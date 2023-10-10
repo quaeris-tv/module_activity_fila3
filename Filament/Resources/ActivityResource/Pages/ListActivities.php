@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Activity\Filament\Resources\ActivityResource\Pages;
 
-use Modules\Activity\Filament\Resources\ActivityResource;
 use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
+use Modules\Activity\Filament\Resources\ActivityResource;
 
 class ListActivities extends ListRecords
 {
