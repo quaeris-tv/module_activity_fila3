@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
+namespace Modules\Activity\Database\Migrations;
+
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 class CreateActivityTable extends XotBaseMigration
 {
-    public function up()
+    public function up(): void
     {
         // -- CREATE --
         $this->tableCreate(

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<psalm
+    errorLevel="8"
+    resolveFromConfigFile="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+    findUnusedBaselineEntry="true"
+    findUnusedCode="true"
+>
+    <projectFiles>
+        <file name="Config/config.php"/>
+        <file name="Database/Migrations/2023_03_31_103350_create_activity_table.php"/>
+        <file name="Database/Seeders/ActivityDatabaseSeeder.php"/>
+        <file name="Events/ActivityEvent.php"/>
+        <file name="Filament/Pages/Dashboard.php"/>
+        <file name="Filament/Resources/ActivityResource.php"/>
+        <file name="Http/Controllers/ActivityController.php"/>
+        <file name="Models/Activity.php"/>
+        <file name="Models/Panels/ActivityPanel.php"/>
+        <file name="Models/Panels/_ModulePanel.php"/>
+        <file name="Providers/ActivityServiceProvider.php"/>
+        <file name="Providers/Filament/AdminPanelProvider.php"/>
+        <file name="Providers/RouteServiceProvider.php"/>
+        <file name="Resources/views/index.blade.php"/>
+        <file name="Routes/api.php"/>
+        <file name="Routes/web.php"/>
+        <!-- <file name="vendor/autoload.php"/>
+        <file name="vendor/composer/ClassLoader.php"/>
+        <file name="vendor/composer/InstalledVersions.php"/>
+        <file name="vendor/composer/autoload_classmap.php"/>
+        <file name="vendor/composer/autoload_files.php"/>
+        <file name="vendor/composer/autoload_namespaces.php"/>
+        <file name="vendor/composer/autoload_psr4.php"/>
+        <file name="vendor/composer/autoload_real.php"/>
+        <file name="vendor/composer/autoload_static.php"/>
+        <file name="vendor/composer/installed.php"/>
+        <file name="vendor/composer/platform_check.php"/> -->
+        <ignoreFiles>
+            <directory name="vendor"/>
+        </ignoreFiles>
+    </projectFiles>
+<plugins><pluginClass class="Psalm\LaravelPlugin\Plugin"/></plugins></psalm>

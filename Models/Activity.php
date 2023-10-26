@@ -50,11 +50,19 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  */
 class Activity extends SpatieActivity
 {
-    protected $fillable = ['id', 'log_name', 'description', 'subject_type', 'event', 'subject_id', 'causer_type', 'causer_id', 'properties', 'batch_uuid', 'created_at', 'updated_at'];
-
-    protected $attributes = ['field_name'];
     /**
-     * @var string
+     * @var array<string>
+     *
+     * @psalm-var list{'id', 'log_name', 'description', 'subject_type', 'event', 'subject_id', 'causer_type', 'causer_id', 'properties', 'batch_uuid', 'created_at', 'updated_at'}
      */
-    protected $connection = 'mysql';
+    protected array $fillable = ['id', 'log_name', 'description', 'subject_type', 'event', 'subject_id', 'causer_type', 'causer_id', 'properties', 'batch_uuid', 'created_at', 'updated_at'];
+
+    /**
+     * @var array<string>
+     *
+     * @psalm-var list{'field_name'}
+     */
+    protected array $attributes = ['field_name'];
+
+    protected string $connection = 'mysql';
 }

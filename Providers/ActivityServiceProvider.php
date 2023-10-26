@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Providers;
 
-use Illuminate\Support\Facades\Event;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 
 // use Modules\Xot\Services\BladeService;
@@ -14,11 +13,11 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
  */
 class ActivityServiceProvider extends XotBaseServiceProvider
 {
+    public string $module_name = 'activity';
+
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
-
-    public string $module_name = 'activity';
 
     public function bootCallback(): void
     {

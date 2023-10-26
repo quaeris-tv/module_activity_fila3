@@ -23,10 +23,8 @@ class ActivityPanel extends XotBasePanel
 
     /**
      * The columns that should be searched.
-     *
-     * @var array
      */
-    public static $search = [
+    public static array $search = [
     ];
 
     /**
@@ -44,10 +42,8 @@ class ActivityPanel extends XotBasePanel
 
     /**
      * on select the option label.
-     *
-     * @param \Modules\Activity\Models\Activity $row
      */
-    public function optionLabel($row): string
+    public function optionLabel(\Modules\Activity\Models\Activity $row): string
     {
         return 'To Set';
     }
@@ -62,12 +58,8 @@ class ActivityPanel extends XotBasePanel
 
     /**
      * Build an "index" query for the given resource.
-     *
-     * @param RowsContract $query
-     *
-     * @return RowsContract
      */
-    public function indexQuery(array $data, $query)
+    public function indexQuery(array $data, RowsContract $query): RowsContract
     {
         // return $query->where('user_id', $request->user()->id);
         return $query;
@@ -149,9 +141,7 @@ class ActivityPanel extends XotBasePanel
      */
     public function tabs(): array
     {
-        $tabs_name = [];
-
-        return $tabs_name;
+        return [];
     }
 
     /**
@@ -165,7 +155,7 @@ class ActivityPanel extends XotBasePanel
     /**
      * Get the filters available for the resource.
      */
-    public function filters(Request $request = null): array
+    public function filters(?Request $request = null): array
     {
         return [];
     }

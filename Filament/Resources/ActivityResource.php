@@ -44,12 +44,20 @@ class ActivityResource extends Resource
             ]);
     }
 
+    /**
+     * @psalm-return array<never, never>
+     */
     public static function getRelations(): array
     {
         return [
         ];
     }
 
+    /**
+     * @return array<array>
+     *
+     * @psalm-return array{index: array, create: array, edit: array}
+     */
     public static function getPages(): array
     {
         return [
