@@ -155,7 +155,7 @@ class ActivityPanel extends XotBasePanel
     /**
      * Get the filters available for the resource.
      */
-    public function filters(?Request $request = null): array
+    public function filters(Request $request = null): array
     {
         return [];
     }
