@@ -54,9 +54,7 @@ class ActivityResource extends Resource
     }
 
     /**
-     * @return array<array>
-     *
-     * @psalm-return array{index: array, create: array, edit: array}
+     * @return array<string, \Filament\Resources\Pages\PageRegistration>
      */
     public static function getPages(): array
     {

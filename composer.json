@@ -19,10 +19,11 @@
         }
     },
     "require": {
-        "spatie/laravel-activitylog": "^4.7",
         "illuminate/contracts": "^9.0|^10.0",
         "illuminate/support": "^9.12|^10.0",
-        "laraxot/module_xot_fila3": "dev-master"
+        "laraxot/module_xot_fila3": "dev-master",
+        "spatie/laravel-activitylog": "^4.7",
+        "thecodingmachine/safe": "^2.5"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
@@ -37,6 +38,7 @@
         "phpstan/phpstan-phpunit": "^1.0",
         "psalm/plugin-laravel": "^2.8",
         "spatie/laravel-ray": "^1.26",
+        "thecodingmachine/phpstan-safe-rule": "^1.2",
         "vimeo/psalm": "^5.15"
     },
     "scripts": {
