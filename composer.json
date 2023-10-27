@@ -45,6 +45,20 @@
         "thecodingmachine/phpstan-safe-rule": "^1.2",
         "vimeo/psalm": "^5.15"
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../module_xot_fila3"
+        },
+        {
+            "type": "path",
+            "url": "../module_tenant_fila3"
+        },
+        {
+            "type": "path",
+            "url": "../module_ui_fila3"
+        }
+    ],
     "scripts": {
         "post-autoload-dump": [
             "@php vendor/bin/testbench package:discover --ansi"
