@@ -16,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::middleware('auth:api')->get('/activity', function (Request $request) {//
+// Route::middleware('auth:api')->get('/activity', function (Request $request) {//
 //    return $request->user();
-//});
+// });
