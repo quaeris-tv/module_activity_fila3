@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Route::middleware('auth:api')->get('/activity', function (Request $request) {//
 //    return $request->user();
 // });
@@ -25,3 +26,8 @@ use Illuminate\Support\Facades\Route;
 //    return $request->user();
 //});
 >>>>>>> 1cbf3b4 (up)
+=======
+// Route::middleware('auth:api')->get('/activity', function (Request $request) {//
+//    return $request->user();
+// });
+>>>>>>> b1e4e3a (Lint)
