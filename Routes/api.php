@@ -16,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+<<<<<<< HEAD
 // Route::middleware('auth:api')->get('/activity', function (Request $request) {//
 //    return $request->user();
 // });
+=======
+//Route::middleware('auth:api')->get('/activity', function (Request $request) {//
+//    return $request->user();
+//});
+>>>>>>> 1cbf3b4 (up)
