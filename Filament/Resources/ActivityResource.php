@@ -4,18 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources;
 
-use Filament\Tables\Actions\EditAction;
+use Filament\Forms\Form;
+use Filament\Resources\Pages\PageRegistration;
+use Filament\Resources\Resource;
 use Filament\Tables\Actions\BulkActionGroup;
 use Filament\Tables\Actions\DeleteBulkAction;
-use Filament\Resources\Pages\PageRegistration;
-use Modules\Activity\Filament\Resources\ActivityResource\Pages\ListActivities;
+use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Table;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages\CreateActivity;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages\EditActivity;
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
-use Filament\Tables;
-use Filament\Tables\Table;
-use Modules\Activity\Filament\Resources\ActivityResource\Pages;
+use Modules\Activity\Filament\Resources\ActivityResource\Pages\ListActivities;
 use Modules\Activity\Models\Activity;
 
 class ActivityResource extends Resource

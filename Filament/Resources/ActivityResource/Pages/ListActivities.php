@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Activity\Filament\Resources\ActivityResource\Pages;
 
 use Filament\Actions\CreateAction;
-use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
 use Modules\Activity\Filament\Resources\ActivityResource;
 
