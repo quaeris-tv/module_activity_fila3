@@ -23,7 +23,8 @@
         "illuminate/support": "^9.12|^10.0",
         "laraxot/module_xot_fila3": "dev-master",
         "spatie/laravel-activitylog": "^4.7",
-        "thecodingmachine/safe": "*"
+        "spatie/laravel-event-sourcing": "^7.3",
+        "thecodingmachine/safe": "^2.5"
     },
     "require-dev": {
         "driftingly/rector-laravel": "^0.26.2",
@@ -42,7 +43,7 @@
         "rector/phpstan-rules": "^0.7.1",
         "rector/rector": "^0.18.6",
         "spatie/laravel-ray": "^1.26",
-        "symplify/phpstan-rules": "*",
+        "symplify/phpstan-rules": "^12.4",
         "thecodingmachine/phpstan-safe-rule": "^1.2",
         "vimeo/psalm": "^5.15"
     },
