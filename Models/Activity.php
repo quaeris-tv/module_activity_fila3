@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Models;
 
+use Illuminate\Support\Collection;
+use Illuminate\Support\Carbon;
+use Illuminate\Database\Eloquent\Model;
 use Spatie\Activitylog\Models\Activity as SpatieActivity;
 
 /**
@@ -17,19 +20,19 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @property int|null                                      $subject_id
  * @property string|null                                   $causer_type
  * @property int|null                                      $causer_id
- * @property \Illuminate\Support\Collection|null           $properties
+ * @property Collection|null $properties
  * @property string|null                                   $batch_uuid
- * @property \Illuminate\Support\Carbon|null               $created_at
- * @property \Illuminate\Support\Carbon|null               $updated_at
- * @property \Illuminate\Database\Eloquent\Model|\Eloquent $causer
- * @property \Illuminate\Support\Collection                $changes
- * @property \Illuminate\Database\Eloquent\Model|\Eloquent $subject
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property Model|\Eloquent $causer
+ * @property Collection $changes
+ * @property Model|\Eloquent $subject
  * @property string|null                                   $field_name
  *
- * @method static Builder|Activity                               causedBy(\Illuminate\Database\Eloquent\Model $causer)
+ * @method static Builder|Activity causedBy(Model $causer)
  * @method static Builder|Activity                               forBatch(string $batchUuid)
  * @method static Builder|Activity                               forEvent(string $event)
- * @method static Builder|Activity                               forSubject(\Illuminate\Database\Eloquent\Model $subject)
+ * @method static Builder|Activity forSubject(Model $subject)
  * @method static Builder|Activity                               hasBatch()
  * @method static Builder|Activity                               inLog(...$logNames)
  * @method static \Illuminate\Database\Eloquent\Builder|Activity newModelQuery()

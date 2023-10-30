@@ -4,6 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources;
 
+use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Actions\BulkActionGroup;
+use Filament\Tables\Actions\DeleteBulkAction;
+use Filament\Resources\Pages\PageRegistration;
+use Modules\Activity\Filament\Resources\ActivityResource\Pages\ListActivities;
+use Modules\Activity\Filament\Resources\ActivityResource\Pages\CreateActivity;
+use Modules\Activity\Filament\Resources\ActivityResource\Pages\EditActivity;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -32,11 +39,11 @@ class ActivityResource extends Resource
             ->filters([
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
+                EditAction::make(),
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+                BulkActionGroup::make([
+                    DeleteBulkAction::make(),
                 ]),
             ])
             ->emptyStateActions([
@@ -54,14 +61,14 @@ class ActivityResource extends Resource
     }
 
     /**
-     * @return array<string, \Filament\Resources\Pages\PageRegistration>
+     * @return array<string, PageRegistration>
      */
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListActivities::route('/'),
-            'create' => Pages\CreateActivity::route('/create'),
-            'edit' => Pages\EditActivity::route('/{record}/edit'),
+            'index' => ListActivities::route('/'),
+            'create' => CreateActivity::route('/create'),
+            'edit' => EditActivity::route('/{record}/edit'),
         ];
     }
 }
