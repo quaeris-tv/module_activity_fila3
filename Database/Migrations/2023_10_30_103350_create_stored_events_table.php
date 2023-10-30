@@ -29,7 +29,7 @@ class CreateStoredEventsTable extends XotBaseMigration
         // -- UPDATE --
         $this->tableUpdate(
             function (Blueprint $table): void {
-                if (!$this->hasColumn('created_by')) {
+                if (! $this->hasColumn('created_by')) {
                     $table->string('created_by')->nullable();
                     $table->string('updated_by')->nullable();
                 }

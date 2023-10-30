@@ -7,23 +7,25 @@ namespace Modules\Activity\Models;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent as SpatieStoredEvent;
 
 /**
- * Modules\Activity\Models\StoredEvent
+ * Modules\Activity\Models\StoredEvent.
  *
- * @property-read \Spatie\EventSourcing\StoredEvents\ShouldBeStored|null $event
- * @property-read \Spatie\SchemalessAttributes\SchemalessAttributes $meta_data
- * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent afterVersion(int $version)
- * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventCollection<int, static> all($columns = ['*'])
- * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventCollection<int, static> get($columns = ['*'])
- * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent lastEvent(string ...$eventClasses)
- * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent newModelQuery()
- * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent newQuery()
- * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent query()
- * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent startingFrom(int $storedEventId)
- * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent whereAggregateRoot(string $uuid)
- * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent whereEvent(string ...$eventClasses)
- * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent wherePropertyIs(string $property, ?mixed $value)
- * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent wherePropertyIsNot(string $property, ?mixed $value)
+ * @property \Spatie\EventSourcing\StoredEvents\ShouldBeStored|null $event
+ * @property \Spatie\SchemalessAttributes\SchemalessAttributes      $meta_data
+ *
+ * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent         afterVersion(int $version)
+ * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventCollection<int, static>          all($columns = ['*'])
+ * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventCollection<int, static>          get($columns = ['*'])
+ * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent         lastEvent(string ...$eventClasses)
+ * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent         newModelQuery()
+ * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent         newQuery()
+ * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent         query()
+ * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent         startingFrom(int $storedEventId)
+ * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent         whereAggregateRoot(string $uuid)
+ * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent         whereEvent(string ...$eventClasses)
+ * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent         wherePropertyIs(string $property, ?mixed $value)
+ * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|StoredEvent         wherePropertyIsNot(string $property, ?mixed $value)
  * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|EloquentStoredEvent withMetaDataAttributes()
+ *
  * @mixin \Eloquent
  */
 class StoredEvent extends SpatieStoredEvent
