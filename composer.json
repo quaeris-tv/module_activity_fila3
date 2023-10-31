@@ -74,6 +74,7 @@
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
     },
     "config": {
+        "_comment_vendor-dir": "../../vendor",
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
