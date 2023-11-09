@@ -66,5 +66,8 @@ class StoredEvent extends SpatieStoredEvent
      */
     protected $attributes = ['field_name'];
 
+    /**
+     * @var string
+     */
     protected $connection = 'mysql';
 }
