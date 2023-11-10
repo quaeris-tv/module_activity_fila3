@@ -7,12 +7,13 @@ namespace Modules\Activity\Models;
 use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
 
 /**
- * Modules\Activity\Models\Snapshot
+ * Modules\Activity\Models\Snapshot.
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot query()
- * @method static Builder|EloquentSnapshot uuid(string $uuid)
+ * @method static Builder|EloquentSnapshot                       uuid(string $uuid)
+ *
  * @mixin \Eloquent
  */
 class Snapshot extends SpatieSnapshot
