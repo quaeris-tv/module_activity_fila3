@@ -14,6 +14,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  *
  * @property \Spatie\EventSourcing\StoredEvents\ShouldBeStored|null $event
  * @property SchemalessAttributes                                   $meta_data
+ *
  * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   afterVersion(int $version)
  * @method static EloquentStoredEventCollection<int, static>                                                    all($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static>                                                    get($columns = ['*'])
@@ -29,8 +30,9 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|EloquentStoredEvent withMetaDataAttributes()
  * @method static EloquentStoredEventCollection<int, static>                                                    all($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static>                                                    get($columns = ['*'])
- * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
- * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
+ * @method static EloquentStoredEventCollection<int, static>                                                    all($columns = ['*'])
+ * @method static EloquentStoredEventCollection<int, static>                                                    get($columns = ['*'])
+ *
  * @mixin \Eloquent
  */
 class StoredEvent extends SpatieStoredEvent
