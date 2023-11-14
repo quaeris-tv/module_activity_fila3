@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Models;
 
-use Illuminate\Support\Carbon;
-use Illuminate\Support\Collection;
 use Barryvdh\LaravelIdeHelper\Eloquent;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Collection;
 use Spatie\Activitylog\Models\Activity as SpatieActivity;
 
 /**
@@ -27,9 +27,9 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @property Carbon|null     $updated_at
  * @property string|null     $created_by
  * @property string|null     $updated_by
- * @property Model|Eloquent $causer
+ * @property Model|Eloquent  $causer
  * @property Collection      $changes
- * @property Model|Eloquent $subject
+ * @property Model|Eloquent  $subject
  *
  * @method static Builder|Activity                               causedBy(\Illuminate\Database\Eloquent\Model $causer)
  * @method static Builder|Activity                               forBatch(string $batchUuid)
