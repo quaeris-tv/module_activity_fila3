@@ -11,7 +11,7 @@ class CreateActivityTable extends XotBaseMigration
     {
         // -- CREATE --
         $this->tableCreate(
-            function (Blueprint $table): void {
+            static function (Blueprint $table) : void {
                 $table->bigIncrements('id');
                 $table->string('log_name')->nullable();
                 $table->text('description');
@@ -19,8 +19,10 @@ class CreateActivityTable extends XotBaseMigration
                 $table->nullableMorphs('causer', 'causer');
                 $table->json('properties')->nullable();
                 $table->index('log_name');
-                $table->uuid('batch_uuid')->nullable(); // ->after('properties');
-                $table->string('event')->nullable(); // ->after('subject_type');
+                $table->uuid('batch_uuid')->nullable();
+                // ->after('properties');
+                $table->string('event')->nullable();
+                // ->after('subject_type');
                 $table->timestamps();
             }
         );

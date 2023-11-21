@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Models;
 
+use Spatie\EventSourcing\StoredEvents\ShouldBeStored;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent as SpatieStoredEvent;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventCollection;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder;
@@ -12,7 +13,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 /**
  * Modules\Activity\Models\StoredEvent.
  *
- * @property \Spatie\EventSourcing\StoredEvents\ShouldBeStored|null $event
+ * @property ShouldBeStored|null $event
  * @property SchemalessAttributes                                   $meta_data
  *
  * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   afterVersion(int $version)
@@ -27,7 +28,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   whereEvent(string ...$eventClasses)
  * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   wherePropertyIs(string $property, ?mixed $value)
  * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   wherePropertyIsNot(string $property, ?mixed $value)
- * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|EloquentStoredEvent withMetaDataAttributes()
+ * @method static EloquentStoredEventQueryBuilder|EloquentStoredEvent withMetaDataAttributes()
  *
  * @mixin \Eloquent
  */

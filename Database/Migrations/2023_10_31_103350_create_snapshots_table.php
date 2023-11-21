@@ -11,14 +11,12 @@ class CreateSnapshotsTable extends XotBaseMigration
     {
         // -- CREATE --
         $this->tableCreate(
-            function (Blueprint $table): void {
+            static function (Blueprint $table) : void {
                 $table->bigIncrements('id');
                 $table->uuid('aggregate_uuid');
                 $table->unsignedInteger('aggregate_version');
                 $table->jsonb('state');
-
                 $table->timestamps();
-
                 $table->index('aggregate_uuid');
             }
         );

@@ -11,7 +11,7 @@ class CreateStoredEventsTable extends XotBaseMigration
     {
         // -- CREATE --
         $this->tableCreate(
-            function (Blueprint $table): void {
+            static function (Blueprint $table) : void {
                 $table->id();
                 $table->uuid('aggregate_uuid')->nullable();
                 $table->unsignedBigInteger('aggregate_version')->nullable();
@@ -22,7 +22,6 @@ class CreateStoredEventsTable extends XotBaseMigration
                 $table->timestamp('created_at');
                 $table->index('event_class');
                 $table->index('aggregate_uuid');
-
                 $table->unique(['aggregate_uuid', 'aggregate_version']);
             }
         );
