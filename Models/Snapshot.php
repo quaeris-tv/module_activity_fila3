@@ -21,7 +21,6 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot query()
-<<<<<<< HEAD
  * @method static Builder|EloquentSnapshot                       uuid(string $uuid)
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereAggregateUuid($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereAggregateVersion($value)
@@ -31,10 +30,8 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereState($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereUpdatedBy($value)
+ * @method static Builder|EloquentSnapshot                       uuid(string $uuid)
  *
-=======
- * @method static Builder|EloquentSnapshot uuid(string $uuid)
->>>>>>> 624f888 (Refactor class annotations for Activity, Snapshot, and StoredEvent models)
  * @mixin \Eloquent
  */
 class Snapshot extends SpatieSnapshot

@@ -12,7 +12,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 /**
  * Modules\Activity\Models\StoredEvent.
  *
-<<<<<<< HEAD
  * @property int                                                    $id
  * @property string|null                                            $aggregate_uuid
  * @property int|null                                               $aggregate_version
@@ -25,6 +24,32 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property string|null                                            $updated_by
  * @property \Spatie\EventSourcing\StoredEvents\ShouldBeStored|null $event
  *
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent afterVersion(int $version)
+ * @method static EloquentStoredEventCollection<int, static>  all($columns = ['*'])
+ * @method static EloquentStoredEventCollection<int, static>  get($columns = ['*'])
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent lastEvent(string ...$eventClasses)
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent newModelQuery()
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent newQuery()
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent query()
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent startingFrom(int $storedEventId)
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent whereAggregateRoot(string $uuid)
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent whereAggregateUuid($value)
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent whereAggregateVersion($value)
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent whereCreatedAt($value)
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent whereCreatedBy($value)
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent whereEvent(string ...$eventClasses)
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent whereEventClass($value)
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent whereEventProperties($value)
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent whereEventVersion($value)
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent whereId($value)
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent whereMetaData($value)
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent wherePropertyIs(string $property, ?mixed $value)
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent wherePropertyIsNot(string $property, ?mixed $value)
+ * @method static EloquentStoredEventQueryBuilder|StoredEvent whereUpdatedBy($value)
+ *
+ * @property \Spatie\EventSourcing\StoredEvents\ShouldBeStored|null $event
+ * @property SchemalessAttributes                                   $meta_data
+ *
  * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   afterVersion(int $version)
  * @method static EloquentStoredEventCollection<int, static>                                                    all($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static>                                                    get($columns = ['*'])
@@ -34,36 +59,11 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   query()
  * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   startingFrom(int $storedEventId)
  * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   whereAggregateRoot(string $uuid)
- * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   whereAggregateUuid($value)
- * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   whereAggregateVersion($value)
- * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   whereCreatedAt($value)
- * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   whereCreatedBy($value)
  * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   whereEvent(string ...$eventClasses)
- * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   whereEventClass($value)
- * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   whereEventProperties($value)
- * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   whereEventVersion($value)
- * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   whereId($value)
- * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   whereMetaData($value)
  * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   wherePropertyIs(string $property, ?mixed $value)
  * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   wherePropertyIsNot(string $property, ?mixed $value)
- * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   whereUpdatedBy($value)
-=======
- * @property-read \Spatie\EventSourcing\StoredEvents\ShouldBeStored|null $event
- * @property-read SchemalessAttributes $meta_data
- * @method static EloquentStoredEventQueryBuilder|StoredEvent afterVersion(int $version)
- * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
- * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
- * @method static EloquentStoredEventQueryBuilder|StoredEvent lastEvent(string ...$eventClasses)
- * @method static EloquentStoredEventQueryBuilder|StoredEvent newModelQuery()
- * @method static EloquentStoredEventQueryBuilder|StoredEvent newQuery()
- * @method static EloquentStoredEventQueryBuilder|StoredEvent query()
- * @method static EloquentStoredEventQueryBuilder|StoredEvent startingFrom(int $storedEventId)
- * @method static EloquentStoredEventQueryBuilder|StoredEvent whereAggregateRoot(string $uuid)
- * @method static EloquentStoredEventQueryBuilder|StoredEvent whereEvent(string ...$eventClasses)
- * @method static EloquentStoredEventQueryBuilder|StoredEvent wherePropertyIs(string $property, ?mixed $value)
- * @method static EloquentStoredEventQueryBuilder|StoredEvent wherePropertyIsNot(string $property, ?mixed $value)
->>>>>>> 624f888 (Refactor class annotations for Activity, Snapshot, and StoredEvent models)
  * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|EloquentStoredEvent withMetaDataAttributes()
+ *
  * @mixin \Eloquent
  */
 class StoredEvent extends SpatieStoredEvent
