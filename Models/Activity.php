@@ -11,6 +11,7 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
 /**
  * Modules\Activity\Models\Activity.
  *
+<<<<<<< HEAD
  * @property int                             $id
  * @property string|null                     $log_name
  * @property string                          $description
@@ -53,6 +54,20 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereUpdatedBy($value)
  *
+=======
+ * @property-read Model|\Eloquent $causer
+ * @property-read Collection $changes
+ * @property-read Model|\Eloquent $subject
+ * @method static Builder|Activity causedBy(\Illuminate\Database\Eloquent\Model $causer)
+ * @method static Builder|Activity forBatch(string $batchUuid)
+ * @method static Builder|Activity forEvent(string $event)
+ * @method static Builder|Activity forSubject(\Illuminate\Database\Eloquent\Model $subject)
+ * @method static Builder|Activity hasBatch()
+ * @method static Builder|Activity inLog(...$logNames)
+ * @method static \Illuminate\Database\Eloquent\Builder|Activity newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Activity newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Activity query()
+>>>>>>> 624f888 (Refactor class annotations for Activity, Snapshot, and StoredEvent models)
  * @mixin \Eloquent
  */
 class Activity extends SpatieActivity
