@@ -31,3 +31,4 @@ build
 /docs/package-lock.json
 .git-blame-ignore-revs
 docs
+.php-cs-fixer.cache
