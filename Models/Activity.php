@@ -1,5 +1,12 @@
 <?php
+<<<<<<< Updated upstream
 -
+=======
+/**
+ * ---.
+ */
+
+>>>>>>> Stashed changes
 declare(strict_types=1);
 
 namespace Modules\Activity\Models;
