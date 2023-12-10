@@ -36,3 +36,4 @@ docs
 *.phar
 *.cache
 *.log
+*.lock
