@@ -37,3 +37,4 @@ docs
 *.cache
 *.log
 *.lock
+*.cache
