@@ -38,3 +38,4 @@ docs
 *.log
 *.lock
 *.cache
+.git-blame-ignore-revs
