@@ -39,3 +39,4 @@ docs
 *.lock
 *.cache
 .git-blame-ignore-revs
+package-lock.json
