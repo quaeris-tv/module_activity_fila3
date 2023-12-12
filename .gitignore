@@ -39,10 +39,13 @@ docs
 *.lock
 *.cache
 <<<<<<< HEAD
+<<<<<<< HEAD
 .git-blame-ignore-revs
 package-lock.json
 .php-cs-fixer.cache
 package-lock.json
 =======
 >>>>>>> af08cfb (Remove unnecessary files and directories)
+=======
+>>>>>>> master
 .git-rewrite/
