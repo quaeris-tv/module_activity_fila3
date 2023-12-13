@@ -39,3 +39,4 @@ docs
 *.lock
 *.cache
 .git-rewrite/
+.php-cs-fixer.cache
