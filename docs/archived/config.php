@@ -36,10 +36,14 @@ return [
 
     // navigation menu
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => require_once ('navigation.php'),
 =======
     'navigation' => require_once('navigation.php'),
 >>>>>>> 285fa96 (.)
+=======
+    'navigation' => require_once ('navigation.php'),
+>>>>>>> d019e5d (Lint)
 
     // helpers
     'isActive' => function ($page, $path) {
