@@ -10,7 +10,11 @@ return [
     'docsearchApiKey' => env('DOCSEARCH_KEY'),
     'docsearchIndexName' => env('DOCSEARCH_INDEX'),
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ];
 >>>>>>> b4eb4c6 (.)
+=======
+];
+>>>>>>> e1c77f7 (Lint)
