@@ -14,6 +14,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ];
@@ -30,3 +31,9 @@ return [
 =======
 ];
 >>>>>>> ff79a66 (Remove unnecessary files and directories)
+=======
+];
+=======
+];
+>>>>>>> 285fa96 (.)
+>>>>>>> 0946dfa (Update navigation.php and config.php files)

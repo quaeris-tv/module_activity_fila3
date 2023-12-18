@@ -3,12 +3,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0946dfa (Update navigation.php and config.php files)
 <?php declare(strict_types=1);
 $__env->startSection('body'); ?>
 =======
 
 
 <?php $__env->startSection('body'); ?>
+<<<<<<< HEAD
 >>>>>>> b4eb4c6 (.)
 =======
 <?php declare(strict_types=1);
@@ -27,6 +31,9 @@ $__env->startSection('body'); ?>
 <?php declare(strict_types=1);
 $__env->startSection('body'); ?>
 >>>>>>> ff79a66 (Remove unnecessary files and directories)
+=======
+>>>>>>> 285fa96 (.)
+>>>>>>> 0946dfa (Update navigation.php and config.php files)
 <div class="flex flex-col items-center mt-32 text-gray-700">
     <h1 class="text-6xl font-light leading-none mb-2">404</h1>
 
