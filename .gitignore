@@ -40,11 +40,14 @@ docs
 *.cache
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .git-rewrite/
 
 =======
 =======
 >>>>>>> 4cdb483 (Remove unnecessary files and directories)
+=======
+>>>>>>> e71c242 (Remove unnecessary files and directories)
 .git-blame-ignore-revs
 package-lock.json
 <<<<<<< HEAD
@@ -57,12 +60,17 @@ package-lock.json
 package-lock.json
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3dc0a56 (package-lock.json >> .gitignore)
 =======
 =======
 =======
 >>>>>>> Remove unnecessary files and directories
 >>>>>>> 4cdb483 (Remove unnecessary files and directories)
+=======
+=======
+>>>>>>> Remove unnecessary files and directories
+>>>>>>> e71c242 (Remove unnecessary files and directories)
 .git-rewrite/
 <<<<<<< HEAD
 >>>>>>> 04e73ea (.git-rewrite/ >> .gitignore)
