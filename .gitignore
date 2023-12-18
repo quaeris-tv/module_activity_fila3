@@ -467,6 +467,7 @@ package-lock.json
 .php-cs-fixer.cache
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 4c98720 (.php-cs-fixer.cache >> .gitignore)
 =======
 package-lock.json
@@ -1052,3 +1053,6 @@ package-lock.json
 =======
 .php-cs-fixer.cache
 >>>>>>> f0ed801 (.php-cs-fixer.cache >> .gitignore)
+=======
+package-lock.json
+>>>>>>> 5b369e0 (package-lock.json >> .gitignore)
