@@ -6,11 +6,19 @@ $__env->startSection('body'); ?>
 
 
 <?php $__env->startSection('body'); ?>
+<<<<<<< HEAD
 >>>>>>> b4eb4c6 (.)
 =======
 <?php declare(strict_types=1);
 $__env->startSection('body'); ?>
 >>>>>>> 5a6cf49 (Dusting)
+=======
+>>>>>>> 285fa96 (.)
+=======
+<?php declare(strict_types=1);
+$__env->startSection('body'); ?>
+>>>>>>> 4a2f0ae (Dusting)
+>>>>>>> edba1131118fe43273e769e0d7e036e54ab0e8c9
 <div class="flex flex-col items-center mt-32 text-gray-700">
     <h1 class="text-6xl font-light leading-none mb-2">404</h1>
 

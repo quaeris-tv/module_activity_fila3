@@ -33,9 +33,8 @@ build
 docs
 .php-cs-fixer.cache
 /vendor
-*.phar
-*.cache
 *.log
+<<<<<<< HEAD
 *.lock
 *.cache
 <<<<<<< HEAD
@@ -545,3 +544,6 @@ package-lock.json
 =======
 .php-cs-fixer.cache
 >>>>>>> f0ed801 (.php-cs-fixer.cache >> .gitignore)
+=======
+.git-rewrite/
+>>>>>>> edba1131118fe43273e769e0d7e036e54ab0e8c9

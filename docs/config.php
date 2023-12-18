@@ -15,7 +15,27 @@ return [
     'docsearchIndexName' => env('DOCSEARCH_INDEX'),
 
     // navigation menu
+<<<<<<< HEAD
     'navigation' => require_once ('navigation.php'),
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    'navigation' => require_once ('navigation.php'),
+=======
+    'navigation' => require_once('navigation.php'),
+>>>>>>> 285fa96 (.)
+=======
+    'navigation' => require_once ('navigation.php'),
+>>>>>>> d019e5d (Lint)
+=======
+    'navigation' => require_once('navigation.php'),
+>>>>>>> 4a2f0ae (Dusting)
+=======
+    'navigation' => require_once ('navigation.php'),
+>>>>>>> 67705af (Lint)
+>>>>>>> edba1131118fe43273e769e0d7e036e54ab0e8c9
 
     // helpers
     'isActive' => function ($page, $path) {
@@ -31,6 +51,7 @@ return [
     'url' => function ($page, $path) {
         return Str::startsWith($path, 'http') ? $path : $page->baseUrl.'/'.trimPath($path);
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -516,3 +537,12 @@ return [
 =======
 ];
 >>>>>>> 2d2a6cc (Dusting)
+=======
+];
+=======
+];
+>>>>>>> 285fa96 (.)
+=======
+];
+>>>>>>> d019e5d (Lint)
+>>>>>>> edba1131118fe43273e769e0d7e036e54ab0e8c9
