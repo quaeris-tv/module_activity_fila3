@@ -15,7 +15,7 @@ return [
     'docsearchIndexName' => env('DOCSEARCH_INDEX'),
 
     // navigation menu
-    'navigation' => require_once ('navigation.php'),
+    'navigation' => require_once('navigation.php'),
 
     // helpers
     'isActive' => function ($page, $path) {
@@ -31,6 +31,7 @@ return [
     'url' => function ($page, $path) {
         return Str::startsWith($path, 'http') ? $path : $page->baseUrl.'/'.trimPath($path);
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -106,3 +107,6 @@ return [
 =======
 ];
 >>>>>>> 3e82161 (rebase 13/143)
+=======
+];
+>>>>>>> 17da9b0 (Dusting)
