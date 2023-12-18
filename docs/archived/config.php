@@ -63,6 +63,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => require_once ('navigation.php'),
 =======
     'navigation' => require_once('navigation.php'),
@@ -145,6 +146,8 @@ return [
 =======
 =======
 >>>>>>> 4097ac6 (Fix navigation require_once statement in config.php files)
+=======
+>>>>>>> 9638973 (Dusting navigation menu configuration)
     'navigation' => require_once ('navigation.php'),
 =======
     'navigation' => require_once('navigation.php'),
@@ -155,7 +158,13 @@ return [
 =======
     'navigation' => require_once ('navigation.php'),
 >>>>>>> d019e5d (Lint)
+<<<<<<< HEAD
 >>>>>>> 4097ac6 (Fix navigation require_once statement in config.php files)
+=======
+=======
+    'navigation' => require_once('navigation.php'),
+>>>>>>> 4a2f0ae (Dusting)
+>>>>>>> 9638973 (Dusting navigation menu configuration)
 
     // helpers
     'isActive' => function ($page, $path) {
