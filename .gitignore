@@ -611,6 +611,7 @@ package-lock.json
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3dc0a56 (package-lock.json >> .gitignore)
 =======
 =======
@@ -1056,3 +1057,6 @@ package-lock.json
 =======
 package-lock.json
 >>>>>>> 5b369e0 (package-lock.json >> .gitignore)
+=======
+.git-rewrite/
+>>>>>>> e7768bf (.git-rewrite/ >> .gitignore)
