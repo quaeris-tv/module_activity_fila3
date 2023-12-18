@@ -108,6 +108,7 @@ docs
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .git-rewrite/
 
 =======
@@ -545,3 +546,6 @@ package-lock.json
 =======
 .php-cs-fixer.cache
 >>>>>>> f0ed801 (.php-cs-fixer.cache >> .gitignore)
+=======
+.git-blame-ignore-revs
+>>>>>>> 219b1c0 (add .git-blame-ignore-revs to .gitignore)
