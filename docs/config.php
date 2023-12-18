@@ -40,6 +40,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => require_once ('navigation.php'),
 =======
     'navigation' => require_once('navigation.php'),
@@ -116,6 +117,9 @@ return [
 =======
     'navigation' => require_once('navigation.php'),
 >>>>>>> 2d2a6cc (Dusting)
+=======
+    'navigation' => require_once ('navigation.php'),
+>>>>>>> ff79a66 (Remove unnecessary files and directories)
 
     // helpers
     'isActive' => function ($page, $path) {
@@ -339,6 +343,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e2d89f7 (rebase 12/143)
 =======
@@ -1100,3 +1105,6 @@ return [
 =======
 ];
 >>>>>>> 2d2a6cc (Dusting)
+=======
+];
+>>>>>>> ff79a66 (Remove unnecessary files and directories)

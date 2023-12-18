@@ -179,6 +179,7 @@ docs
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .git-rewrite/
 
 =======
@@ -460,6 +461,8 @@ docs
 >>>>>>> 0c6e2ae (rebase 12/143)
 =======
 >>>>>>> d6f5515 (Remove unnecessary files and directories)
+=======
+>>>>>>> ff79a66 (Remove unnecessary files and directories)
 .git-blame-ignore-revs
 package-lock.json
 <<<<<<< HEAD
@@ -1037,7 +1040,12 @@ package-lock.json
 =======
 =======
 >>>>>>> af08cfb (Remove unnecessary files and directories)
+<<<<<<< HEAD
 >>>>>>> d6f5515 (Remove unnecessary files and directories)
+=======
+=======
+>>>>>>> master
+>>>>>>> ff79a66 (Remove unnecessary files and directories)
 .git-rewrite/
 <<<<<<< HEAD
 <<<<<<< HEAD
