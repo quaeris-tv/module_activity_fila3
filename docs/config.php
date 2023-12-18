@@ -17,6 +17,7 @@ return [
     // navigation menu
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => require_once ('navigation.php'),
 =======
     'navigation' => require_once('navigation.php'),
@@ -24,6 +25,9 @@ return [
 =======
     'navigation' => require_once ('navigation.php'),
 >>>>>>> d019e5d (Lint)
+=======
+    'navigation' => require_once('navigation.php'),
+>>>>>>> 4a2f0ae (Dusting)
 
     // helpers
     'isActive' => function ($page, $path) {
