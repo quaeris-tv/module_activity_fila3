@@ -9,4 +9,8 @@ return [
     // DocSearch credentials
     'docsearchApiKey' => env('DOCSEARCH_KEY'),
     'docsearchIndexName' => env('DOCSEARCH_INDEX'),
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 285fa96 (.)
