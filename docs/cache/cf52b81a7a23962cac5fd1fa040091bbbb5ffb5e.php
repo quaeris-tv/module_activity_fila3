@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php declare(strict_types=1);
 $__env->startSection('body'); ?>
 =======
@@ -11,6 +12,11 @@ $__env->startSection('body'); ?>
 <?php declare(strict_types=1);
 $__env->startSection('body'); ?>
 >>>>>>> 5a6cf49 (Dusting)
+=======
+
+
+<?php $__env->startSection('body'); ?>
+>>>>>>> b4eb4c6 (.)
 <div class="flex flex-col items-center mt-32 text-gray-700">
     <h1 class="text-6xl font-light leading-none mb-2">404</h1>
 
