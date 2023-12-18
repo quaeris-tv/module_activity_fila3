@@ -44,4 +44,8 @@ docs
 =======
 .git-blame-ignore-revs
 package-lock.json
+<<<<<<< HEAD
 >>>>>>> 543b408 (package-lock.json >> .gitignore)
+=======
+.php-cs-fixer.cache
+>>>>>>> 4c98720 (.php-cs-fixer.cache >> .gitignore)
