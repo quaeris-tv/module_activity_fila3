@@ -52,4 +52,8 @@ package-lock.json
 >>>>>>> 4c98720 (.php-cs-fixer.cache >> .gitignore)
 =======
 package-lock.json
+<<<<<<< HEAD
 >>>>>>> 3dc0a56 (package-lock.json >> .gitignore)
+=======
+.git-rewrite/
+>>>>>>> 04e73ea (.git-rewrite/ >> .gitignore)
