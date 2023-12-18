@@ -11,6 +11,7 @@ return [
     'docsearchIndexName' => env('DOCSEARCH_INDEX'),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ];
@@ -18,3 +19,6 @@ return [
 =======
 ];
 >>>>>>> e1c77f7 (Lint)
+=======
+];
+>>>>>>> b4eb4c6 (.)
