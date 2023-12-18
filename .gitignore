@@ -166,6 +166,7 @@ docs
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .git-rewrite/
 
 =======
@@ -421,6 +422,8 @@ docs
 >>>>>>> 52a57b1 (Remove unnecessary files and directories)
 =======
 >>>>>>> 208154b (rebase 12/143)
+=======
+>>>>>>> f4e483c (Remove unnecessary files and directories)
 .git-blame-ignore-revs
 package-lock.json
 <<<<<<< HEAD
@@ -434,6 +437,7 @@ package-lock.json
 >>>>>>> 4c98720 (.php-cs-fixer.cache >> .gitignore)
 =======
 package-lock.json
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -944,6 +948,10 @@ package-lock.json
 >>>>>>> 52a57b1 (Remove unnecessary files and directories)
 =======
 >>>>>>> 208154b (rebase 12/143)
+=======
+=======
+>>>>>>> Remove unnecessary files and directories
+>>>>>>> f4e483c (Remove unnecessary files and directories)
 .git-rewrite/
 <<<<<<< HEAD
 <<<<<<< HEAD
