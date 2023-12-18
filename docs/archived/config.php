@@ -56,6 +56,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => require_once ('navigation.php'),
 =======
     'navigation' => require_once('navigation.php'),
@@ -120,6 +121,9 @@ return [
 =======
     'navigation' => require_once('navigation.php'),
 >>>>>>> 7532e57 (Dusting)
+=======
+    'navigation' => require_once('navigation.php'),
+>>>>>>> ff04fcb (Dusting)
 
     // helpers
     'isActive' => function ($page, $path) {
