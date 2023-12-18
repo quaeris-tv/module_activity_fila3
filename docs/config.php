@@ -31,4 +31,8 @@ return [
     'url' => function ($page, $path) {
         return Str::startsWith($path, 'http') ? $path : $page->baseUrl.'/'.trimPath($path);
     },
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> b4eb4c6 (.)
