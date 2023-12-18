@@ -15,6 +15,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ];
@@ -32,8 +33,16 @@ return [
 ];
 >>>>>>> ff79a66 (Remove unnecessary files and directories)
 =======
+=======
+>>>>>>> 4097ac6 (Fix navigation require_once statement in config.php files)
 ];
 =======
 ];
 >>>>>>> 285fa96 (.)
+<<<<<<< HEAD
 >>>>>>> 0946dfa (Update navigation.php and config.php files)
+=======
+=======
+];
+>>>>>>> d019e5d (Lint)
+>>>>>>> 4097ac6 (Fix navigation require_once statement in config.php files)
