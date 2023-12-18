@@ -554,6 +554,7 @@ package-lock.json
 >>>>>>> 4cdb483 (Remove unnecessary files and directories)
 .git-rewrite/
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 04e73ea (.git-rewrite/ >> .gitignore)
 =======
 .php-cs-fixer.cache
@@ -572,3 +573,6 @@ package-lock.json
 =======
 .git-rewrite/
 >>>>>>> 04e73ea (.git-rewrite/ >> .gitignore)
+=======
+.php-cs-fixer.cache
+>>>>>>> f0ed801 (.php-cs-fixer.cache >> .gitignore)
