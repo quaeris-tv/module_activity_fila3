@@ -38,5 +38,10 @@ docs
 *.log
 *.lock
 *.cache
+<<<<<<< HEAD
 .git-rewrite/
 
+=======
+.git-blame-ignore-revs
+package-lock.json
+>>>>>>> 543b408 (package-lock.json >> .gitignore)
