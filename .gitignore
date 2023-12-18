@@ -253,6 +253,7 @@ docs
 .git-blame-ignore-revs
 package-lock.json
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 543b408 (package-lock.json >> .gitignore)
 =======
 .php-cs-fixer.cache
@@ -549,3 +550,5 @@ package-lock.json
 =======
 .git-blame-ignore-revs
 >>>>>>> 219b1c0 (add .git-blame-ignore-revs to .gitignore)
+=======
+>>>>>>> 543b408 (package-lock.json >> .gitignore)
