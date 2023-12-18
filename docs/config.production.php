@@ -13,6 +13,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ];
@@ -26,3 +27,6 @@ return [
 =======
 ];
 >>>>>>> e1c77f7 (Lint)
+=======
+];
+>>>>>>> ff79a66 (Remove unnecessary files and directories)
