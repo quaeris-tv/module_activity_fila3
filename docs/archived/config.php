@@ -62,6 +62,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => require_once ('navigation.php'),
 =======
     'navigation' => require_once('navigation.php'),
@@ -142,11 +143,19 @@ return [
     'navigation' => require_once ('navigation.php'),
 >>>>>>> ff79a66 (Remove unnecessary files and directories)
 =======
+=======
+>>>>>>> 4097ac6 (Fix navigation require_once statement in config.php files)
     'navigation' => require_once ('navigation.php'),
 =======
     'navigation' => require_once('navigation.php'),
 >>>>>>> 285fa96 (.)
+<<<<<<< HEAD
 >>>>>>> 0946dfa (Update navigation.php and config.php files)
+=======
+=======
+    'navigation' => require_once ('navigation.php'),
+>>>>>>> d019e5d (Lint)
+>>>>>>> 4097ac6 (Fix navigation require_once statement in config.php files)
 
     // helpers
     'isActive' => function ($page, $path) {
