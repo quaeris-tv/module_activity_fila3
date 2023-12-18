@@ -32,6 +32,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => require_once ('navigation.php'),
 =======
     'navigation' => require_once('navigation.php'),
@@ -84,6 +85,9 @@ return [
 =======
     'navigation' => require_once('navigation.php'),
 >>>>>>> f709bc8 (Dusting)
+=======
+    'navigation' => require_once('navigation.php'),
+>>>>>>> eb1881d (Dusting)
 
     // helpers
     'isActive' => function ($page, $path) {
@@ -99,6 +103,7 @@ return [
     'url' => function ($page, $path) {
         return Str::startsWith($path, 'http') ? $path : $page->baseUrl.'/'.trimPath($path);
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -882,3 +887,6 @@ return [
 =======
 ];
 >>>>>>> c2d7c6c (rebase 13/143)
+=======
+];
+>>>>>>> eb1881d (Dusting)
