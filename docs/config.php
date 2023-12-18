@@ -16,10 +16,14 @@ return [
 
     // navigation menu
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => require_once ('navigation.php'),
 =======
     'navigation' => require_once('navigation.php'),
 >>>>>>> b4eb4c6 (.)
+=======
+    'navigation' => require_once ('navigation.php'),
+>>>>>>> e1c77f7 (Lint)
 
     // helpers
     'isActive' => function ($page, $path) {
@@ -35,6 +39,7 @@ return [
     'url' => function ($page, $path) {
         return Str::startsWith($path, 'http') ? $path : $page->baseUrl.'/'.trimPath($path);
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -524,3 +529,6 @@ return [
 =======
 ];
 >>>>>>> b4eb4c6 (.)
+=======
+];
+>>>>>>> e1c77f7 (Lint)
