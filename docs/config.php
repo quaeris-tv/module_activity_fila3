@@ -15,7 +15,7 @@ return [
     'docsearchIndexName' => env('DOCSEARCH_INDEX'),
 
     // navigation menu
-    'navigation' => require_once ('navigation.php'),
+    'navigation' => require_once('navigation.php'),
 
     // helpers
     'isActive' => function ($page, $path) {
@@ -35,6 +35,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e2d89f7 (rebase 12/143)
 ];
@@ -50,3 +51,6 @@ return [
 =======
 ];
 >>>>>>> c3754c3 (rebase 13/143)
+=======
+];
+>>>>>>> 8fd996a (Dusting)
