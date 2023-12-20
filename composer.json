@@ -2,6 +2,11 @@
     "name": "laraxot/module_activity_fila3",
     "description": "",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "homepage": "https://github.com/laraxot/module_activity_fila3",
+    "license": "MIT",
+>>>>>>> dev
 =======
     "homepage": "https://github.com/laraxot/module_activity_fila3",
     "license": "MIT",
@@ -38,7 +43,11 @@
         "laravel/pint": "^1.13",
         "nunomaduro/collision": "^7.9",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "larastan/larastan": "^2.7",
+=======
+        "nunomaduro/larastan": "*",
+>>>>>>> dev
 =======
         "nunomaduro/larastan": "*",
 >>>>>>> dev
