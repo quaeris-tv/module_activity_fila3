@@ -36,10 +36,13 @@ return [
 
     // navigation menu
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     'navigation' => require_once ('navigation.php'),
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> dev
     'navigation' => require_once ('navigation.php'),
 =======
 <<<<<<< HEAD
@@ -60,6 +63,9 @@ return [
     'navigation' => require_once ('navigation.php'),
 >>>>>>> 67705af (Lint)
 >>>>>>> edba1131118fe43273e769e0d7e036e54ab0e8c9
+<<<<<<< HEAD
+>>>>>>> dev
+=======
 >>>>>>> dev
 
     // helpers
@@ -73,7 +79,11 @@ return [
         if (is_object($menuItem) && $menuItem->children) {
             return $menuItem->children->contains(function ($child) use ($page) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 return trimPath($page->getPath()) === trimPath($child);
+=======
+                return trimPath($page->getPath()) == trimPath($child);
+>>>>>>> dev
 =======
                 return trimPath($page->getPath()) == trimPath($child);
 >>>>>>> dev

@@ -19,9 +19,12 @@ return [
     'navigation' => require_once ('navigation.php'),
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => require_once ('navigation.php'),
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> dev
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -39,6 +42,9 @@ return [
     'navigation' => require_once ('navigation.php'),
 >>>>>>> 67705af (Lint)
 >>>>>>> edba1131118fe43273e769e0d7e036e54ab0e8c9
+<<<<<<< HEAD
+>>>>>>> dev
+=======
 >>>>>>> dev
 
     // helpers
@@ -49,7 +55,11 @@ return [
         if (is_object($menuItem) && $menuItem->children) {
             return $menuItem->children->contains(function ($child) use ($page) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 return trimPath($page->getPath()) === trimPath($child);
+=======
+                return trimPath($page->getPath()) == trimPath($child);
+>>>>>>> dev
 =======
                 return trimPath($page->getPath()) == trimPath($child);
 >>>>>>> dev
@@ -60,9 +70,12 @@ return [
         return Str::startsWith($path, 'http') ? $path : $page->baseUrl.'/'.trimPath($path);
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> dev
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -561,4 +574,7 @@ return [
 =======
 ];
 >>>>>>> 494a611dbac62dcd6cf37891fdaeccb7c3ac7f53
+<<<<<<< HEAD
+>>>>>>> dev
+=======
 >>>>>>> dev
