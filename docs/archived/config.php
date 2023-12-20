@@ -36,7 +36,7 @@ return [
 
     // navigation menu
 
-    'navigation' => require_once('navigation.php'),
+    'navigation' => require_once ('navigation.php'),
 
     // helpers
     'isActive' => function ($page, $path) {
