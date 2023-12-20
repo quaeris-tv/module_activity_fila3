@@ -33,3 +33,7 @@ build
 docs
 .php-cs-fixer.cache
 /vendor
+<<<<<<< HEAD
+=======
+*.log
+>>>>>>> ab76bb8a35025e4ff12535d70e36045873ef55ca
