@@ -36,6 +36,7 @@
         "nunomaduro/collision": "^7.9",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
         "nunomaduro/larastan": "*",
@@ -47,6 +48,11 @@
 =======
 >>>>>>> 4a0f178 (first)
 >>>>>>> 8c53621 (rebase 3/3)
+=======
+        "nunomaduro/larastan": "*",
+=======
+>>>>>>> 4a0f178 (first)
+>>>>>>> 426b725 (rebase 3/3)
         "nunomaduro/phpinsights": "^2.11",
         "orchestra/testbench": "^8.0",
         "pestphp/pest": "^2.0",
