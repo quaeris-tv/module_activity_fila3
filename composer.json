@@ -34,6 +34,13 @@
         "larastan/larastan": "^2.7",
         "laravel/pint": "^1.13",
         "nunomaduro/collision": "^7.9",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        "nunomaduro/larastan": "*",
+=======
+>>>>>>> 4a0f178 (first)
+>>>>>>> d5f80aa (rebase 3/3)
         "nunomaduro/phpinsights": "^2.11",
         "orchestra/testbench": "^8.0",
         "pestphp/pest": "^2.0",
