@@ -34,7 +34,3 @@ docs
 .php-cs-fixer.cache
 /vendor
 *.log
-<<<<<<< HEAD
-.git-rewrite
-=======
->>>>>>> 4a0f178 (first)
