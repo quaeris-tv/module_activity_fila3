@@ -34,3 +34,4 @@ docs
 .php-cs-fixer.cache
 /vendor
 *.log
+.git-rewrite
