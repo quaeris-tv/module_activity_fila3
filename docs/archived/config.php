@@ -36,10 +36,29 @@ return [
 
     // navigation menu
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> dev
     'navigation' => require_once ('navigation.php'),
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    'navigation' => require_once ('navigation.php'),
+=======
+    'navigation' => require_once('navigation.php'),
+>>>>>>> 285fa96 (.)
+=======
+    'navigation' => require_once ('navigation.php'),
+>>>>>>> d019e5d (Lint)
+=======
+    'navigation' => require_once('navigation.php'),
+>>>>>>> 4a2f0ae (Dusting)
+=======
+    'navigation' => require_once ('navigation.php'),
+>>>>>>> 67705af (Lint)
+>>>>>>> 0777dc9 (first)
 
     // helpers
     'isActive' => function ($page, $path) {
@@ -52,10 +71,14 @@ return [
         if (is_object($menuItem) && $menuItem->children) {
             return $menuItem->children->contains(function ($child) use ($page) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 return trimPath($page->getPath()) == trimPath($child);
 =======
                 return trimPath($page->getPath()) === trimPath($child);
 >>>>>>> dev
+=======
+                return trimPath($page->getPath()) == trimPath($child);
+>>>>>>> 0777dc9 (first)
             });
         }
     }, /*

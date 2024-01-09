@@ -2,10 +2,13 @@
     "name": "laraxot/module_activity_fila3",
     "description": "",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "homepage": "https://github.com/laraxot/module_activity_fila3",
     "license": "MIT",
 =======
 >>>>>>> dev
+=======
+>>>>>>> 0777dc9 (first)
     "authors": [{
         "name": "Marco Sottana",
         "email": "marco.sottana@gmail.com"
@@ -38,9 +41,13 @@
         "laravel/pint": "^1.13",
         "nunomaduro/collision": "^7.9",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         "larastan/larastan": "^2.7",
 >>>>>>> dev
+=======
+        "larastan/larastan": "^2.7",
+>>>>>>> 0777dc9 (first)
         "nunomaduro/phpinsights": "^2.11",
         "orchestra/testbench": "^8.0",
         "pestphp/pest": "^2.0",
