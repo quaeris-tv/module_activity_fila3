@@ -46,14 +46,18 @@ docs
 *.lock
 *.cache
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0777dc9 (first)
+=======
+>>>>>>> cd68dd7 (.)
 .git-blame-ignore-revs
 package-lock.json
 .php-cs-fixer.cache
 package-lock.json
+<<<<<<< HEAD
 <<<<<<< HEAD
 .git-rewrite/
 >>>>>>> dev
@@ -62,5 +66,7 @@ package-lock.json
 >>>>>>> af08cfb (Remove unnecessary files and directories)
 =======
 >>>>>>> master
+=======
+>>>>>>> cd68dd7 (.)
 .git-rewrite/
 >>>>>>> 0777dc9 (first)
