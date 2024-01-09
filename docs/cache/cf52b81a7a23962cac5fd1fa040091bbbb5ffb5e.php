@@ -24,4 +24,4 @@ $__env->startSection('body'); ?>
 </div>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('_layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\var\www\_bases\base_quaeris_fila3\laravel\Modules\Activity\docs/source\404.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('_layouts.master', Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\var\www\_bases\base_quaeris_fila3\laravel\Modules\Activity\docs/source\404.blade.php ENDPATH**/ ?>
