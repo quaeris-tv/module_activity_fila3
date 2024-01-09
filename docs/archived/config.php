@@ -35,6 +35,10 @@ return [
     'docsearchIndexName' => env('DOCSEARCH_INDEX'),
 
     // navigation menu
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
     'navigation' => require_once ('navigation.php'),
 
     // helpers
@@ -47,7 +51,11 @@ return [
     'isActiveParent' => function ($page, $menuItem) {
         if (is_object($menuItem) && $menuItem->children) {
             return $menuItem->children->contains(function ($child) use ($page) {
+<<<<<<< HEAD
                 return trimPath($page->getPath()) == trimPath($child);
+=======
+                return trimPath($page->getPath()) === trimPath($child);
+>>>>>>> dev
             });
         }
     }, /*
