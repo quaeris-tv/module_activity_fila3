@@ -33,44 +33,17 @@ build
 docs
 .php-cs-fixer.cache
 /vendor
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 *.log
 .git-rewrite
-=======
-=======
->>>>>>> 0777dc9 (first)
 *.phar
 *.cache
 *.log
 *.lock
 *.cache
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 0777dc9 (first)
-=======
->>>>>>> cd68dd7 (.)
 .git-blame-ignore-revs
 package-lock.json
 .php-cs-fixer.cache
 package-lock.json
-<<<<<<< HEAD
-<<<<<<< HEAD
 .git-rewrite/
->>>>>>> dev
-=======
-=======
->>>>>>> af08cfb (Remove unnecessary files and directories)
-=======
->>>>>>> master
-=======
->>>>>>> cd68dd7 (.)
 .git-rewrite/
->>>>>>> 0777dc9 (first)
-=======
 *.log
->>>>>>> 6edc7c2 (conflict)
