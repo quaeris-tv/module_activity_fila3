@@ -34,7 +34,4 @@ docs
 .php-cs-fixer.cache
 /vendor
 *.log
-<<<<<<< HEAD
 .git-rewrite
-=======
->>>>>>> master
