@@ -18,6 +18,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => require_once ('navigation.php'),
 =======
 <<<<<<< HEAD
@@ -44,6 +45,9 @@ return [
 =======
     'navigation' => require_once('navigation.php'),
 >>>>>>> master
+=======
+    'navigation' => require_once ('navigation.php'),
+>>>>>>> dev
 
     // helpers
     'isActive' => function ($page, $path) {
@@ -59,6 +63,7 @@ return [
     'url' => function ($page, $path) {
         return Str::startsWith($path, 'http') ? $path : $page->baseUrl.'/'.trimPath($path);
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -566,3 +571,6 @@ return [
 =======
 ];
 >>>>>>> master
+=======
+];
+>>>>>>> dev

@@ -38,6 +38,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => require_once ('navigation.php'),
 =======
 <<<<<<< HEAD
@@ -64,6 +65,9 @@ return [
 =======
     'navigation' => require_once('navigation.php'),
 >>>>>>> master
+=======
+    'navigation' => require_once ('navigation.php'),
+>>>>>>> dev
 
     // helpers
     'isActive' => function ($page, $path) {
