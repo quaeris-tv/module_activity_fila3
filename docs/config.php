@@ -15,8 +15,8 @@ return [
     'docsearchIndexName' => env('DOCSEARCH_INDEX'),
 
     // navigation menu
-<<<<<<< HEAD
     'navigation' => require_once ('navigation.php'),
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -46,6 +46,8 @@ return [
 >>>>>>> dev
 =======
 >>>>>>> dev
+=======
+>>>>>>> 95647ba7b17f312d84affb286626d5741c9ea2e0
 
     // helpers
     'isActive' => function ($page, $path) {
@@ -56,6 +58,7 @@ return [
             return $menuItem->children->contains(function ($child) use ($page) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 return trimPath($page->getPath()) === trimPath($child);
 =======
                 return trimPath($page->getPath()) == trimPath($child);
@@ -63,12 +66,16 @@ return [
 =======
                 return trimPath($page->getPath()) == trimPath($child);
 >>>>>>> dev
+=======
+                return trimPath($page->getPath()) == trimPath($child);
+>>>>>>> 95647ba7b17f312d84affb286626d5741c9ea2e0
             });
         }
     },
     'url' => function ($page, $path) {
         return Str::startsWith($path, 'http') ? $path : $page->baseUrl.'/'.trimPath($path);
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 ];
@@ -578,3 +585,6 @@ return [
 >>>>>>> dev
 =======
 >>>>>>> dev
+=======
+];
+>>>>>>> 95647ba7b17f312d84affb286626d5741c9ea2e0

@@ -36,4 +36,23 @@ docs
 <<<<<<< HEAD
 =======
 *.log
+<<<<<<< HEAD
 >>>>>>> ab76bb8a35025e4ff12535d70e36045873ef55ca
+=======
+*.cache
+.git-rewrite
+*.phar
+*.cache
+*.log
+*.lock
+*.cache
+.git-blame-ignore-revs
+package-lock.json
+.php-cs-fixer.cache
+package-lock.json
+.git-rewrite/
+.php-cs-fixer.cache
+/docs/cache
+.git-rewrite/
+*.log
+>>>>>>> 95647ba7b17f312d84affb286626d5741c9ea2e0
