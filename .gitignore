@@ -33,12 +33,7 @@ build
 docs
 .php-cs-fixer.cache
 /vendor
-<<<<<<< HEAD
-=======
 *.log
-<<<<<<< HEAD
->>>>>>> ab76bb8a35025e4ff12535d70e36045873ef55ca
-=======
 *.cache
 .git-rewrite
 *.phar
@@ -55,4 +50,3 @@ package-lock.json
 /docs/cache
 .git-rewrite/
 *.log
->>>>>>> 95647ba7b17f312d84affb286626d5741c9ea2e0
