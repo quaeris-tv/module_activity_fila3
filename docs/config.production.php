@@ -11,6 +11,7 @@ return [
     'docsearchIndexName' => env('DOCSEARCH_INDEX'),
 ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -35,3 +36,5 @@ return [
 >>>>>>> dev
 =======
 >>>>>>> dev
+=======
+>>>>>>> 95647ba7b17f312d84affb286626d5741c9ea2e0

@@ -37,6 +37,7 @@ return [
     // navigation menu
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     'navigation' => require_once ('navigation.php'),
 =======
@@ -67,6 +68,9 @@ return [
 >>>>>>> dev
 =======
 >>>>>>> dev
+=======
+    'navigation' => require_once ('navigation.php'),
+>>>>>>> 95647ba7b17f312d84affb286626d5741c9ea2e0
 
     // helpers
     'isActive' => function ($page, $path) {
@@ -80,6 +84,7 @@ return [
             return $menuItem->children->contains(function ($child) use ($page) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 return trimPath($page->getPath()) === trimPath($child);
 =======
                 return trimPath($page->getPath()) == trimPath($child);
@@ -87,6 +92,9 @@ return [
 =======
                 return trimPath($page->getPath()) == trimPath($child);
 >>>>>>> dev
+=======
+                return trimPath($page->getPath()) == trimPath($child);
+>>>>>>> 95647ba7b17f312d84affb286626d5741c9ea2e0
             });
         }
     }, /*
