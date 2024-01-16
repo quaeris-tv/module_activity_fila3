@@ -34,8 +34,6 @@ docs
 .php-cs-fixer.cache
 /vendor
 *.log
-<<<<<<< HEAD
-<<<<<<< HEAD
 *.cache
 .git-rewrite
 *.phar
@@ -52,7 +50,3 @@ package-lock.json
 /docs/cache
 .git-rewrite/
 *.log
-=======
->>>>>>> ee7d88d (first)
-=======
->>>>>>> 6edc7c2 (conflict)
