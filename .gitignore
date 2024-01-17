@@ -34,10 +34,7 @@ docs
 .php-cs-fixer.cache
 /vendor
 *.log
-<<<<<<< HEAD
-=======
 *.cache
->>>>>>> f0ef646 (.)
 .git-rewrite
 *.phar
 *.cache
@@ -49,10 +46,7 @@ package-lock.json
 .php-cs-fixer.cache
 package-lock.json
 .git-rewrite/
-<<<<<<< HEAD
-=======
 .php-cs-fixer.cache
 /docs/cache
->>>>>>> f0ef646 (.)
 .git-rewrite/
 *.log
