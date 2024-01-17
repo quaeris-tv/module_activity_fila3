@@ -109,5 +109,5 @@ class StoredEvent extends SpatieStoredEvent
     /**
      * @var string
      */
-    protected $connection = 'mysql';
+    protected $connection = 'activity';
 }
