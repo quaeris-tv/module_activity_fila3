@@ -1,8 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests\Unit;
 
-use CreateSnapshotsTable;
 use Tests\TestCase;
 
 /**
@@ -12,22 +13,16 @@ use Tests\TestCase;
  */
 final class CreateSnapshotsTableTest extends TestCase
 {
-    private CreateSnapshotsTable $createSnapshotsTable;
+    private \CreateSnapshotsTable $createSnapshotsTable;
 
-    /**
-     * {@inheritdoc}
-     */
     protected function setUp(): void
     {
         parent::setUp();
 
-        /** @todo Correctly instantiate tested object to use it. */
-        $this->createSnapshotsTable = new CreateSnapshotsTable();
+        /* @todo Correctly instantiate tested object to use it. */
+        $this->createSnapshotsTable = new \CreateSnapshotsTable();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function tearDown(): void
     {
         parent::tearDown();
@@ -37,7 +32,7 @@ final class CreateSnapshotsTableTest extends TestCase
 
     public function testUp(): void
     {
-        /** @todo This test is incomplete. */
+        /* @todo This test is incomplete. */
         self::markTestIncomplete();
     }
 }
