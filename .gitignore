@@ -50,3 +50,4 @@ package-lock.json
 /docs/cache
 .git-rewrite/
 *.log
+node_modules
