@@ -41,12 +41,6 @@ docs
 *.log
 *.lock
 *.cache
-.git-blame-ignore-revs
-package-lock.json
-.php-cs-fixer.cache
-package-lock.json
 .git-rewrite/
-.php-cs-fixer.cache
 /docs/cache
-.git-rewrite/
-*.log
+node_modules
