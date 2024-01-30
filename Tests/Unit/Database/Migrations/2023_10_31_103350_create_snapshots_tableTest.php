@@ -20,7 +20,7 @@ final class CreateSnapshotsTableTest extends TestCase
         parent::setUp();
 
         /* @todo Correctly instantiate tested object to use it. */
-        $this->createSnapshotsTable = new \CreateSnapshotsTable;
+        $this->createSnapshotsTable = new \CreateSnapshotsTable();
     }
 
     protected function tearDown(): void
