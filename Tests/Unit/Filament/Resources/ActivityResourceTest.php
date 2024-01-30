@@ -54,7 +54,7 @@ final class ActivityResourceTest extends TestCase
 >>>>>>> 6398a7f (up)
 =======
         /* @todo Correctly instantiate tested object to use it. */
-        $this->activityResource = new ActivityResource();
+        $this->activityResource = new ActivityResource;
     }
 
 >>>>>>> 8d3d268 (Lint)
