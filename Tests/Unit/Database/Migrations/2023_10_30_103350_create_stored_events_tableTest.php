@@ -48,7 +48,7 @@ final class CreateStoredEventsTableTest extends TestCase
 <<<<<<< HEAD
 <<<<<<< HEAD
         /* @todo Correctly instantiate tested object to use it. */
-        $this->createStoredEventsTable = new \CreateStoredEventsTable;
+        $this->createStoredEventsTable = new \CreateStoredEventsTable();
     }
 
 =======
