@@ -62,7 +62,7 @@ final class CreateSnapshotsTableTest extends TestCase
 >>>>>>> 6398a7f (up)
 =======
         /* @todo Correctly instantiate tested object to use it. */
-        $this->createSnapshotsTable = new \CreateSnapshotsTable();
+        $this->createSnapshotsTable = new \CreateSnapshotsTable;
     }
 
 >>>>>>> 8d3d268 (Lint)
