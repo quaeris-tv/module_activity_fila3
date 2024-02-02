@@ -25,28 +25,42 @@ class ActivityResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
-            ->schema([
-            ]);
+            ->schema(
+                [
+                ]
+            );
     }
 
     public static function table(Table $table): Table
     {
         return $table
-            ->columns([
-            ])
-            ->filters([
-            ])
-            ->actions([
-                EditAction::make(),
-            ])
-            ->bulkActions([
-                BulkActionGroup::make([
-                    DeleteBulkAction::make(),
-                ]),
-            ])
-            ->emptyStateActions([
-                // {{ tableEmptyStateActions }}
-            ]);
+            ->columns(
+                [
+                ]
+            )
+            ->filters(
+                [
+                ]
+            )
+            ->actions(
+                [
+                    EditAction::make(),
+                ]
+            )
+            ->bulkActions(
+                [
+                    BulkActionGroup::make(
+                        [
+                            DeleteBulkAction::make(),
+                        ]
+                    ),
+                ]
+            )
+            ->emptyStateActions(
+                [
+                    // {{ tableEmptyStateActions }}
+                ]
+            );
     }
 
     /**
