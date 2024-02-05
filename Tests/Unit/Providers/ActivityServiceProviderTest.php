@@ -40,7 +40,7 @@ final class ActivityServiceProviderTest extends TestCase
 <<<<<<< HEAD
 <<<<<<< HEAD
         /* @todo Correctly instantiate tested object to use it. */
-        $this->activityServiceProvider = new ActivityServiceProvider;
+        $this->activityServiceProvider = new ActivityServiceProvider();
     }
 
 =======
