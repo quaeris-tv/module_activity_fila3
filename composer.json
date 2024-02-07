@@ -44,7 +44,6 @@
         "psalm/plugin-laravel": "^2.8",
         "rector/rector": "^0.18.12",
         "spatie/laravel-ray": "^1.26",
-        "symplify/phpstan-rules": "*",
         "thecodingmachine/phpstan-safe-rule": "^1.2",
         "vimeo/psalm": "^5.17"
     },
