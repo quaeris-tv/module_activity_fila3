@@ -41,14 +41,14 @@ class Snapshot extends SpatieSnapshot
      *
      * @psalm-var list{'id', 'aggregate_uuid', 'aggregate_version', 'state', 'created_at', 'updated_at'}
      */
-    protected $fillable = ['id', 'aggregate_uuid', 'aggregate_version', 'state', 'created_at', 'updated_at'];
+    protected array $fillable = ['id', 'aggregate_uuid', 'aggregate_version', 'state', 'created_at', 'updated_at'];
 
     /**
      * @var array<string>
      *
      * @psalm-var list{'field_name'}
      */
-    protected $attributes = ['field_name'];
+    protected array $attributes = ['field_name'];
 
     protected $connection = 'activity';
 }
