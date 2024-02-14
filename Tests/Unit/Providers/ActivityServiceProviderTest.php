@@ -21,7 +21,7 @@ final class ActivityServiceProviderTest extends TestCase
         parent::setUp();
 
         /* @todo Correctly instantiate tested object to use it. */
-        $this->activityServiceProvider = new ActivityServiceProvider;
+        $this->activityServiceProvider = new ActivityServiceProvider();
     }
 
     protected function tearDown(): void
