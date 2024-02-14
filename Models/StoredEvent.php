@@ -99,17 +99,14 @@ class StoredEvent extends SpatieStoredEvent
      *
      * @psalm-var list{'id', 'aggregate_uuid', 'aggregate_version', 'event_version', 'event_class', 'event_properties', 'meta_data', 'created_at', 'event_class', 'aggregate_uuid', 'created_at', 'updated_at'}
      */
-    protected $fillable = ['id', 'aggregate_uuid', 'aggregate_version', 'event_version', 'event_class', 'event_properties', 'meta_data', 'created_at', 'event_class', 'aggregate_uuid', 'created_at', 'updated_at'];
+    protected array $fillable = ['id', 'aggregate_uuid', 'aggregate_version', 'event_version', 'event_class', 'event_properties', 'meta_data', 'created_at', 'event_class', 'aggregate_uuid', 'created_at', 'updated_at'];
 
     /**
      * @var array<string>
      *
      * @psalm-var list{'field_name'}
      */
-    protected $attributes = ['field_name'];
+    protected array $attributes = ['field_name'];
 
-    /**
-     * @var string
-     */
-    protected $connection = 'activity';
+    protected string $connection = 'activity';
 }

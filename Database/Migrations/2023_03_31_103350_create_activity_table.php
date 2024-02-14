@@ -11,7 +11,7 @@ class CreateActivityTable extends XotBaseMigration
     {
         // -- CREATE --
         $this->tableCreate(
-            function (Blueprint $table): void {
+            static function (Blueprint $table): void {
                 $table->bigIncrements('id');
                 $table->string('log_name')->nullable();
                 $table->text('description');
