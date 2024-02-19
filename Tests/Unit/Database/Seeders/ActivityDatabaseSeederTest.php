@@ -40,7 +40,7 @@ final class ActivityDatabaseSeederTest extends TestCase
 <<<<<<< HEAD
 <<<<<<< HEAD
         /* @todo Correctly instantiate tested object to use it. */
-        $this->activityDatabaseSeeder = new ActivityDatabaseSeeder();
+        $this->activityDatabaseSeeder = new ActivityDatabaseSeeder;
     }
 
 =======
