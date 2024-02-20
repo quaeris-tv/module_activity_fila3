@@ -40,7 +40,7 @@ final class ActivityResourceTest extends TestCase
 <<<<<<< HEAD
 <<<<<<< HEAD
         /* @todo Correctly instantiate tested object to use it. */
-        $this->activityResource = new ActivityResource;
+        $this->activityResource = new ActivityResource();
     }
 
 =======
