@@ -21,7 +21,7 @@ final class ActivityDatabaseSeederTest extends TestCase
         parent::setUp();
 
         /* @todo Correctly instantiate tested object to use it. */
-        $this->activityDatabaseSeeder = new ActivityDatabaseSeeder;
+        $this->activityDatabaseSeeder = new ActivityDatabaseSeeder();
     }
 
     protected function tearDown(): void
