@@ -110,8 +110,6 @@ class StoredEvent extends SpatieStoredEvent
      */
     protected $attributes = ['field_name'];
 
-    /**
-     * @var string
-     */
+    /** @var string */
     protected $connection = 'activity';
 }
