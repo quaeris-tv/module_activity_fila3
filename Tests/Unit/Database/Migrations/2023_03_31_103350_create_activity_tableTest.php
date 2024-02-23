@@ -20,7 +20,7 @@ final class CreateActivityTableTest extends TestCase
         parent::setUp();
 
         /* @todo Correctly instantiate tested object to use it. */
-        $this->createActivityTable = new \CreateActivityTable;
+        $this->createActivityTable = new \CreateActivityTable();
     }
 
     protected function tearDown(): void
