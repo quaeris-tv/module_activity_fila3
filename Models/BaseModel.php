@@ -40,9 +40,10 @@ abstract class BaseModel extends Model
     /** @var bool */
     public $timestamps
      = true;
-
+    /** @var int */
     protected $perPage = 30;
 
+    /** @var string */
     protected $connection = 'activity';
 
     /** @var array<string, string> */
