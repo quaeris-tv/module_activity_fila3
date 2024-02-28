@@ -50,5 +50,6 @@ class Snapshot extends SpatieSnapshot
      */
     protected $attributes = ['field_name'];
 
+    /** @var string */
     protected $connection = 'activity';
 }

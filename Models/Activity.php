@@ -88,5 +88,6 @@ class Activity extends SpatieActivity
      */
     protected $attributes = ['field_name'];
 
+    /** @var string */
     protected $connection = 'activity';
 }
