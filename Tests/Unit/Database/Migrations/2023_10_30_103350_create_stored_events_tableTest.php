@@ -20,7 +20,7 @@ final class CreateStoredEventsTableTest extends TestCase
         parent::setUp();
 
         /* @todo Correctly instantiate tested object to use it. */
-        $this->createStoredEventsTable = new \CreateStoredEventsTable;
+        $this->createStoredEventsTable = new \CreateStoredEventsTable();
     }
 
     protected function tearDown(): void
