@@ -21,7 +21,7 @@ final class ActivityResourceTest extends TestCase
         parent::setUp();
 
         /* @todo Correctly instantiate tested object to use it. */
-        $this->activityResource = new ActivityResource;
+        $this->activityResource = new ActivityResource();
     }
 
     protected function tearDown(): void
