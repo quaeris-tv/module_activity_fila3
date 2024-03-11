@@ -15,9 +15,13 @@
     "lodash": "^4.17.21",
     "postcss": "^8.4.33",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "postcss-nesting": "^12.0.2",
 =======
 >>>>>>> 29e8ee0 (up)
+=======
+    "postcss-nesting": "^12.0.2",
+>>>>>>> 89a8cd4 (up)
     "tailwindcss": "^3.4.1",
     "tippy.js": "^6.3.7",
     "vite": "^4.5.2"
