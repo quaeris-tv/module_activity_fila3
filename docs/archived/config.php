@@ -35,7 +35,35 @@ return [
     'docsearchIndexName' => env('DOCSEARCH_INDEX'),
 
     // navigation menu
+<<<<<<< HEAD
     'navigation' => include_once 'navigation.php',
+=======
+<<<<<<< HEAD
+    'navigation' => require_once ('navigation.php'),
+=======
+<<<<<<< HEAD
+    'navigation' => require_once ('navigation.php'),
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    'navigation' => require_once ('navigation.php'),
+=======
+    'navigation' => require_once('navigation.php'),
+>>>>>>> 285fa96 (.)
+=======
+    'navigation' => require_once ('navigation.php'),
+>>>>>>> d019e5d (Lint)
+=======
+    'navigation' => require_once('navigation.php'),
+>>>>>>> 4a2f0ae (Dusting)
+=======
+    'navigation' => require_once ('navigation.php'),
+>>>>>>> 67705af (Lint)
+>>>>>>> edba1131118fe43273e769e0d7e036e54ab0e8c9
+>>>>>>> 8cb09c2 (rebase 1)
+>>>>>>> 9868256 (🔧 chore(.gitignore): remove unnecessary files and directories from git tracking)
 
     // helpers
     'isActive' => static function ($page, $path) {
