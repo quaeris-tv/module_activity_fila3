@@ -42,9 +42,16 @@
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
         "psalm/plugin-laravel": "^2.8",
+<<<<<<< HEAD
         "symplify/phpstan-rules": "*",
         "rector/rector": "^0.18.12",
         "spatie/laravel-ray": "^1.26",
+=======
+        "symplify/phpstan-rules": "^0.7.1",
+        "rector/rector": "^0.18.12",
+        "spatie/laravel-ray": "^1.26",
+        "symplify/phpstan-rules": "*",
+>>>>>>> 74d6658 (up)
         "thecodingmachine/phpstan-safe-rule": "^1.2",
         "vimeo/psalm": "^5.17"
     },
