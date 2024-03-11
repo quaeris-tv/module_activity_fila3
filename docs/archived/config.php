@@ -36,6 +36,7 @@ return [
 
     // navigation menu
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => include_once 'navigation.php',
 =======
 <<<<<<< HEAD
@@ -64,6 +65,9 @@ return [
 >>>>>>> edba1131118fe43273e769e0d7e036e54ab0e8c9
 >>>>>>> 8cb09c2 (rebase 1)
 >>>>>>> 9868256 (🔧 chore(.gitignore): remove unnecessary files and directories from git tracking)
+=======
+    'navigation' => require_once ('navigation.php'),
+>>>>>>> a3227dc (fix conflict)
 
     // helpers
     'isActive' => static function ($page, $path) {
