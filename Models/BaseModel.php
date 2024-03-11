@@ -27,12 +27,21 @@ abstract class BaseModel extends Model
      * Indicates whether attributes are snake cased on arrays.
      *
      * @see https://laravel-news.com/6-eloquent-secrets
+     *
+     * @var bool
      */
-    public static bool $snakeAttributes = true;
+    public static $snakeAttributes = true;
 
-    public bool $incrementing = true;
+    /**
+     * @ var  bool
+     */
+    public $incrementing = true;
 
-    public bool $timestamps = true;
+    /**
+     * @var bool
+     */
+    public $timestamps
+     = true;
 
     /**
 <<<<<<< HEAD
@@ -62,15 +71,25 @@ abstract class BaseModel extends Model
 =======
      * @var array<string, string>
      */
-    protected array $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
+    /**
+     * @var array<string, string>
+     */
+    protected $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
 
-    protected string $primaryKey = 'id';
+    /**
+     * @var string
+     */
+    protected $primaryKey = 'id';
 
     /**
      * @var array<int, string>
      */
+<<<<<<< HEAD
     protected array $hidden = [
 >>>>>>> 5ca6ed5 (Inline constructor default to property, Add return type declarations, and Redirect route to toRoute helper)
+=======
+    protected $hidden = [
+>>>>>>> 3b8c951 (up)
         // 'password'
     ];
 
