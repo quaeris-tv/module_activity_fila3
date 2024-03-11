@@ -96,12 +96,17 @@ abstract class BaseModel extends Model
     /**
      * Create a new factory instance for the model.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return \Illuminate\Database\Eloquent\Factories\Factory<static>
 =======
 >>>>>>> 5ca6ed5 (Inline constructor default to property, Add return type declarations, and Redirect route to toRoute helper)
+=======
+     *
+     * @return \Illuminate\Database\Eloquent\Factories\Factory<static>
+>>>>>>> 069aca3 (up)
      */
-    protected static function newFactory(): Factory
+    protected static function newFactory()
     {
         return FactoryService::newFactory(static::class);
     }
