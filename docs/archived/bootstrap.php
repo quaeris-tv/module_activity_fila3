@@ -4,23 +4,8 @@ declare(strict_types=1);
 
 use App\Listeners\GenerateSitemap;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* @var \Illuminate\Container\Container $container */
 /* @var \TightenCo\Jigsaw\Events\EventBus $events */
-=======
-/** @var \Illuminate\Container\Container $container */
-/** @var \TightenCo\Jigsaw\Events\EventBus $events */
->>>>>>> 5ca6ed5 (Inline constructor default to property, Add return type declarations, and Redirect route to toRoute helper)
-=======
-/* @var \Illuminate\Container\Container $container */
-/* @var \TightenCo\Jigsaw\Events\EventBus $events */
->>>>>>> 3690197 (Lint)
-=======
-/* @var \Illuminate\Container\Container $container */
-/* @var \TightenCo\Jigsaw\Events\EventBus $events */
->>>>>>> master
 
 /*
  * You can run custom code at different stages of the build process by
