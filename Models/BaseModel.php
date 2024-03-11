@@ -41,9 +41,13 @@ abstract class BaseModel extends Model
     public $timestamps
      = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 6c33d92 (up)
+=======
+
+>>>>>>> 7a2bf3a (Dusting)
     /** @var int */
     protected $perPage = 30;
 
