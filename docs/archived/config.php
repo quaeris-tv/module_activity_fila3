@@ -38,6 +38,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => include_once 'navigation.php',
 =======
 <<<<<<< HEAD
@@ -72,6 +73,9 @@ return [
 =======
     'navigation' => include_once 'navigation.php',
 >>>>>>> cd0d628 (up)
+=======
+    'navigation' => include_once 'navigation.php',
+>>>>>>> master
 
     // helpers
     'isActive' => static function ($page, $path) {
@@ -85,6 +89,7 @@ return [
             return $menuItem->children->contains(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 static function ($child) use ($page) {
                     return trimPath($page->getPath()) === trimPath($child);
 =======
@@ -95,6 +100,10 @@ return [
                 static function ($child) use ($page) {
                     return trimPath($page->getPath()) === trimPath($child);
 >>>>>>> 5ca6ed5 (Inline constructor default to property, Add return type declarations, and Redirect route to toRoute helper)
+=======
+                static function ($child) use ($page) {
+                    return trimPath($page->getPath()) === trimPath($child);
+>>>>>>> master
                 }
             );
         }
