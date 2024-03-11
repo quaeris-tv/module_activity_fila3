@@ -43,12 +43,4 @@ docs
 *.cache
 .git-rewrite/
 /docs/cache
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-.git-rewrite/
-*.log
->>>>>>> 89a8cd4 (up)
-=======
->>>>>>> 9868256 (🔧 chore(.gitignore): remove unnecessary files and directories from git tracking)
 node_modules

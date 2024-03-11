@@ -87,31 +87,11 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static EloquentStoredEventCollection<int, static>                                                    get($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static>                                                    all($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static>                                                    get($columns = ['*'])
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @method static EloquentStoredEventCollection<int, static>                                                    all($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static>                                                    get($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static>                                                    all($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static>                                                    get($columns = ['*'])
-<<<<<<< HEAD
-<<<<<<< HEAD
  *
-=======
- * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
- * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
->>>>>>> cd0d628 (up)
-=======
- * @method static EloquentStoredEventCollection<int, static>                                                    all($columns = ['*'])
- * @method static EloquentStoredEventCollection<int, static>                                                    get($columns = ['*'])
- *
->>>>>>> 47f534a (Lint)
-=======
- * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
- * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
->>>>>>> 890afa0 (up)
-=======
- *
->>>>>>> 1fca850 (Lint)
  * @mixin \Eloquent
  */
 class StoredEvent extends SpatieStoredEvent
@@ -130,23 +110,6 @@ class StoredEvent extends SpatieStoredEvent
      */
     protected $attributes = ['field_name'];
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     /** @var string */
-=======
-    /**
-     * @var string
-     */
->>>>>>> 95533d8 (fix attribute $connection)
     protected $connection = 'activity';
-=======
-    protected string $connection = 'activity';
->>>>>>> 5ca6ed5 (Inline constructor default to property, Add return type declarations, and Redirect route to toRoute helper)
-=======
-    /**
-     * @var string
-     */
-    protected $connection = 'activity';
->>>>>>> c62588a (fix error)
 }
