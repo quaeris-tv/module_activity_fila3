@@ -34,19 +34,7 @@ class GenerateSitemap
                     return $this->isExcluded($path);
                 }
             )->each(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                 static function ($path) use ($baseUrl, $sitemap): void {
-=======
-                function ($path) use ($baseUrl, $sitemap) {
->>>>>>> cd0d628 (up)
-=======
-                static function ($path) use ($baseUrl, $sitemap): void {
->>>>>>> 5ca6ed5 (Inline constructor default to property, Add return type declarations, and Redirect route to toRoute helper)
-=======
-                static function ($path) use ($baseUrl, $sitemap): void {
->>>>>>> master
                     $sitemap->addItem(rtrim($baseUrl, '/').$path, time(), Sitemap::DAILY);
                 }
             );
