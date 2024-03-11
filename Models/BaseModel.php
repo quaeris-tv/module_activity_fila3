@@ -40,7 +40,10 @@ abstract class BaseModel extends Model
     /** @var bool */
     public $timestamps
      = true;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6c33d92 (up)
     /** @var int */
     protected $perPage = 30;
 
