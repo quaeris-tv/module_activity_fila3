@@ -17,6 +17,7 @@ return [
     // navigation menu
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => include_once 'navigation.php',
 =======
 <<<<<<< HEAD
@@ -48,6 +49,9 @@ return [
 =======
     'navigation' => require_once ('navigation.php'),
 >>>>>>> a3227dc (fix conflict)
+=======
+    'navigation' => include_once 'navigation.php',
+>>>>>>> cd0d628 (up)
 
     // helpers
     'isActive' => static function ($page, $path) {
@@ -56,8 +60,13 @@ return [
     'isActiveParent' => static function ($page, $menuItem) {
         if (is_object($menuItem) && $menuItem->children) {
             return $menuItem->children->contains(
+<<<<<<< HEAD
                 static function ($child) use ($page) {
                     return trimPath($page->getPath()) === trimPath($child);
+=======
+                function ($child) use ($page) {
+                    return trimPath($page->getPath()) == trimPath($child);
+>>>>>>> cd0d628 (up)
                 }
             );
         }
