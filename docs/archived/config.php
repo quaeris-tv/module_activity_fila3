@@ -84,12 +84,17 @@ return [
         if (is_object($menuItem) && $menuItem->children) {
             return $menuItem->children->contains(
 <<<<<<< HEAD
+<<<<<<< HEAD
                 static function ($child) use ($page) {
                     return trimPath($page->getPath()) === trimPath($child);
 =======
                 function ($child) use ($page) {
                     return trimPath($page->getPath()) == trimPath($child);
 >>>>>>> cd0d628 (up)
+=======
+                static function ($child) use ($page) {
+                    return trimPath($page->getPath()) === trimPath($child);
+>>>>>>> 5ca6ed5 (Inline constructor default to property, Add return type declarations, and Redirect route to toRoute helper)
                 }
             );
         }
