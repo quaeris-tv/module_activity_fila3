@@ -54,7 +54,7 @@ final class ActivityDatabaseSeederTest extends TestCase
 >>>>>>> 6398a7f (up)
 =======
         /* @todo Correctly instantiate tested object to use it. */
-        $this->activityDatabaseSeeder = new ActivityDatabaseSeeder;
+        $this->activityDatabaseSeeder = new ActivityDatabaseSeeder();
     }
 
 >>>>>>> 8d3d268 (Lint)

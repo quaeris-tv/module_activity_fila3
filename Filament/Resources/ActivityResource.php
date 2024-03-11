@@ -45,20 +45,28 @@ class ActivityResource extends Resource
             ->actions(
                 [
 <<<<<<< HEAD
+<<<<<<< HEAD
                     EditAction::make(),
 =======
                 EditAction::make(),
 >>>>>>> cd0d628 (up)
+=======
+                    EditAction::make(),
+>>>>>>> 47f534a (Lint)
                 ]
             )
             ->bulkActions(
                 [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 47f534a (Lint)
                     BulkActionGroup::make(
                         [
                             DeleteBulkAction::make(),
                         ]
                     ),
+<<<<<<< HEAD
 =======
                 BulkActionGroup::make(
                     [
@@ -66,15 +74,21 @@ class ActivityResource extends Resource
                     ]
                 ),
 >>>>>>> cd0d628 (up)
+=======
+>>>>>>> 47f534a (Lint)
                 ]
             )
             ->emptyStateActions(
                 [
 <<<<<<< HEAD
+<<<<<<< HEAD
                     // {{ tableEmptyStateActions }}
 =======
                 // {{ tableEmptyStateActions }}
 >>>>>>> cd0d628 (up)
+=======
+                    // {{ tableEmptyStateActions }}
+>>>>>>> 47f534a (Lint)
                 ]
             );
     }

@@ -62,7 +62,7 @@ final class CreateActivityTableTest extends TestCase
 >>>>>>> 6398a7f (up)
 =======
         /* @todo Correctly instantiate tested object to use it. */
-        $this->createActivityTable = new \CreateActivityTable;
+        $this->createActivityTable = new \CreateActivityTable();
     }
 
 >>>>>>> 8d3d268 (Lint)
