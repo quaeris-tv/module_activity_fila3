@@ -23,10 +23,11 @@ class CreateSnapshotsTable extends XotBaseMigration
         // -- UPDATE --
         $this->tableUpdate(
             function (Blueprint $table): void {
-                if (! $this->hasColumn('created_by')) {
-                    $table->string('created_by')->nullable();
-                    $table->string('updated_by')->nullable();
-                }
+                //if (! $this->hasColumn('created_by')) {
+                //    $table->string('created_by')->nullable();
+                //    $table->string('updated_by')->nullable();
+                //}
+                $this->updateTimestamps($table,false);
             }
         );
     }
