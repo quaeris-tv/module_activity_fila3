@@ -35,7 +35,6 @@ abstract class BaseModel extends Model
     public bool $timestamps = true;
 
     /**
-<<<<<<< HEAD
      * @ var  bool
      */
     public $incrementing = true;
@@ -58,28 +57,13 @@ abstract class BaseModel extends Model
 
     /** @var array<int, string> */
     protected $hidden = [
-=======
-     * @var array<string, string>
-     */
-    protected array $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
-
-    protected string $primaryKey = 'id';
-
-    /**
-     * @var array<int, string>
-     */
-    protected array $hidden = [
->>>>>>> 5ca6ed5 (Inline constructor default to property, Add return type declarations, and Redirect route to toRoute helper)
         // 'password'
     ];
 
     /**
      * Create a new factory instance for the model.
-<<<<<<< HEAD
      *
      * @return \Illuminate\Database\Eloquent\Factories\Factory<static>
-=======
->>>>>>> 5ca6ed5 (Inline constructor default to property, Add return type declarations, and Redirect route to toRoute helper)
      */
     protected static function newFactory(): Factory
     {

@@ -108,10 +108,6 @@ class StoredEvent extends SpatieStoredEvent
      */
     protected array $attributes = ['field_name'];
 
-<<<<<<< HEAD
     /** @var string */
     protected $connection = 'activity';
-=======
-    protected string $connection = 'activity';
->>>>>>> 5ca6ed5 (Inline constructor default to property, Add return type declarations, and Redirect route to toRoute helper)
 }
