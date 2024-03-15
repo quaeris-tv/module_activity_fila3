@@ -58,11 +58,7 @@ class ActivityResource extends Resource
             )
             ->emptyStateActions(
                 [
-<<<<<<< HEAD
                 
-=======
-                    // {{ tableEmptyStateActions }}
->>>>>>> 47f534a (Lint)
                 ]
             );
     }
