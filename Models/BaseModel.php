@@ -37,9 +37,7 @@ abstract class BaseModel extends Model
      */
     public $incrementing = true;
 
-    /**
-     * @var bool
-     */
+    /** @var bool */
     public $timestamps
      = true;
 
@@ -63,7 +61,11 @@ abstract class BaseModel extends Model
     /** @var string */
     protected $primaryKey = 'id';
 
+<<<<<<< HEAD
     /** @var array<int, string> */
+=======
+    /** @var  array<int, string> */
+>>>>>>> 288cbc4 (up)
     protected $hidden = [
         // 'password'
     ];
