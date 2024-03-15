@@ -56,6 +56,10 @@ abstract class BaseModel extends Model
     protected $connection = 'activity';
 
     /** @var array<string, string> */
+<<<<<<< HEAD
+=======
+    /** @var array<string, string> */
+>>>>>>> a1a415b (up)
     protected $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
 
     /** @var string */
