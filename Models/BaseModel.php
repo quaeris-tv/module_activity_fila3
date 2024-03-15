@@ -27,12 +27,21 @@ abstract class BaseModel extends Model
      * Indicates whether attributes are snake cased on arrays.
      *
      * @see https://laravel-news.com/6-eloquent-secrets
+     *
+     * @var bool
      */
-    public static bool $snakeAttributes = true;
+    public static $snakeAttributes = true;
 
-    public bool $incrementing = true;
+    /**
+     * @ var  bool
+     */
+    public $incrementing = true;
 
-    public bool $timestamps = true;
+    /**
+     * @var bool
+     */
+    public $timestamps
+     = true;
 
     /**
      * @ var  bool
@@ -48,6 +57,7 @@ abstract class BaseModel extends Model
     /** @var string */
     protected $connection = 'activity';
 
+<<<<<<< HEAD
     /** @var array<string, string> */
     /** @var array<string, string> */
     protected $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
@@ -56,6 +66,24 @@ abstract class BaseModel extends Model
     protected $primaryKey = 'id';
 
     /** @var array<int, string> */
+=======
+    /**
+     * @var array<string, string>
+     */
+    /**
+     * @var array<string, string>
+     */
+    protected $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
+
+    /**
+     * @var string
+     */
+    protected $primaryKey = 'id';
+
+    /**
+     * @var array<int, string>
+     */
+>>>>>>> 3b8c951 (up)
     protected $hidden = [
         // 'password'
     ];
