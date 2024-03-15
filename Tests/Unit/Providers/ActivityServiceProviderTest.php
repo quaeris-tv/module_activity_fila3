@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 
-=======
->>>>>>> 6398a7f (up)
 namespace Tests\Unit\Modules\Activity\Providers;
 
 use Modules\Activity\Providers\ActivityServiceProvider;
@@ -19,30 +16,14 @@ final class ActivityServiceProviderTest extends TestCase
 {
     private ActivityServiceProvider $activityServiceProvider;
 
-<<<<<<< HEAD
-=======
-    /**
-     * {@inheritdoc}
-     */
->>>>>>> 6398a7f (up)
     protected function setUp(): void
     {
         parent::setUp();
 
-<<<<<<< HEAD
         /* @todo Correctly instantiate tested object to use it. */
         $this->activityServiceProvider = new ActivityServiceProvider();
     }
 
-=======
-        /** @todo Correctly instantiate tested object to use it. */
-        $this->activityServiceProvider = new ActivityServiceProvider();
-    }
-
-    /**
-     * {@inheritdoc}
-     */
->>>>>>> 6398a7f (up)
     protected function tearDown(): void
     {
         parent::tearDown();
@@ -52,21 +33,13 @@ final class ActivityServiceProviderTest extends TestCase
 
     public function testBootCallback(): void
     {
-<<<<<<< HEAD
         /* @todo This test is incomplete. */
-=======
-        /** @todo This test is incomplete. */
->>>>>>> 6398a7f (up)
         self::markTestIncomplete();
     }
 
     public function testRegisterCallback(): void
     {
-<<<<<<< HEAD
         /* @todo This test is incomplete. */
-=======
-        /** @todo This test is incomplete. */
->>>>>>> 6398a7f (up)
         self::markTestIncomplete();
     }
 }
