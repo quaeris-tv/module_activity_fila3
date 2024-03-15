@@ -38,14 +38,8 @@ abstract class BaseModel extends Model
     public $incrementing = true;
 
     /** @var bool */
-<<<<<<< HEAD
     public $timestamps = true;
     
-=======
-    public $timestamps
-     = true;
-
->>>>>>> 7a2bf3a (Dusting)
     /** @var int */
     protected $perPage = 30;
 
