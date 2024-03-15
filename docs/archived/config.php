@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <?php
 
 declare(strict_types=1);
@@ -70,4 +68,3 @@ return [
         return $docs->where('parent_id', $page->id);
     },
 ];
->>>>>>> a3227dc (fix conflict)
