@@ -44,37 +44,21 @@ class ActivityResource extends Resource
             )
             ->actions(
                 [
-<<<<<<< HEAD
-                    EditAction::make(),
-=======
                 EditAction::make(),
->>>>>>> cd0d628 (up)
                 ]
             )
             ->bulkActions(
                 [
-<<<<<<< HEAD
-                    BulkActionGroup::make(
-                        [
-                            DeleteBulkAction::make(),
-                        ]
-                    ),
-=======
                 BulkActionGroup::make(
                     [
                     DeleteBulkAction::make(),
                     ]
                 ),
->>>>>>> cd0d628 (up)
                 ]
             )
             ->emptyStateActions(
                 [
-<<<<<<< HEAD
-                    // {{ tableEmptyStateActions }}
-=======
-                // {{ tableEmptyStateActions }}
->>>>>>> cd0d628 (up)
+                
                 ]
             );
     }

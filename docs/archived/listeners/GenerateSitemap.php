@@ -34,11 +34,7 @@ class GenerateSitemap
                     return $this->isExcluded($path);
                 }
             )->each(
-<<<<<<< HEAD
-                static function ($path) use ($baseUrl, $sitemap): void {
-=======
                 function ($path) use ($baseUrl, $sitemap) {
->>>>>>> cd0d628 (up)
                     $sitemap->addItem(rtrim($baseUrl, '/').$path, time(), Sitemap::DAILY);
                 }
             );
