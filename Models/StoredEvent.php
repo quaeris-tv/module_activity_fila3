@@ -84,17 +84,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static EloquentStoredEventCollection<int, static>                                                    get($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static>                                                    all($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static>                                                    get($columns = ['*'])
-<<<<<<< HEAD
- * @method static EloquentStoredEventCollection<int, static>                                                    all($columns = ['*'])
- * @method static EloquentStoredEventCollection<int, static>                                                    get($columns = ['*'])
- * @method static EloquentStoredEventCollection<int, static>                                                    all($columns = ['*'])
- * @method static EloquentStoredEventCollection<int, static>                                                    get($columns = ['*'])
- * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
- * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
- * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
- * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
-=======
->>>>>>> cd0d628 (up)
  * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
  * @mixin \Eloquent
