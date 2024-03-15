@@ -43,4 +43,9 @@ docs
 *.cache
 .git-rewrite/
 /docs/cache
+<<<<<<< HEAD
+=======
+.git-rewrite/
+*.log
+>>>>>>> 89a8cd4 (up)
 node_modules
