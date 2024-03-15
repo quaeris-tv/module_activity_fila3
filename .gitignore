@@ -42,5 +42,6 @@ docs
 *.lock
 *.cache
 .git-rewrite/
-/docs/cache
+/docs/cache/
+docs/cache/
 node_modules
