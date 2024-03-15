@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <?php
 
 declare(strict_types=1);
@@ -34,4 +32,3 @@ return [
         return Str::startsWith($path, 'http') ? $path : $page->baseUrl.'/'.trimPath($path);
     },
 ];
->>>>>>> a3227dc (fix conflict)
