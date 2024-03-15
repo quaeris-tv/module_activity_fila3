@@ -57,8 +57,6 @@ abstract class BaseModel extends Model
     /** @var string */
     protected $connection = 'activity';
 
-<<<<<<< HEAD
-    /** @var array<string, string> */
     /** @var array<string, string> */
     protected $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
 
@@ -66,24 +64,6 @@ abstract class BaseModel extends Model
     protected $primaryKey = 'id';
 
     /** @var array<int, string> */
-=======
-    /**
-     * @var array<string, string>
-     */
-    /**
-     * @var array<string, string>
-     */
-    protected $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
-
-    /**
-     * @var string
-     */
-    protected $primaryKey = 'id';
-
-    /**
-     * @var array<int, string>
-     */
->>>>>>> 3b8c951 (up)
     protected $hidden = [
         // 'password'
     ];
