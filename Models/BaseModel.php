@@ -47,7 +47,7 @@ abstract class BaseModel extends Model
     /** @var string */
     protected $connection = 'activity';
 
-    /** @var array<string, string> */
+    /** @return array<string, string> */
     protected function casts(): array
     {
         return [
