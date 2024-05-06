@@ -45,3 +45,4 @@ docs
 /docs/cache/
 docs/cache/
 node_modules
+.git-blame-ignore-revs
