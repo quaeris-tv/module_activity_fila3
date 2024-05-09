@@ -44,5 +44,7 @@ docs
 .git-rewrite/
 /docs/cache/
 docs/cache/
+.git-rewrite/
+*.log
 node_modules
-.git-blame-ignore-revs
+docs/cache
