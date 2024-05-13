@@ -72,7 +72,6 @@ abstract class BaseModel extends Model
      */
     protected static function newFactory()
     {
-        // return FactoryService::newFactory(static::class);
         return app(GetFactoryAction::class)->execute(static::class);
     }
 }
