@@ -46,7 +46,7 @@
         "pestphp/pest-plugin-laravel": "^2.0",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
-        "psalm/plugin-laravel": "^2.8",
+        "psalm/plugin-laravel": "*",
         "rector/rector": "*",
         "spatie/laravel-ray": "^1.26",
         "thecodingmachine/phpstan-safe-rule": "^1.2",
