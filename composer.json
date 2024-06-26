@@ -22,7 +22,7 @@
             "Modules\\Activity\\": ""
         }
     },
-    "require": {
+    "require_comment": {
         "filament/filament": "^3.2",
         "illuminate/contracts": "^9.0|^10.0|^11.0",
         "illuminate/support": "^9.12|^10.0|^11.0",
@@ -32,7 +32,7 @@
         "spatie/laravel-event-sourcing": "^7.3",
         "thecodingmachine/safe": "^2.5"
     },
-    "require-dev": {
+    "require-dev_comment": {
         "driftingly/rector-laravel": "^0.26.2",
         "enlightn/enlightn": "^2.7",
         "larastan/larastan": "^2.7",
