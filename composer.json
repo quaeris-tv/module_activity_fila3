@@ -26,7 +26,7 @@
         "filament/filament": "^3.2",
         "illuminate/contracts": "^9.0|^10.0|^11.0",
         "illuminate/support": "^9.12|^10.0|^11.0",
-        "laraxot/module_xot_fila3": "dev-master",
+        "laraxot/module_xot_fila3": "*",
         "mhmiton/laravel-modules-livewire": "^2.3",
         "spatie/laravel-activitylog": "^4.7",
         "spatie/laravel-event-sourcing": "^7.3",
@@ -47,7 +47,7 @@
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
         "psalm/plugin-laravel": "^2.8",
-        "rector/rector": "^1.0",
+        "rector/rector": "*",
         "spatie/laravel-ray": "^1.26",
         "thecodingmachine/phpstan-safe-rule": "^1.2",
         "vimeo/psalm": "^5.17"
