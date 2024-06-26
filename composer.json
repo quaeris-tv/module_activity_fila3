@@ -22,6 +22,10 @@
             "Modules\\Activity\\": ""
         }
     },
+    "require": {
+        "spatie/laravel-activitylog": "*",
+        "spatie/laravel-event-sourcing": "*"
+    },
     "require_comment": {
         "filament/filament": "^3.2",
         "illuminate/contracts": "^9.0|^10.0|^11.0",
