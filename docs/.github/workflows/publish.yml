@@ -36,7 +36,7 @@ jobs:
       run: echo "laraxot.github.io/doc_activity" > ./build_production/CNAME
 
     - name: gh-pages
-      uses: JamesIves/github-pages-deploy-action@v4.4.2
+      uses: JamesIves/github-pages-deploy-action@latest
       with:
         branch: gh-pages
         folder: build_production
