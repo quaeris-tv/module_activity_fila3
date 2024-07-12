@@ -66,6 +66,10 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static \Illuminate\Database\Eloquent\Builder|Activity newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Activity newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Activity query()
+ * @property string|null $deleted_at
+ * @property string|null $deleted_by
+ * @method static \Illuminate\Database\Eloquent\Builder|Activity whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Activity whereDeletedBy($value)
  * @mixin \Eloquent
  */
 class Activity extends SpatieActivity
