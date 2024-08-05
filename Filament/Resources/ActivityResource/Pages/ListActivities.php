@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\ActivityResource\Pages;
 
-use Filament\Tables\Table;
 use Filament\Actions\CreateAction;
-use Modules\UI\Enums\TableLayoutEnum;
-use Filament\Tables\Actions\EditAction;
 use Filament\Resources\Pages\ListRecords;
 use Filament\Tables\Actions\DeleteBulkAction;
+use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Table;
 use Modules\Activity\Filament\Resources\ActivityResource;
+use Modules\UI\Enums\TableLayoutEnum;
 use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 
 class ListActivities extends ListRecords
@@ -57,6 +57,12 @@ class ListActivities extends ListRecords
         ];
     }
 
+    public function getTableEmptyStateActions(): array
+    {
+        return [
+        ];
+    }
+
     public function table(Table $table): Table
     {
         return $table
@@ -64,9 +70,7 @@ class ListActivities extends ListRecords
             ->filters($this->getTableFilters())
             ->actions($this->getTableActions())
             ->bulkActions($this->getTableBulkActions())
-            ->emptyStateActions(
-                [
-                ]
-            );
+            ->emptyStateActions($this->emptyStateActions())
+        ;
     }
 }
