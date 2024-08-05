@@ -4,10 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\ActivityResource\Pages;
 
+use Filament\Tables\Table;
 use Filament\Actions\CreateAction;
-use Filament\Resources\Pages\ListRecords;
-use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\UI\Enums\TableLayoutEnum;
+use Filament\Tables\Actions\EditAction;
+use Filament\Resources\Pages\ListRecords;
+use Filament\Tables\Actions\DeleteBulkAction;
+use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 
 class ListActivities extends ListRecords
