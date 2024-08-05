@@ -70,7 +70,7 @@ class ListActivities extends ListRecords
             ->filters($this->getTableFilters())
             ->actions($this->getTableActions())
             ->bulkActions($this->getTableBulkActions())
-            ->emptyStateActions($this->emptyStateActions())
+            ->emptyStateActions($this->getTableEmptyStateActions())
         ;
     }
 }
