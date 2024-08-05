@@ -85,18 +85,7 @@ class Activity extends SpatieActivity
      *
      * @psalm-var list{'id', 'log_name', 'description', 'subject_type', 'event', 'subject_id', 'causer_type', 'causer_id', 'properties', 'batch_uuid', 'created_at', 'updated_at'}
      */
-    protected $fillable = [
-        'id',
-        'log_name',
-        'description',
-        'subject_type',
-        'event',
-        'subject_id',
-        'causer_type',
-        'causer_id',
-        'properties',
-        'batch_uuid',
-    ];
+    protected $fillable = ['id', 'log_name', 'description', 'subject_type', 'event', 'subject_id', 'causer_type', 'causer_id', 'properties', 'batch_uuid', 'created_at', 'updated_at'];
 
     /**
      * @var array<string>
