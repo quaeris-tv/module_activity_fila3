@@ -7,13 +7,7 @@ namespace Modules\Activity\Filament\Resources;
 use Filament\Forms\Form;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Resources\Resource;
-use Filament\Tables\Actions\BulkActionGroup;
-use Filament\Tables\Actions\DeleteBulkAction;
-use Filament\Tables\Actions\EditAction;
-use Filament\Tables\Table;
-use Modules\Activity\Filament\Resources\ActivityResource\Pages\CreateActivity;
-use Modules\Activity\Filament\Resources\ActivityResource\Pages\EditActivity;
-use Modules\Activity\Filament\Resources\ActivityResource\Pages\ListActivities;
+use Modules\Activity\Filament\Resources\ActivityResource\Pages;
 use Modules\Activity\Models\Activity;
 
 class ActivityResource extends Resource
@@ -27,38 +21,6 @@ class ActivityResource extends Resource
         return $form
             ->schema(
                 [
-                ]
-            );
-    }
-
-    public static function table(Table $table): Table
-    {
-        return $table
-            ->columns(
-                [
-                ]
-            )
-            ->filters(
-                [
-                ]
-            )
-            ->actions(
-                [
-                    EditAction::make(),
-                ]
-            )
-            ->bulkActions(
-                [
-                    BulkActionGroup::make(
-                        [
-                            DeleteBulkAction::make(),
-                        ]
-                    ),
-                ]
-            )
-            ->emptyStateActions(
-                [
-                
                 ]
             );
     }
@@ -78,9 +40,9 @@ class ActivityResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => ListActivities::route('/'),
-            'create' => CreateActivity::route('/create'),
-            'edit' => EditActivity::route('/{record}/edit'),
+            'index' => Pages\ListActivities::route('/'),
+            'create' => Pages\CreateActivity::route('/create'),
+            'edit' => Pages\EditActivity::route('/{record}/edit'),
         ];
     }
 }
