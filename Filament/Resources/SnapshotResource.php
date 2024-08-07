@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources;
 
-use App\Models\App\Models\Snapshot;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Modules\Activity\Filament\Resources\SnapshotResource\Pages;
+use Modules\Activity\Models\Snapshot;
 
 class SnapshotResource extends Resource
 {

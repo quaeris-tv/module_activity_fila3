@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources;
 
-use App\Models\App\Models\StoredEvent;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Modules\Activity\Filament\Resources\StoredEventResource\Pages;
+use Modules\Activity\StoredEvent;
 
 class StoredEventResource extends Resource
 {
