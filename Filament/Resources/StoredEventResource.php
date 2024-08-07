@@ -7,7 +7,7 @@ namespace Modules\Activity\Filament\Resources;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Modules\Activity\Filament\Resources\StoredEventResource\Pages;
-use Modules\Activity\StoredEvent;
+use Modules\Activity\Models\StoredEvent;
 
 class StoredEventResource extends Resource
 {
