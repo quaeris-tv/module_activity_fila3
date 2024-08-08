@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 
-=======
->>>>>>> c72b996 (.)
 namespace Workbench\App\Providers;
 
 use Illuminate\Support\ServiceProvider;
@@ -16,7 +13,6 @@ class WorkbenchServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
     }
 
     /**
@@ -24,6 +20,5 @@ class WorkbenchServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
     }
 }
