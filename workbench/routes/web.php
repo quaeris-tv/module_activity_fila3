@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 
-=======
->>>>>>> c72b996 (.)
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,10 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-<<<<<<< HEAD
-Route::get('/', fn() => view('welcome'));
-=======
-Route::get('/', function () {
-    return view('welcome');
-});
->>>>>>> c72b996 (.)
+Route::get('/', fn () => view('welcome'));

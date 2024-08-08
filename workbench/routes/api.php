@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 
-=======
->>>>>>> c72b996 (.)
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 

@@ -5,12 +5,7 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-<<<<<<< HEAD
-return new class extends XotBaseMigration
-=======
-class CreateStoredEventsTable extends XotBaseMigration
->>>>>>> c72b996 (.)
-{
+return new class() extends XotBaseMigration {
     public function up(): void
     {
         // -- CREATE --
@@ -32,20 +27,12 @@ class CreateStoredEventsTable extends XotBaseMigration
         // -- UPDATE --
         $this->tableUpdate(
             function (Blueprint $table): void {
-                //if (! $this->hasColumn('created_by')) {
+                // if (! $this->hasColumn('created_by')) {
                 //    $table->string('created_by')->nullable();
                 //    $table->string('updated_by')->nullable();
-                //}
-<<<<<<< HEAD
+                // }
                 $this->updateTimestamps($table, false);
             }
         );
     }
 };
-=======
-                $this->updateTimestamps($table,false);
-            }
-        );
-    }
-}
->>>>>>> c72b996 (.)

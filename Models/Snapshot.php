@@ -9,20 +9,6 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
 /**
  * Modules\Activity\Models\Snapshot.
  *
-<<<<<<< HEAD
- * @property int $id
- * @property string $aggregate_uuid
- * @property int $aggregate_version
- * @property array $state
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property string|null $created_by
- * @property string|null $updated_by
- * @method static \Illuminate\Database\Eloquent\Builder|Snapshot newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Snapshot newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Snapshot query()
- * @method static Builder|EloquentSnapshot uuid(string $uuid)
-=======
  * @property int                             $id
  * @property string                          $aggregate_uuid
  * @property int                             $aggregate_version
@@ -31,11 +17,11 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property string|null                     $created_by
  * @property string|null                     $updated_by
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot query()
  * @method static Builder|EloquentSnapshot                       uuid(string $uuid)
->>>>>>> c72b996 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereAggregateUuid($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereAggregateVersion($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereCreatedAt($value)
@@ -44,11 +30,8 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereState($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereUpdatedBy($value)
-<<<<<<< HEAD
- * @method static Builder|EloquentSnapshot uuid(string $uuid)
-=======
  * @method static Builder|EloquentSnapshot                       uuid(string $uuid)
->>>>>>> c72b996 (.)
+ *
  * @mixin \Eloquent
  */
 class Snapshot extends SpatieSnapshot

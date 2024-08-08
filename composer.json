@@ -12,25 +12,17 @@
     "extra": {
         "laravel": {
             "providers": [
-<<<<<<< HEAD
                 "Modules\\Activity\\Providers\\ActivityServiceProvider",
                 "Modules\\Activity\\Providers\\Filament\\AdminPanelProvider"
-=======
-                "Modules\\Activity\\Providers\\ActivityServiceProvider"
->>>>>>> c72b996 (.)
             ],
             "aliases": []
         }
     },
     "autoload": {
         "psr-4": {
-<<<<<<< HEAD
             "Modules\\Activity\\": "",
             "Modules\\Activity\\Database\\Factories\\": "database/factories/",
             "Modules\\Activity\\Database\\Seeders\\": "database/seeders/"
-=======
-            "Modules\\Activity\\": ""
->>>>>>> c72b996 (.)
         }
     },
     "require": {
