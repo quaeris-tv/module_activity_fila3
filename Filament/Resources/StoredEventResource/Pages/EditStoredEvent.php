@@ -2,9 +2,9 @@
 
 namespace Modules\Activity\Filament\Resources\StoredEventResource\Pages;
 
-use Modules\Activity\Filament\Resources\StoredEventResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
+use Modules\Activity\Filament\Resources\StoredEventResource;
 
 class EditStoredEvent extends EditRecord
 {

@@ -35,7 +35,7 @@ class CreateActivityTable extends XotBaseMigration
                     $table->string('updated_by')->nullable();
                 }
                 */
-                $this->updateTimestamps($table,true);
+                $this->updateTimestamps($table, true);
             }
         );
     }

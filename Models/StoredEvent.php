@@ -12,20 +12,21 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 /**
  * Modules\Activity\Models\StoredEvent.
  *
- * @property int                                                    $id
- * @property string|null                                            $aggregate_uuid
- * @property int|null                                               $aggregate_version
- * @property int                                                    $event_version
- * @property string                                                 $event_class
- * @property array                                                  $event_properties
- * @property SchemalessAttributes                                   $meta_data
- * @property string                                                 $created_at
- * @property string|null                                            $created_by
- * @property string|null                                            $updated_by
+ * @property int $id
+ * @property string|null $aggregate_uuid
+ * @property int|null $aggregate_version
+ * @property int $event_version
+ * @property string $event_class
+ * @property array $event_properties
+ * @property SchemalessAttributes $meta_data
+ * @property string $created_at
+ * @property string|null $created_by
+ * @property string|null $updated_by
  * @property \Spatie\EventSourcing\StoredEvents\ShouldBeStored|null $event
+ *
  * @method static EloquentStoredEventQueryBuilder|StoredEvent afterVersion(int $version)
- * @method static EloquentStoredEventCollection<int, static>  all($columns = ['*'])
- * @method static EloquentStoredEventCollection<int, static>  get($columns = ['*'])
+ * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
+ * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
  * @method static EloquentStoredEventQueryBuilder|StoredEvent lastEvent(string ...$eventClasses)
  * @method static EloquentStoredEventQueryBuilder|StoredEvent newModelQuery()
  * @method static EloquentStoredEventQueryBuilder|StoredEvent newQuery()
@@ -45,8 +46,10 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static EloquentStoredEventQueryBuilder|StoredEvent wherePropertyIs(string $property, ?mixed $value)
  * @method static EloquentStoredEventQueryBuilder|StoredEvent wherePropertyIsNot(string $property, ?mixed $value)
  * @method static EloquentStoredEventQueryBuilder|StoredEvent whereUpdatedBy($value)
+ *
  * @property \Spatie\EventSourcing\StoredEvents\ShouldBeStored|null $event
- * @property SchemalessAttributes                                   $meta_data
+ * @property SchemalessAttributes $meta_data
+ *
  * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
  * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|EloquentStoredEvent withMetaDataAttributes()
@@ -86,6 +89,9 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
+ * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
+ * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
+ *
  * @mixin \Eloquent
  */
 class StoredEvent extends SpatieStoredEvent
