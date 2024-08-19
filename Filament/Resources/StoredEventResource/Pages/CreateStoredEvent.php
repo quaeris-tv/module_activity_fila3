@@ -2,9 +2,8 @@
 
 namespace Modules\Activity\Filament\Resources\StoredEventResource\Pages;
 
-use Modules\Activity\Filament\Resources\StoredEventResource;
-use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
+use Modules\Activity\Filament\Resources\StoredEventResource;
 
 class CreateStoredEvent extends CreateRecord
 {

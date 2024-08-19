@@ -32,7 +32,7 @@ class CreateStoredEventsTable extends XotBaseMigration
                 //    $table->string('created_by')->nullable();
                 //    $table->string('updated_by')->nullable();
                 //}
-                $this->updateTimestamps($table,false);
+                $this->updateTimestamps($table, false);
             }
         );
     }

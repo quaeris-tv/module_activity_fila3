@@ -2,9 +2,9 @@
 
 namespace Modules\Activity\Filament\Resources\SnapshotResource\Pages;
 
-use Modules\Activity\Filament\Resources\SnapshotResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
+use Modules\Activity\Filament\Resources\SnapshotResource;
 
 class EditSnapshot extends EditRecord
 {
