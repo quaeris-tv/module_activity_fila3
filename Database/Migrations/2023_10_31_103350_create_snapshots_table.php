@@ -7,8 +7,8 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-class CreateSnapshotsTable extends XotBaseMigration
-{
+return new class () extends XotBaseMigration {
+    //protected ?string $model_class = Activity::class;
     public function up(): void
     {
         // -- CREATE --
@@ -33,4 +33,4 @@ class CreateSnapshotsTable extends XotBaseMigration
             }
         );
     }
-}
+};
