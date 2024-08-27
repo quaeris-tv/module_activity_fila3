@@ -1,0 +1,25 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Activity\Listeners;
+
+use Illuminate\Auth\Events\Login;
+
+class LoginListener
+{
+    /**
+     * Create the event listener.
+     */
+    public function __construct()
+    {
+    }
+
+    /**
+     * Handle the event.
+     */
+    public function handle(Login $event): void
+    {
+        // ...
+    }
+}
