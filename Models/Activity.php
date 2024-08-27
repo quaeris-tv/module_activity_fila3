@@ -81,14 +81,14 @@ class Activity extends SpatieActivity
      */
     protected $fillable = ['id', 'log_name', 'description', 'subject_type', 'event', 'subject_id', 'causer_type', 'causer_id', 'properties', 'batch_uuid', 'created_at', 'updated_at'];
 
-    /**
-     * @var array<string>
-     *
-     * @psalm-var list{'field_name'}
-     */
-    protected $attributes = [
-        'field_name',
-    ];
+    // /**
+    //  * @var array<string>
+    //  *
+    //  * @psalm-var list{'field_name'}
+    //  */
+    // protected $attributes = [
+    //     'field_name',
+    // ];
 
     /** @var string */
     protected $connection = 'activity';

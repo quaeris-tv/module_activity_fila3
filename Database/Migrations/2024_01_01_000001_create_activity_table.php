@@ -36,6 +36,10 @@ return new class extends XotBaseMigration {
                     $table->string('updated_by')->nullable();
                 }
                 */
+
+                if ($this->hasColumn('causer_id')) {
+                    $table->string('causer_id')->change();
+                }
                 $this->updateTimestamps($table, true);
             }
         );
