@@ -5,8 +5,7 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-class CreateStoredEventsTable extends XotBaseMigration
-{
+return new class () extends XotBaseMigration {
     public function up(): void
     {
         // -- CREATE --
@@ -32,8 +31,8 @@ class CreateStoredEventsTable extends XotBaseMigration
                 //    $table->string('created_by')->nullable();
                 //    $table->string('updated_by')->nullable();
                 //}
-                $this->updateTimestamps($table,false);
+                $this->updateTimestamps($table, false);
             }
         );
     }
-}
+};
