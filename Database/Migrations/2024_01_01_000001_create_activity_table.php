@@ -6,7 +6,7 @@ use Modules\Activity\Models\Activity;
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class () extends XotBaseMigration {
+return new class extends XotBaseMigration {
     //protected ?string $model_class = Activity::class;
     public function up(): void
     {
@@ -36,6 +36,10 @@ return new class () extends XotBaseMigration {
                     $table->string('updated_by')->nullable();
                 }
                 */
+
+                if ($this->hasColumn('causer_id')) {
+                    $table->string('causer_id')->change();
+                }
                 $this->updateTimestamps($table, true);
             }
         );

@@ -12,7 +12,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\Activity\\Providers\\ActivityServiceProvider"
+                "Modules\\Activity\\Providers\\ActivityServiceProvider",
+                "Modules\\Activity\\Providers\\Filament\\AdminPanelProvider"
             ],
             "aliases": []
         }

@@ -45,7 +45,6 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @property Model|\Eloquent $causer
  * @property Collection $changes
  * @property Model|\Eloquent $subject
- *
  * @method static Builder|Activity causedBy(\Illuminate\Database\Eloquent\Model $causer)
  * @method static Builder|Activity forBatch(string $batchUuid)
  * @method static Builder|Activity forEvent(string $event)
@@ -70,10 +69,10 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereSubjectType($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereUpdatedBy($value)
- *
  * @property Model|\Eloquent $causer
  * @property Collection $changes
  * @property Model|\Eloquent $subject
+<<<<<<< HEAD
  *
 <<<<<<< HEAD
  * @method static Builder|Activity                               causedBy(\Illuminate\Database\Eloquent\Model $causer)
@@ -95,6 +94,8 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  *
 =======
 =======
+=======
+>>>>>>> d9ef0ffe4fa6513a54151c0ad1ce6baa09060a49
  * @method static Builder|Activity causedBy(\Illuminate\Database\Eloquent\Model $causer)
  * @method static Builder|Activity forBatch(string $batchUuid)
  * @method static Builder|Activity forEvent(string $event)
@@ -104,18 +105,23 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static \Illuminate\Database\Eloquent\Builder|Activity newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Activity newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Activity query()
+<<<<<<< HEAD
  *
 >>>>>>> a34a493a52d04625c3ab4ad527762be38475eae2
+=======
+>>>>>>> d9ef0ffe4fa6513a54151c0ad1ce6baa09060a49
  * @property string|null $deleted_at
  * @property string|null $deleted_by
- *
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereDeletedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereDeletedBy($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 371cbe57533c730958aef04fede57e1191836150
 =======
  *
 >>>>>>> a34a493a52d04625c3ab4ad527762be38475eae2
+=======
+>>>>>>> d9ef0ffe4fa6513a54151c0ad1ce6baa09060a49
  * @mixin \Eloquent
  */
 class Activity extends SpatieActivity
@@ -127,14 +133,14 @@ class Activity extends SpatieActivity
      */
     protected $fillable = ['id', 'log_name', 'description', 'subject_type', 'event', 'subject_id', 'causer_type', 'causer_id', 'properties', 'batch_uuid', 'created_at', 'updated_at'];
 
-    /**
-     * @var array<string>
-     *
-     * @psalm-var list{'field_name'}
-     */
-    protected $attributes = [
-        'field_name',
-    ];
+    // /**
+    //  * @var array<string>
+    //  *
+    //  * @psalm-var list{'field_name'}
+    //  */
+    // protected $attributes = [
+    //     'field_name',
+    // ];
 
     /** @var string */
     protected $connection = 'activity';
