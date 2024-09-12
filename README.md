@@ -25,8 +25,4 @@ php artisan module:enable Activity
 ## Eseguire le migrazioni
 ```bash
 php artisan module:migrate Activity
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> 82b3cf2 (.)
