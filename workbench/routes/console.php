@@ -1,7 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+>>>>>>> 82b3cf2 (.)
 use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Artisan;
 
