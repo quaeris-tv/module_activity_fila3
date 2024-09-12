@@ -46,12 +46,35 @@ abstract class BaseModel extends Model
     /** @var string */
     protected $connection = 'activity';
 
+<<<<<<< HEAD
     /** @var string */
     protected $primaryKey = 'id';
     /** @var string */
     protected $keyType = 'string';
 
     /** @var list<string> */
+=======
+    /** @return array<string, string> */
+    protected function casts(): array
+    {
+        return [
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+
+            'updated_by' => 'string',
+            'created_by' => 'string',
+            'deleted_by' => 'string',
+
+            'published_at' => 'datetime',
+        ];
+    }
+
+    /** @var string */
+    protected $primaryKey = 'id';
+
+    /** @var array<int, string> */
+>>>>>>> 82b3cf2 (.)
     protected $hidden = [
         // 'password'
     ];
@@ -65,6 +88,7 @@ abstract class BaseModel extends Model
     {
         return app(GetFactoryAction::class)->execute(static::class);
     }
+<<<<<<< HEAD
 
     /** @return array<string, string> */
     protected function casts(): array
@@ -83,4 +107,6 @@ abstract class BaseModel extends Model
             'published_at' => 'datetime',
         ];
     }
+=======
+>>>>>>> 82b3cf2 (.)
 }

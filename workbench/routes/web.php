@@ -1,7 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+>>>>>>> 82b3cf2 (.)
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +18,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', fn () => view('welcome'));
+=======
+Route::get('/', function () {
+    return view('welcome');
+});
+>>>>>>> 82b3cf2 (.)

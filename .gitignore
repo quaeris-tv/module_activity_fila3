@@ -48,6 +48,7 @@ docs/cache/
 *.log
 node_modules
 docs/cache
+<<<<<<< HEAD
 node_modules
 vendor
 .php-cs-fixer.cache
@@ -58,3 +59,5 @@ build/
 node_modules
 docs/cache/
 cache/
+=======
+>>>>>>> 82b3cf2 (.)
