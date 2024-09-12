@@ -17,10 +17,7 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property string|null                     $created_by
  * @property string|null                     $updated_by
-<<<<<<< HEAD
  *
-=======
->>>>>>> 82b3cf2 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot query()
@@ -34,10 +31,7 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereUpdatedBy($value)
  * @method static Builder|EloquentSnapshot                       uuid(string $uuid)
-<<<<<<< HEAD
  *
-=======
->>>>>>> 82b3cf2 (.)
  * @mixin \Eloquent
  */
 class Snapshot extends SpatieSnapshot
