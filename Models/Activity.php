@@ -33,7 +33,6 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @property Model|\Eloquent                 $causer
  * @property Collection                      $changes
  * @property Model|\Eloquent                 $subject
- *
  * @method static EloquentBuilder|Activity                       causedBy(\Illuminate\Database\Eloquent\Model $causer)
  * @method static EloquentBuilder|Activity                       forBatch(string $batchUuid)
  * @method static EloquentBuilder|Activity                       forEvent(string $event)
@@ -57,11 +56,9 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereSubjectType($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereUpdatedBy($value)
- *
  * @property Model|\Eloquent $causer
  * @property Collection      $changes
  * @property Model|\Eloquent $subject
- *
  * @method static EloquentBuilder|Activity                       causedBy(\Illuminate\Database\Eloquent\Model $causer)
  * @method static EloquentBuilder|Activity                       forBatch(string $batchUuid)
  * @method static EloquentBuilder|Activity                       forEvent(string $event)
@@ -71,13 +68,10 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static \Illuminate\Database\Eloquent\Builder|Activity newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Activity newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Activity query()
- *
  * @property string|null $deleted_at
  * @property string|null $deleted_by
- *
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereDeletedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereDeletedBy($value)
- *
  * @mixin \Eloquent
  * @mixin Eloquent
  */
