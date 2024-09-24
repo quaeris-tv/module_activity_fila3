@@ -46,24 +46,11 @@ abstract class BaseModel extends Model
     /** @var string */
     protected $connection = 'activity';
 
-    /** @return array<string, string> */
-    protected function casts(): array
-    {
-        return [
-            'created_at' => 'datetime',
-            'updated_at' => 'datetime',
-            'deleted_at' => 'datetime',
-
-            'updated_by' => 'string',
-            'created_by' => 'string',
-            'deleted_by' => 'string',
-
-            'published_at' => 'datetime',
-        ];
-    }
-
     /** @var string */
     protected $primaryKey = 'id';
+
+    /** @var string */
+    protected $keyType = 'string';
 
     /** @var list<string> */
     protected $hidden = [
@@ -78,5 +65,23 @@ abstract class BaseModel extends Model
     protected static function newFactory()
     {
         return app(GetFactoryAction::class)->execute(static::class);
+    }
+
+    /** @return array<string, string> */
+    protected function casts(): array
+    {
+        return [
+            'id' => 'string',
+            'uuid' => 'string',
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+
+            'updated_by' => 'string',
+            'created_by' => 'string',
+            'deleted_by' => 'string',
+
+            'published_at' => 'datetime',
+        ];
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Activity\Filament\Resources\StoredEventResource\Pages;
 
 use Filament\Actions;

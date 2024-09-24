@@ -20,7 +20,9 @@
     },
     "autoload": {
         "psr-4": {
-            "Modules\\Activity\\": ""
+            "Modules\\Activity\\": "",
+            "Modules\\Activity\\Database\\Factories\\": "database/factories/",
+            "Modules\\Activity\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "require": {
@@ -45,7 +47,7 @@
         "nunomaduro/collision": "^7.10",
         "nunomaduro/phpinsights": "^2.11",
         "orchestra/pest-plugin-testbench": "^2.0",
-        "orchestra/testbench": "*",
+        "orchestra/testbench": "^9.4",
         "pestphp/pest": "^2.34",
         "pestphp/pest-plugin-arch": "^2.0",
         "pestphp/pest-plugin-laravel": "^2.0",
