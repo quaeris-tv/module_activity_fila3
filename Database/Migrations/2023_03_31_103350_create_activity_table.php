@@ -3,12 +3,10 @@
 declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
-use Modules\Activity\Models\Activity;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration
+class CreateActivityTable extends XotBaseMigration
 {
-    //protected ?string $model_class = Activity::class;
     public function up(): void
     {
         // -- CREATE --
@@ -37,12 +35,8 @@ return new class extends XotBaseMigration
                     $table->string('updated_by')->nullable();
                 }
                 */
-
-                if ($this->hasColumn('causer_id')) {
-                    $table->string('causer_id')->change();
-                }
                 $this->updateTimestamps($table, true);
             }
         );
     }
-};
+}

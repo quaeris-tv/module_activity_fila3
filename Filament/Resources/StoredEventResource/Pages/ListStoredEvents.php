@@ -14,13 +14,6 @@ class ListStoredEvents extends ListRecords
 {
     protected static string $resource = StoredEventResource::class;
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\CreateAction::make(),
-        ];
-    }
-
     public function table(Table $table): Table
     {
         return $table
@@ -38,5 +31,12 @@ class ListStoredEvents extends ListRecords
             ])
             ->emptyStateActions([
             ]);
+    }
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            Actions\CreateAction::make(),
+        ];
     }
 }

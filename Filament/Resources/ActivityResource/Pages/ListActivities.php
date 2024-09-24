@@ -15,23 +15,9 @@ use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 
 class ListActivities extends ListRecords
 {
-    protected static string $resource = ActivityResource::class;
-
     public TableLayoutEnum $layoutView = TableLayoutEnum::GRID;
 
-    protected function getTableHeaderActions(): array
-    {
-        return [
-            TableLayoutToggleTableAction::make(),
-        ];
-    }
-
-    protected function getHeaderActions(): array
-    {
-        return [
-            CreateAction::make(),
-        ];
-    }
+    protected static string $resource = ActivityResource::class;
 
     public function getTableColumns(): array
     {
@@ -76,5 +62,19 @@ class ListActivities extends ListRecords
 =======
             ->emptyStateActions($this->getTableEmptyStateActions());
 >>>>>>> a34a493a52d04625c3ab4ad527762be38475eae2
+    }
+
+    protected function getTableHeaderActions(): array
+    {
+        return [
+            TableLayoutToggleTableAction::make(),
+        ];
+    }
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            CreateAction::make(),
+        ];
     }
 }
