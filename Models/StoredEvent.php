@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Collection;
 
 /**
  * Class StoredEvent
- *
+ * 
  * Represents a stored event in the activity module.
  *
  * @property int $id
@@ -26,7 +26,6 @@ use Illuminate\Database\Eloquent\Collection;
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property-read ShouldBeStored|null $event
- *
  * @method static \Illuminate\Database\Eloquent\Builder|StoredEvent afterVersion(int $version)
  * @method static Collection|StoredEvent[] all($columns = ['*'])
  * @method static Collection|StoredEvent[] get($columns = ['*'])
@@ -50,7 +49,6 @@ use Illuminate\Database\Eloquent\Collection;
  * @method static \Illuminate\Database\Eloquent\Builder|StoredEvent wherePropertyIsNot(string $property, ?mixed $value)
  * @method static \Illuminate\Database\Eloquent\Builder|StoredEvent whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|StoredEvent withMetaDataAttributes()
- *
  * @mixin \Eloquent
  */
 class StoredEvent extends SpatieStoredEvent
