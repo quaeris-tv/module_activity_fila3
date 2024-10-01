@@ -15,7 +15,7 @@ use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 
 class ListActivities extends ListRecords
 {
-    public TableLayoutEnum $layoutView = TableLayoutEnum::GRID;
+    public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
 
     protected static string $resource = ActivityResource::class;
 
