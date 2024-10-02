@@ -16,6 +16,9 @@ A dedicated module that allows users to efficiently monitor and manage their dai
 ## Prerequisites
 - php v8+
 - laravel
+- **[Xot Module](https://github.com/laraxot/module_xot_fila3.git)** (Required)
+- **[Tenant Module](https://github.com/laraxot/module_tenant_fila3.git)** (Required)
+- **[UI Module](https://github.com/laraxot/module_ui_fila3.git)** (Required)
 
 ## Add Module to the Project Base
 Inside the `laravel/Modules` folder:
