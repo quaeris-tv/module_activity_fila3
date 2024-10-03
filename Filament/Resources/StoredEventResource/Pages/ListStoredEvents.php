@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\StoredEventResource\Pages;
 
-use Filament\Tables;
 use Filament\Actions;
-use Filament\Tables\Table;
-use Modules\UI\Enums\TableLayoutEnum;
-use Filament\Tables\Actions\EditAction;
-use Filament\Tables\Enums\FiltersLayout;
 use Filament\Resources\Pages\ListRecords;
-use Filament\Tables\Enums\ActionsPosition;
+use Filament\Tables;
 use Filament\Tables\Actions\DeleteBulkAction;
+use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Enums\ActionsPosition;
+use Filament\Tables\Enums\FiltersLayout;
+use Filament\Tables\Table;
 use Modules\Activity\Filament\Resources\StoredEventResource;
+use Modules\UI\Enums\TableLayoutEnum;
 
 class ListStoredEvents extends ListRecords
 {
@@ -60,13 +60,6 @@ class ListStoredEvents extends ListRecords
             );
     }
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\CreateAction::make(),
-        ];
-    }
-
     public function getGridTableColumns(): array
     {
         return [
@@ -91,6 +84,13 @@ class ListStoredEvents extends ListRecords
     {
         return [
             DeleteBulkAction::make(),
+        ];
+    }
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            Actions\CreateAction::make(),
         ];
     }
 }
