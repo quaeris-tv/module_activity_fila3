@@ -1,0 +1,120 @@
+{
+    "name": "laraxot/module_activity_fila3",
+    "description": "",
+    "homepage": "https://github.com/laraxot/module_activity_fila3",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Sottana",
+            "email": "marco.sottana@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Activity\\Providers\\ActivityServiceProvider",
+                "Modules\\Activity\\Providers\\Filament\\AdminPanelProvider"
+            ],
+            "aliases": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Activity\\": "",
+            "Modules\\Activity\\Database\\Factories\\": "database/factories/",
+            "Modules\\Activity\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "require": {
+        "spatie/laravel-activitylog": "*",
+        "spatie/laravel-event-sourcing": "*"
+    },
+    "require_comment": {
+        "filament/filament": "^3.2",
+        "illuminate/contracts": "^9.0|^10.0|^11.0",
+        "illuminate/support": "^9.12|^10.0|^11.0",
+        "laraxot/module_xot_fila3": "*",
+        "mhmiton/laravel-modules-livewire": "^2.3",
+        "spatie/laravel-activitylog": "^4.7",
+        "spatie/laravel-event-sourcing": "^7.3",
+        "thecodingmachine/safe": "^2.5"
+    },
+    "require-dev_comment": {
+        "driftingly/rector-laravel": "^0.26.2",
+        "enlightn/enlightn": "^2.7",
+        "larastan/larastan": "^2.7",
+        "laravel/pint": "^1.13",
+        "nunomaduro/collision": "^7.10",
+        "nunomaduro/phpinsights": "^2.11",
+        "orchestra/pest-plugin-testbench": "^2.0",
+        "orchestra/testbench": "^9.4",
+        "pestphp/pest": "^2.34",
+        "pestphp/pest-plugin-arch": "^2.0",
+        "pestphp/pest-plugin-laravel": "^2.0",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "psalm/plugin-laravel": "*",
+        "rector/rector": "*",
+        "spatie/laravel-ray": "^1.26",
+        "thecodingmachine/phpstan-safe-rule": "^1.2",
+        "vimeo/psalm": "^5.17"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../Xot"
+        },
+        {
+            "type": "path",
+            "url": "../Tenant"
+        },
+        {
+            "type": "path",
+            "url": "../UI"
+        }
+    ],
+    "scripts": {
+        "post-autoload-dump": [
+            "@clear",
+            "@prepare",
+            "@php vendor/bin/testbench package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate"
+        ],
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "./vendor/bin/pest --no-coverage",
+        "test-coverage": "vendor/bin/pest --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes",
+        "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
+        "prepare": "@php vendor/bin/testbench package:discover --ansi",
+        "build": "@php vendor/bin/testbench workbench:build --ansi",
+        "serve": [
+            "Composer\\Config::disableProcessTimeout",
+            "@build",
+            "@php vendor/bin/testbench serve"
+        ],
+        "lint": [
+            "@php vendor/bin/pint",
+            "@php vendor/bin/phpstan analyse"
+        ]
+    },
+    "config": {
+        "_comment_vendor-dir": "../../vendor",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "wikimedia/composer-merge-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload-dev": {
+        "psr-4": {
+            "Workbench\\App\\": "workbench/app/",
+            "Workbench\\Database\\Factories\\": "workbench/database/factories/",
+            "Workbench\\Database\\Seeders\\": "workbench/database/seeders/"
+        }
+    }
+}
