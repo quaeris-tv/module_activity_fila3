@@ -16,18 +16,19 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
 /**
  * Modules\Activity\Models\Activity.
  *
- * @property int                             $id
- * @property string|null                     $log_name
- * @property string                          $description
- * @property string|null                     $subject_type
- * @property int|null                        $subject_id
- * @property string|null                     $causer_type
- * @property int|null                        $causer_id
- * @property Collection|null                 $properties
- * @property string|null                     $batch_uuid
- * @property string|null                     $event
+ * @property int $id
+ * @property string|null $log_name
+ * @property string $description
+ * @property string|null $subject_type
+ * @property int|null $subject_id
+ * @property string|null $causer_type
+ * @property int|null $causer_id
+ * @property Collection|null $properties
+ * @property string|null $batch_uuid
+ * @property string|null $event
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -46,12 +47,15 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static Builder|Activity                               hasBatch()
  * @method static Builder|Activity                               inLog(...$logNames)
 =======
+=======
+>>>>>>> dda5897f8b272c3c05d7606217001322264add4a
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property Model|Eloquent $causer
  * @property Collection $changes
  * @property Model|Eloquent $subject
  *
+<<<<<<< HEAD
  * @method static Builder|Activity causedBy(\Illuminate\Database\Eloquent\Model $causer)
  * @method static Builder|Activity forBatch(string $batchUuid)
  * @method static Builder|Activity forEvent(string $event)
@@ -67,6 +71,14 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static EloquentBuilder|Activity                       hasBatch()
  * @method static EloquentBuilder|Activity                       inLog(...$logNames)
 >>>>>>> 9fb4eca6a8b2cab7a56e0a5271e6e4c9245516d3
+=======
+ * @method static EloquentBuilder|Activity causedBy(\Illuminate\Database\Eloquent\Model $causer)
+ * @method static EloquentBuilder|Activity forBatch(string $batchUuid)
+ * @method static EloquentBuilder|Activity forEvent(string $event)
+ * @method static EloquentBuilder|Activity forSubject(\Illuminate\Database\Eloquent\Model $subject)
+ * @method static EloquentBuilder|Activity hasBatch()
+ * @method static EloquentBuilder|Activity inLog(...$logNames)
+>>>>>>> dda5897f8b272c3c05d7606217001322264add4a
  * @method static \Illuminate\Database\Eloquent\Builder|Activity newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Activity newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Activity query()
@@ -84,6 +96,7 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereSubjectType($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereUpdatedBy($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
  *
  * @property Model|Eloquent $causer
@@ -150,10 +163,29 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static \Illuminate\Database\Eloquent\Builder|Activity newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Activity query()
 >>>>>>> 9fb4eca6a8b2cab7a56e0a5271e6e4c9245516d3
+=======
+ *
+ * @property Model|Eloquent $causer
+ * @property Collection $changes
+ * @property Model|Eloquent $subject
+ *
+ * @method static EloquentBuilder|Activity causedBy(\Illuminate\Database\Eloquent\Model $causer)
+ * @method static EloquentBuilder|Activity forBatch(string $batchUuid)
+ * @method static EloquentBuilder|Activity forEvent(string $event)
+ * @method static EloquentBuilder|Activity forSubject(\Illuminate\Database\Eloquent\Model $subject)
+ * @method static EloquentBuilder|Activity hasBatch()
+ * @method static EloquentBuilder|Activity inLog(...$logNames)
+ * @method static \Illuminate\Database\Eloquent\Builder|Activity newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Activity newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Activity query()
+ *
+>>>>>>> dda5897f8b272c3c05d7606217001322264add4a
  * @property string|null $deleted_at
  * @property string|null $deleted_by
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereDeletedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereDeletedBy($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -169,6 +201,9 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
 >>>>>>> 7e50b869544b76b87ff8417425294c8ac8446058
 =======
 >>>>>>> 9fb4eca6a8b2cab7a56e0a5271e6e4c9245516d3
+=======
+ *
+>>>>>>> dda5897f8b272c3c05d7606217001322264add4a
  * @mixin \Eloquent
  * @mixin Eloquent
  */
