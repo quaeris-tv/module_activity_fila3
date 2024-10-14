@@ -4,22 +4,48 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\SnapshotResource\Pages;
 
-use Filament\Actions;
-use Filament\Resources\Pages\ListRecords;
 use Filament\Tables;
-use Filament\Tables\Actions\DeleteBulkAction;
-use Filament\Tables\Actions\EditAction;
-use Filament\Tables\Enums\ActionsPosition;
-use Filament\Tables\Enums\FiltersLayout;
+use Filament\Actions;
 use Filament\Tables\Table;
-use Modules\Activity\Filament\Resources\SnapshotResource;
 use Modules\UI\Enums\TableLayoutEnum;
+use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Enums\FiltersLayout;
+use Filament\Resources\Pages\ListRecords;
+use Filament\Tables\Enums\ActionsPosition;
+use Filament\Tables\Actions\DeleteBulkAction;
+use Modules\Activity\Filament\Resources\SnapshotResource;
 
 class ListSnapshots extends ListRecords
 {
     public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
 
     protected static string $resource = SnapshotResource::class;
+
+    // public function table(Table $table): Table
+    // {
+    //     return $table
+    //         ->columns([
+    //         ])
+    //         ->filters([
+    //         ])
+    //         ->actions([
+    //             Tables\Actions\EditAction::make(),
+    //         ])
+    //         ->bulkActions([
+    //             Tables\Actions\BulkActionGroup::make([
+    //                 Tables\Actions\DeleteBulkAction::make(),
+    //             ]),
+    //         ])
+    //         ->emptyStateActions([
+    //         ]);
+    // }
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            Actions\CreateAction::make(),
+        ];
+    }
 
     public function table(Table $table): Table
     {
@@ -65,32 +91,6 @@ class ListSnapshots extends ListRecords
     {
         return [
             DeleteBulkAction::make(),
-        ];
-    }
-
-    // public function table(Table $table): Table
-    // {
-    //     return $table
-    //         ->columns([
-    //         ])
-    //         ->filters([
-    //         ])
-    //         ->actions([
-    //             Tables\Actions\EditAction::make(),
-    //         ])
-    //         ->bulkActions([
-    //             Tables\Actions\BulkActionGroup::make([
-    //                 Tables\Actions\DeleteBulkAction::make(),
-    //             ]),
-    //         ])
-    //         ->emptyStateActions([
-    //         ]);
-    // }
-
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\CreateAction::make(),
         ];
     }
 }
