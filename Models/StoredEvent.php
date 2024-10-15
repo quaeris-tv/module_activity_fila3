@@ -4,14 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Models;
 
-use Illuminate\Database\Eloquent\Collection;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent as SpatieStoredEvent;
-use Spatie\EventSourcing\StoredEvents\ShouldBeStored;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
+use Spatie\EventSourcing\StoredEvents\ShouldBeStored;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 
 /**
  * Class StoredEvent
- *
+ * 
  * Represents a stored event in the activity module.
  *
  * @property int $id
@@ -25,7 +26,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property-read ShouldBeStored|null $event
- *
  * @method static \Illuminate\Database\Eloquent\Builder|StoredEvent afterVersion(int $version)
  * @method static Collection|StoredEvent[] all($columns = ['*'])
  * @method static Collection|StoredEvent[] get($columns = ['*'])
@@ -49,7 +49,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static \Illuminate\Database\Eloquent\Builder|StoredEvent wherePropertyIsNot(string $property, ?mixed $value)
  * @method static \Illuminate\Database\Eloquent\Builder|StoredEvent whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|StoredEvent withMetaDataAttributes()
- *
  * @mixin \Eloquent
  */
 class StoredEvent extends SpatieStoredEvent
@@ -65,8 +64,9 @@ class StoredEvent extends SpatieStoredEvent
         'meta_data',
         'created_at',
         'updated_by',
-        'created_by',
+        'created_by'
     ];
+
 
     // protected $attributes = [
     //     'field_name' => '',
