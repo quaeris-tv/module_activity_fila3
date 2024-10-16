@@ -4,13 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\ActivityResource\Pages;
 
-use Filament\Actions\CreateAction;
-use Filament\Resources\Pages\ListRecords;
-use Filament\Tables\Actions\DeleteBulkAction;
-use Filament\Tables\Actions\EditAction;
+use Filament\Tables;
 use Filament\Tables\Table;
-use Modules\Activity\Filament\Resources\ActivityResource;
+use Filament\Actions\CreateAction;
 use Modules\UI\Enums\TableLayoutEnum;
+use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Enums\FiltersLayout;
+use Filament\Resources\Pages\ListRecords;
+use Filament\Tables\Enums\ActionsPosition;
+use Filament\Tables\Actions\DeleteBulkAction;
+use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 
 class ListActivities extends ListRecords
@@ -18,11 +21,6 @@ class ListActivities extends ListRecords
     public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
 
     protected static string $resource = ActivityResource::class;
-
-    public function getTableColumns(): array
-    {
-        return [];
-    }
 
     public function getTableFilters(): array
     {
@@ -32,7 +30,9 @@ class ListActivities extends ListRecords
     public function getTableActions(): array
     {
         return [
-            EditAction::make(),
+            // Tables\Actions\EditAction::make()->label(''),
+            Tables\Actions\ViewAction::make()->label(''),
+            // Tables\Actions\DeleteAction::make()->label(''),
         ];
     }
 
@@ -52,11 +52,21 @@ class ListActivities extends ListRecords
     public function table(Table $table): Table
     {
         return $table
-            ->columns($this->getTableColumns())
+            // ->columns($this->getTableColumns())
+            ->columns($this->layoutView->getTableColumns())
+            ->contentGrid($this->layoutView->getTableContentGrid())
+            ->headerActions($this->getTableHeaderActions())
+
             ->filters($this->getTableFilters())
+            ->filtersLayout(FiltersLayout::AboveContent)
+            ->persistFiltersInSession()
             ->actions($this->getTableActions())
             ->bulkActions($this->getTableBulkActions())
-            ->emptyStateActions($this->getTableEmptyStateActions());
+            ->actionsPosition(ActionsPosition::BeforeColumns)
+            ->defaultSort(
+                column: 'created_at',
+                direction: 'DESC',
+            );
     }
 
     protected function getTableHeaderActions(): array
@@ -70,6 +80,22 @@ class ListActivities extends ListRecords
     {
         return [
             CreateAction::make(),
+        ];
+    }
+
+    public function getGridTableColumns(): array
+    {
+        return [
+            Tables\Columns\TextColumn::make('id'),
+            Tables\Columns\TextColumn::make('description'),
+        ];
+    }
+
+    public function getListTableColumns(): array
+    {
+        return [
+            Tables\Columns\TextColumn::make('id'),
+            Tables\Columns\TextColumn::make('description'),
         ];
     }
 }
