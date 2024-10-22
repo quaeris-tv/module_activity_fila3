@@ -4,41 +4,23 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\StoredEventResource\Pages;
 
-use Filament\Tables;
 use Filament\Actions;
-use Filament\Tables\Table;
-use Modules\UI\Enums\TableLayoutEnum;
-use Filament\Tables\Actions\EditAction;
-use Filament\Tables\Enums\FiltersLayout;
 use Filament\Resources\Pages\ListRecords;
-use Filament\Tables\Enums\ActionsPosition;
+use Filament\Tables;
 use Filament\Tables\Actions\DeleteBulkAction;
+use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Enums\ActionsPosition;
+use Filament\Tables\Enums\FiltersLayout;
+use Filament\Tables\Table;
 use Modules\Activity\Filament\Resources\StoredEventResource;
+use Modules\UI\Enums\TableLayoutEnum;
+use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 
 class ListStoredEvents extends ListRecords
 {
     public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
 
     protected static string $resource = StoredEventResource::class;
-
-    // public function table(Table $table): Table
-    // {
-    //     return $table
-    //         ->columns([
-    //         ])
-    //         ->filters([
-    //         ])
-    //         ->actions([
-    //             Tables\Actions\EditAction::make(),
-    //         ])
-    //         ->bulkActions([
-    //             Tables\Actions\BulkActionGroup::make([
-    //                 Tables\Actions\DeleteBulkAction::make(),
-    //             ]),
-    //         ])
-    //         ->emptyStateActions([
-    //         ]);
-    // }
 
     public function table(Table $table): Table
     {
@@ -60,13 +42,6 @@ class ListStoredEvents extends ListRecords
             );
     }
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\CreateAction::make(),
-        ];
-    }
-
     public function getGridTableColumns(): array
     {
         return [
@@ -76,6 +51,10 @@ class ListStoredEvents extends ListRecords
     public function getListTableColumns(): array
     {
         return [
+            Tables\Columns\TextColumn::make('id'),
+            Tables\Columns\TextColumn::make('event_class'),
+            // Tables\Columns\TextColumn::make('event_properties'),
+            Tables\Columns\ViewColumn::make('event_properties')->view('activity::filament.tables.columns.event-properties'),
         ];
     }
 
@@ -91,6 +70,20 @@ class ListStoredEvents extends ListRecords
     {
         return [
             DeleteBulkAction::make(),
+        ];
+    }
+
+    protected function getTableHeaderActions(): array
+    {
+        return [
+            TableLayoutToggleTableAction::make(),
+        ];
+    }
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            Actions\CreateAction::make(),
         ];
     }
 }
