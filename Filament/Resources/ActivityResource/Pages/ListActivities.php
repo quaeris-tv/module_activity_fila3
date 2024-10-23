@@ -83,7 +83,6 @@ class ListActivities extends ListRecords
             Tables\Columns\TextColumn::make('id'),
             Tables\Columns\TextColumn::make('description'),
         ];
->>>>>>> 29c06495601f707bb0d2193849cfb6b190d5d450
     }
 
     protected function getTableHeaderActions(): array
