@@ -5,24 +5,12 @@ declare(strict_types=1);
 namespace Modules\Activity\Filament\Resources\ActivityResource\Pages;
 
 use Filament\Actions\CreateAction;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Filament\Resources\Pages\ListRecords;
 use Filament\Tables;
 use Filament\Tables\Actions\DeleteBulkAction;
+use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Enums\ActionsPosition;
 use Filament\Tables\Enums\FiltersLayout;
-use Filament\Tables\Table;
-use Modules\Activity\Filament\Resources\ActivityResource;
-=======
->>>>>>> 0b4b2ff (.)
-use Modules\UI\Enums\TableLayoutEnum;
-use Filament\Tables\Actions\EditAction;
-=======
->>>>>>> 0203a45 (up)
-use Filament\Resources\Pages\ListRecords;
-use Filament\Tables\Actions\DeleteBulkAction;
-use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Table;
 use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\UI\Enums\TableLayoutEnum;
@@ -34,7 +22,14 @@ class ListActivities extends ListRecords
 
     protected static string $resource = ActivityResource::class;
 
-<<<<<<< HEAD
+    protected function getTableHeaderActions(): array
+    {
+        return [
+            TableLayoutToggleTableAction::make(),
+            CreateAction::make(),
+        ];
+    }
+
     public function getTableFilters(): array
     {
         return [];
@@ -43,128 +38,56 @@ class ListActivities extends ListRecords
     public function getTableActions(): array
     {
         return [
-            // Tables\Actions\EditAction::make()->label(''),
-            Tables\Actions\ViewAction::make()->label(''),
-            // Tables\Actions\DeleteAction::make()->label(''),
+            Tables\Actions\ViewAction::make()->label('View Details'),
+            EditAction::make()->label('Edit'),
         ];
     }
 
     public function getTableBulkActions(): array
     {
         return [
-            DeleteBulkAction::make(),
+            DeleteBulkAction::make()->label('Delete Selected'),
         ];
     }
 
     public function getTableEmptyStateActions(): array
     {
         return [
+            CreateAction::make()->label('Add New Activity'),
         ];
     }
 
     public function table(Table $table): Table
     {
         return $table
-            // ->columns($this->getTableColumns())
             ->columns($this->layoutView->getTableColumns())
             ->contentGrid($this->layoutView->getTableContentGrid())
             ->headerActions($this->getTableHeaderActions())
-
             ->filters($this->getTableFilters())
             ->filtersLayout(FiltersLayout::AboveContent)
             ->persistFiltersInSession()
             ->actions($this->getTableActions())
             ->bulkActions($this->getTableBulkActions())
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
             ->emptyStateActions($this->getTableEmptyStateActions())
->>>>>>> 5d7c9b9 (Fixed typo in Activity model.)
-=======
-            ->emptyStateActions($this->getTableEmptyStateActions())
->>>>>>> 170492e (rebase 51/58)
             ->actionsPosition(ActionsPosition::BeforeColumns)
-            ->defaultSort(
-                column: 'created_at',
-                direction: 'DESC',
-            );
+            ->defaultSort('created_at', 'DESC');
     }
 
     public function getGridTableColumns(): array
     {
         return [
-            Tables\Columns\TextColumn::make('id'),
-            Tables\Columns\TextColumn::make('description'),
+            Tables\Columns\TextColumn::make('id')->label('ID'),
+            Tables\Columns\TextColumn::make('description')->label('Description'),
+            Tables\Columns\TextColumn::make('created_at')->label('Created At')->sortable(),
         ];
     }
 
     public function getListTableColumns(): array
     {
         return [
-            Tables\Columns\TextColumn::make('id'),
-            Tables\Columns\TextColumn::make('description'),
+            Tables\Columns\TextColumn::make('id')->label('ID')->sortable(),
+            Tables\Columns\TextColumn::make('description')->label('Description'),
+            Tables\Columns\TextColumn::make('created_at')->label('Created At')->sortable(),
         ];
-    }
-=======
-    public TableLayoutEnum $layoutView = TableLayoutEnum::GRID;
->>>>>>> c1a5089 (up)
-
-    protected function getTableHeaderActions(): array
-    {
-        return [
-            TableLayoutToggleTableAction::make(),
-        ];
-    }
-
-    protected function getHeaderActions(): array
-    {
-        return [
-            CreateAction::make(),
-        ];
-    }
-<<<<<<< HEAD
-
-    public function getTableColumns(): array
-    {
-        return [];
-    }
-
-    public function getTableFilters(): array
-    {
-        return [];
-    }
-
-    public function getTableActions(): array
-    {
-        return [
-            EditAction::make(),
-        ];
-    }
-
-    public function getTableBulkActions(): array
-    {
-        return [
-            DeleteBulkAction::make(),
-        ];
-    }
-
-    public function getTableEmptyStateActions(): array
-    {
-        return [
-        ];
-    }
-
-    public function table(Table $table): Table
-    {
-        return $table
-            ->columns($this->getTableColumns())
-            ->filters($this->getTableFilters())
-            ->actions($this->getTableActions())
-            ->bulkActions($this->getTableBulkActions())
-            ->emptyStateActions($this->getTableEmptyStateActions())
-        ;
     }
 }
-=======
-}
->>>>>>> 170492e (rebase 51/58)
