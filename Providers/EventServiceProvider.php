@@ -5,11 +5,8 @@ declare(strict_types=1);
 namespace Modules\Activity\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
-<<<<<<< HEAD
 use Modules\Activity\Listeners\LoginListener;
 use Modules\Activity\Listeners\LogoutListener;
-=======
->>>>>>> 4de3915 (add EventServiceProvider)
 
 class EventServiceProvider extends BaseEventServiceProvider
 {
@@ -18,7 +15,6 @@ class EventServiceProvider extends BaseEventServiceProvider
      *
      * @var array<string, array<int, string>>
      */
-<<<<<<< HEAD
     protected $listen = [
         \Illuminate\Auth\Events\Login::class => [
             LoginListener::class,
@@ -27,9 +23,6 @@ class EventServiceProvider extends BaseEventServiceProvider
             LogoutListener::class,
         ],
     ];
-=======
-    protected $listen = [];
->>>>>>> 4de3915 (add EventServiceProvider)
 
     /**
      * Indicates if events should be discovered.
