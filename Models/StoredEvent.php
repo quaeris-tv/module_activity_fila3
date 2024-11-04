@@ -227,7 +227,12 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|EloquentStoredEvent withMetaDataAttributes()
  * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
+<<<<<<< HEAD
 >>>>>>> c5c8925 (up)
+=======
+ * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
+ * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
+>>>>>>> a74f610 (up)
  * @mixin \Eloquent
  */
 class StoredEvent extends SpatieStoredEvent
