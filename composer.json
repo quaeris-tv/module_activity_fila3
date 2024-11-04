@@ -26,12 +26,19 @@
         }
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     "require": {
 <<<<<<< HEAD
         "spatie/laravel-activitylog": "*",
         "spatie/laravel-event-sourcing": "*"
 =======
 =======
+=======
+    "require": {
+        "spatie/laravel-activitylog": "*",
+        "spatie/laravel-event-sourcing": "*"
+    },
+>>>>>>> 600fe2b (.)
     "require_comment": {
 >>>>>>> 545d674 (up)
         "filament/filament": "^3.2",
