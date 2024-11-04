@@ -46,6 +46,17 @@ abstract class BaseModel extends Model
     /** @var string */
     protected $connection = 'activity';
 
+    /** @var string */
+    protected $primaryKey = 'id';
+
+    /** @var string */
+    protected $keyType = 'string';
+
+    /** @var list<string> */
+    protected $hidden = [
+        // 'password'
+    ];
+
     /** @return array<string, string> */
     protected function casts(): array
     {
@@ -64,17 +75,6 @@ abstract class BaseModel extends Model
             'published_at' => 'datetime',
         ];
     }
-
-    /** @var string */
-    protected $primaryKey = 'id';
-
-    /** @var string */
-    protected $keyType = 'string';
-
-    /** @var list<string> */
-    protected $hidden = [
-        // 'password'
-    ];
 
     /**
      * Create a new factory instance for the model.
