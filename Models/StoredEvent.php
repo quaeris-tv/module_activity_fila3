@@ -63,7 +63,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property string|null                                            $created_by
  * @property string|null                                            $updated_by
  * @property \Spatie\EventSourcing\StoredEvents\ShouldBeStored|null $event
- *
  * @method static EloquentStoredEventQueryBuilder|StoredEvent afterVersion(int $version)
  * @method static EloquentStoredEventCollection<int, static>  all($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static>  get($columns = ['*'])
@@ -86,9 +85,9 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static EloquentStoredEventQueryBuilder|StoredEvent wherePropertyIs(string $property, ?mixed $value)
  * @method static EloquentStoredEventQueryBuilder|StoredEvent wherePropertyIsNot(string $property, ?mixed $value)
  * @method static EloquentStoredEventQueryBuilder|StoredEvent whereUpdatedBy($value)
- *
  * @property \Spatie\EventSourcing\StoredEvents\ShouldBeStored|null $event
  * @property SchemalessAttributes                                   $meta_data
+<<<<<<< HEAD
  *
  * @method static EloquentStoredEventQueryBuilder|StoredEvent                                                   afterVersion(int $version)
  * @method static EloquentStoredEventCollection<int, static>                                                    all($columns = ['*'])
@@ -222,6 +221,13 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 >>>>>>> 7937bcb (.)
 =======
 >>>>>>> 2c10729 (up)
+=======
+ * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
+ * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
+ * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder|EloquentStoredEvent withMetaDataAttributes()
+ * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
+ * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
+>>>>>>> c5c8925 (up)
  * @mixin \Eloquent
  */
 class StoredEvent extends SpatieStoredEvent
