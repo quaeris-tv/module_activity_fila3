@@ -21,6 +21,7 @@ class ListActivities extends ListRecords
 
     protected static string $resource = ActivityResource::class;
 
+<<<<<<< HEAD
     public function getTableFilters(): array
     {
         return [];
@@ -83,6 +84,9 @@ class ListActivities extends ListRecords
             Tables\Columns\TextColumn::make('description'),
         ];
     }
+=======
+    public TableLayoutEnum $layoutView = TableLayoutEnum::GRID;
+>>>>>>> c1a5089 (up)
 
     protected function getTableHeaderActions(): array
     {
