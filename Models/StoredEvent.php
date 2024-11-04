@@ -258,7 +258,18 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
  * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
+<<<<<<< HEAD
 >>>>>>> 67f9cf7 (up)
+=======
+ * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
+ * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
+ * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
+ * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
+ * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
+ * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
+ * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
+ * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
+>>>>>>> 3dfa483 (up)
  * @mixin \Eloquent
  */
 class StoredEvent extends SpatieStoredEvent
