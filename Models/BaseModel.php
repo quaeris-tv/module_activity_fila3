@@ -85,22 +85,4 @@ abstract class BaseModel extends Model
     {
         return app(GetFactoryAction::class)->execute(static::class);
     }
-
-    /** @return array<string, string> */
-    public function casts(): array
-    {
-        return [
-            'id' => 'string',
-            'uuid' => 'string',
-            'created_at' => 'datetime',
-            'updated_at' => 'datetime',
-            'deleted_at' => 'datetime',
-
-            'updated_by' => 'string',
-            'created_by' => 'string',
-            'deleted_by' => 'string',
-
-            'published_at' => 'datetime',
-        ];
-    }
 }
