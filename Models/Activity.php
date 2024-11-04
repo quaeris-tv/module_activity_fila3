@@ -29,6 +29,9 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5d7c9b9 (Fixed typo in Activity model.)
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property Model|Eloquent $causer
@@ -41,6 +44,7 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static EloquentBuilder|Activity forSubject(\Illuminate\Database\Eloquent\Model $subject)
  * @method static EloquentBuilder|Activity hasBatch()
  * @method static EloquentBuilder|Activity inLog(...$logNames)
+<<<<<<< HEAD
 =======
  * @property string|null                     $created_by
  * @property string|null                     $updated_by
@@ -55,6 +59,8 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static Builder|Activity                               hasBatch()
  * @method static Builder|Activity                               inLog(...$logNames)
 >>>>>>> 7352755 (up)
+=======
+>>>>>>> 5d7c9b9 (Fixed typo in Activity model.)
  * @method static \Illuminate\Database\Eloquent\Builder|Activity newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Activity newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Activity query()
@@ -74,6 +80,9 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereUpdatedBy($value)
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5d7c9b9 (Fixed typo in Activity model.)
  * @property Model|Eloquent $causer
  * @property Collection $changes
  * @property Model|Eloquent $subject
@@ -87,6 +96,7 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static \Illuminate\Database\Eloquent\Builder|Activity newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Activity newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Activity query()
+<<<<<<< HEAD
 <<<<<<< HEAD
  *
  * @property string|null $deleted_at
@@ -112,16 +122,23 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static \Illuminate\Database\Eloquent\Builder|Activity query()
  *
 >>>>>>> 7352755 (up)
+=======
+ *
+>>>>>>> 5d7c9b9 (Fixed typo in Activity model.)
  * @property string|null $deleted_at
  * @property string|null $deleted_by
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereDeletedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Activity whereDeletedBy($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 67f9cf7 (up)
 =======
  *
 >>>>>>> 7352755 (up)
+=======
+ *
+>>>>>>> 5d7c9b9 (Fixed typo in Activity model.)
  * @mixin \Eloquent
  * @mixin Eloquent
  */
