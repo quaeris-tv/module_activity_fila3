@@ -149,6 +149,7 @@ php artisan module:enable Activity
 ## Run the Migrations
 ```bash
 php artisan module:migrate Activity
+<<<<<<< HEAD
 ```
 =======
 ## Eseguire le migrazioni
@@ -156,3 +157,6 @@ php artisan module:migrate Activity
 php artisan module:migrate Activity
 ```
 >>>>>>> 9f677d8 (.)
+=======
+```
+>>>>>>> 7d44732 (rebase 48/58)
