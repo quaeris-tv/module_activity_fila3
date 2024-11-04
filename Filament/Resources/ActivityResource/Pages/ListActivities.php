@@ -76,9 +76,13 @@ class ListActivities extends ListRecords
             ->actions($this->getTableActions())
             ->bulkActions($this->getTableBulkActions())
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             ->emptyStateActions($this->getTableEmptyStateActions())
 >>>>>>> 5d7c9b9 (Fixed typo in Activity model.)
+=======
+            ->emptyStateActions($this->getTableEmptyStateActions())
+>>>>>>> 170492e (rebase 51/58)
             ->actionsPosition(ActionsPosition::BeforeColumns)
             ->defaultSort(
                 column: 'created_at',
@@ -118,6 +122,7 @@ class ListActivities extends ListRecords
             CreateAction::make(),
         ];
     }
+<<<<<<< HEAD
 
     public function getTableColumns(): array
     {
@@ -160,3 +165,6 @@ class ListActivities extends ListRecords
         ;
     }
 }
+=======
+}
+>>>>>>> 170492e (rebase 51/58)
