@@ -46,6 +46,25 @@ abstract class BaseModel extends Model
     /** @var string */
     protected $connection = 'activity';
 
+<<<<<<< HEAD
+=======
+    /** @return array<string, string> */
+    protected function casts(): array
+    {
+        return [
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+
+            'updated_by' => 'string',
+            'created_by' => 'string',
+            'deleted_by' => 'string',
+
+            'published_at' => 'datetime',
+        ];
+    }
+
+>>>>>>> 8295a66 (up)
     /** @var string */
     protected $primaryKey = 'id';
 
