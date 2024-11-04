@@ -46,8 +46,6 @@ abstract class BaseModel extends Model
     /** @var string */
     protected $connection = 'activity';
 
-<<<<<<< HEAD
-=======
     /** @return array<string, string> */
     protected function casts(): array
     {
@@ -64,7 +62,6 @@ abstract class BaseModel extends Model
         ];
     }
 
->>>>>>> 8295a66 (up)
     /** @var string */
     protected $primaryKey = 'id';
 
