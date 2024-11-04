@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\ActivityResource\Pages;
 
+use Filament\Tables\Table;
 use Filament\Actions\CreateAction;
+<<<<<<< HEAD
 use Filament\Resources\Pages\ListRecords;
 use Filament\Tables;
 use Filament\Tables\Actions\DeleteBulkAction;
@@ -12,7 +14,13 @@ use Filament\Tables\Enums\ActionsPosition;
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Table;
 use Modules\Activity\Filament\Resources\ActivityResource;
+=======
+>>>>>>> 0b4b2ff (.)
 use Modules\UI\Enums\TableLayoutEnum;
+use Filament\Tables\Actions\EditAction;
+use Filament\Resources\Pages\ListRecords;
+use Filament\Tables\Actions\DeleteBulkAction;
+use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 
 class ListActivities extends ListRecords
