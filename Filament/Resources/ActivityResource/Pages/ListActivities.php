@@ -101,4 +101,41 @@ class ListActivities extends ListRecords
             CreateAction::make(),
         ];
     }
+
+    public function getTableColumns(): array
+    {
+        return [];
+    }
+
+    public function getTableFilters(): array
+    {
+        return [];
+    }
+
+    public function getTableActions(): array
+    {
+        return [
+            EditAction::make(),
+        ];
+    }
+
+    public function getTableBulkActions(): array
+    {
+        return [
+            DeleteBulkAction::make(),
+        ];
+    }
+
+    public function table(Table $table): Table
+    {
+        return $table
+            ->columns($this->getTableColumns())
+            ->filters($this->getTableFilters())
+            ->actions($this->getTableActions())
+            ->bulkActions($this->getTableBulkActions())
+            ->emptyStateActions(
+                [
+                ]
+            );
+    }
 }
