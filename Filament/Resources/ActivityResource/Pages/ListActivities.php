@@ -75,6 +75,10 @@ class ListActivities extends ListRecords
             ->persistFiltersInSession()
             ->actions($this->getTableActions())
             ->bulkActions($this->getTableBulkActions())
+<<<<<<< HEAD
+=======
+            ->emptyStateActions($this->getTableEmptyStateActions())
+>>>>>>> 5d7c9b9 (Fixed typo in Activity model.)
             ->actionsPosition(ActionsPosition::BeforeColumns)
             ->defaultSort(
                 column: 'created_at',
