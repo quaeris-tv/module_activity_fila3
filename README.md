@@ -133,7 +133,4 @@ php artisan module:enable Activity
 ```bash
 php artisan module:migrate Activity
 ```
-## Eseguire le migrazioni
-```bash
-php artisan module:migrate Activity
-```
+
