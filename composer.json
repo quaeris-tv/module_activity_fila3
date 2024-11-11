@@ -28,6 +28,7 @@
     "require": {
         "spatie/laravel-activitylog": "*",
         "spatie/laravel-event-sourcing": "*"
+
     },
     "repositories": [
         {

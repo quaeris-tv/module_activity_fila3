@@ -57,22 +57,13 @@ abstract class BaseModel extends Model
         // 'password'
     ];
 
-    /**
-     * Create a new factory instance for the model.
-     *
-     * @return \Illuminate\Database\Eloquent\Factories\Factory<static>
-     */
-    protected static function newFactory()
-    {
-        return app(GetFactoryAction::class)->execute(static::class);
-    }
-
     /** @return array<string, string> */
-    public function casts(): array
+    protected function casts(): array
     {
         return [
             'id' => 'string',
             'uuid' => 'string',
+
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
@@ -83,5 +74,15 @@ abstract class BaseModel extends Model
 
             'published_at' => 'datetime',
         ];
+    }
+
+    /**
+     * Create a new factory instance for the model.
+     *
+     * @return \Illuminate\Database\Eloquent\Factories\Factory<static>
+     */
+    protected static function newFactory()
+    {
+        return app(GetFactoryAction::class)->execute(static::class);
     }
 }
