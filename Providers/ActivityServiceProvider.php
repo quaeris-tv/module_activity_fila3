@@ -19,8 +19,9 @@ class ActivityServiceProvider extends XotBaseServiceProvider
 
     protected string $module_ns = __NAMESPACE__;
 
-    public function bootCallback(): void
+    public function boot(): void
     {
+        parent::boot();
         // ...
         // activity()->log('boot');
         // Event::listen('*', function (string $eventName, array $data) {
@@ -43,8 +44,9 @@ class ActivityServiceProvider extends XotBaseServiceProvider
         // });
     }
 
-    public function registerCallback(): void
+    public function register(): void
     {
+        parent::register();
         // ...
         // activity()->log('register');
         // Event::listen('*', function (string $eventName, array $data) {
