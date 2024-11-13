@@ -17,6 +17,7 @@ class ListActivities extends ListRecords
 
     protected static string $resource = ActivityResource::class;
 
+
     public function getListTableColumns(): array
     {
         return [
