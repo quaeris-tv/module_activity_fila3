@@ -4,17 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\ActivityResource\Pages;
 
-use Filament\Resources\Pages\ListRecords;
 use Filament\Tables;
-use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\UI\Enums\TableLayoutEnum;
+use Filament\Resources\Pages\ListRecords;
 use Modules\Xot\Filament\Traits\HasXotTable;
+use Modules\Xot\Filament\Pages\XotBaseListRecords;
+use Modules\Activity\Filament\Resources\ActivityResource;
 
-class ListActivities extends ListRecords
+class ListActivities extends XotBaseListRecords
 {
-    use HasXotTable;
-    public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
-
     protected static string $resource = ActivityResource::class;
 
 
