@@ -6,9 +6,8 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration
-{
-    //protected ?string $model_class = Activity::class;
+return new class() extends XotBaseMigration {
+    // protected ?string $model_class = Activity::class;
     public function up(): void
     {
         // -- CREATE --
@@ -25,19 +24,11 @@ return new class extends XotBaseMigration
                 // ->after('properties');
                 $table->string('event')->nullable();
                 // ->after('subject_type');
-                $table->timestamps();
             }
         );
         // -- UPDATE --
         $this->tableUpdate(
             function (Blueprint $table): void {
-                /*
-                if (! $this->hasColumn('created_by')) {
-                    $table->string('created_by')->nullable();
-                    $table->string('updated_by')->nullable();
-                }
-                */
-
                 if ($this->hasColumn('causer_id')) {
                     $table->string('causer_id')->change();
                 }
