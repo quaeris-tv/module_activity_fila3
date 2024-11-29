@@ -30,6 +30,9 @@
         "spatie/laravel-event-sourcing": "*"
 
     },
+    "require-dev": {
+        
+    },
     "repositories": [
         {
             "type": "path",
@@ -46,9 +49,7 @@
     ],
     "scripts": {
         "post-autoload-dump": [
-            "@clear",
-            "@prepare",
-            "@php vendor/bin/testbench package:discover --ansi"
+            
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate"
