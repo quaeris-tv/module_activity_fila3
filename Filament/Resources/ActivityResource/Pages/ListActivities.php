@@ -20,12 +20,12 @@ class ListActivities extends XotBaseListRecords
     {
         return [
             Tables\Columns\TextColumn::make('id')
-                ->label('ID')
+                
                 ->sortable(),
             Tables\Columns\TextColumn::make('description')
-                ->label('Description'),
+                ,
             Tables\Columns\TextColumn::make('created_at')
-                ->label('Created At')
+                
                 ->sortable(),
         ];
     }
