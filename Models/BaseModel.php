@@ -32,9 +32,7 @@ abstract class BaseModel extends Model
      */
     public static $snakeAttributes = true;
 
-    /**
-     * @ var  bool
-     */
+    /** @var bool */
     public $incrementing = true;
 
     /** @var bool */
@@ -55,6 +53,11 @@ abstract class BaseModel extends Model
     /** @var list<string> */
     protected $hidden = [
         // 'password'
+    ];
+
+    /** @var list<string> */
+    protected $fillable = [
+        // ..
     ];
 
     /** @return array<string, string> */
