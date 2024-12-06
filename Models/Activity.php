@@ -32,7 +32,6 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @property \Illuminate\Database\Eloquent\Model|\Eloquent      $causer
  * @property \Illuminate\Support\Collection                     $changes
  * @property \Illuminate\Database\Eloquent\Model|\Eloquent|null $subject
- *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity causedBy(\Illuminate\Database\Eloquent\Model $causer)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity forBatch(string $batchUuid)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity forEvent(string $event)
@@ -58,6 +57,7 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity whereSubjectType($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity whereUpdatedBy($value)
+<<<<<<< HEAD
 >>>>>>> ceab13a47300dc42dc203137ca38343b98ee0778
  *
  * @property int                                                $id
@@ -104,6 +104,8 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity whereSubjectType($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity whereUpdatedBy($value)
+=======
+>>>>>>> origin/v0.2.10
  * @mixin \Eloquent
  */
 class Activity extends SpatieActivity
