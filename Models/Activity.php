@@ -8,7 +8,7 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
 
 /**
  * Class Activity.
- *
+ * 
  * This class extends the Spatie Activity model to represent activities in the application.
  *
  * @property int                                                $id
@@ -30,7 +30,6 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @property \Illuminate\Database\Eloquent\Model|\Eloquent      $causer
  * @property \Illuminate\Support\Collection                     $changes
  * @property \Illuminate\Database\Eloquent\Model|\Eloquent|null $subject
- *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity causedBy(\Illuminate\Database\Eloquent\Model $causer)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity forBatch(string $batchUuid)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity forEvent(string $event)
@@ -56,7 +55,6 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity whereSubjectType($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity whereUpdatedBy($value)
- *
  * @mixin \Eloquent
  */
 class Activity extends SpatieActivity
