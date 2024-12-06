@@ -29,6 +29,10 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereState($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereUpdatedBy($value)
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> ceab13a47300dc42dc203137ca38343b98ee0778
  * @mixin \Eloquent
  */
 class Snapshot extends SpatieSnapshot
