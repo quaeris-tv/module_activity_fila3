@@ -13,7 +13,7 @@ use Filament\Resources\Resource;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages;
 use Modules\Activity\Models\Activity;
 
-class ActivityResource extends Resource
+class ActivityResource extends \Modules\Xot\Filament\Resources\XotBaseResource
 {
     protected static ?string $model = Activity::class;
 

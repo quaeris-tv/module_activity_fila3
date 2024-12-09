@@ -9,7 +9,7 @@ use Filament\Resources\Resource;
 use Modules\Activity\Filament\Resources\StoredEventResource\Pages;
 use Modules\Activity\Models\StoredEvent;
 
-class StoredEventResource extends Resource
+class StoredEventResource extends \Modules\Xot\Filament\Resources\XotBaseResource
 {
     protected static ?string $model = StoredEvent::class;
 
