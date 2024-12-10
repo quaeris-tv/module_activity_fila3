@@ -9,7 +9,7 @@ use Filament\Resources\Resource;
 use Modules\Activity\Filament\Resources\SnapshotResource\Pages;
 use Modules\Activity\Models\Snapshot;
 
-class SnapshotResource extends Resource
+class SnapshotResource extends \Modules\Xot\Filament\Resources\XotBaseResource
 {
     protected static ?string $model = Snapshot::class;
 
