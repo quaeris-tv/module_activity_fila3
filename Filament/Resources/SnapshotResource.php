@@ -6,10 +6,11 @@ namespace Modules\Activity\Filament\Resources;
 
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
-use Modules\Activity\Filament\Resources\SnapshotResource\Pages;
 use Modules\Activity\Models\Snapshot;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Activity\Filament\Resources\SnapshotResource\Pages;
 
-class SnapshotResource extends \Modules\Xot\Filament\Resources\XotBaseResource
+class SnapshotResource extends XotBaseResource
 {
     protected static ?string $model = Snapshot::class;
 
