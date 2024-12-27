@@ -9,9 +9,7 @@ use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
     protected string $moduleNamespace = 'Modules\Activity\Http\Controllers';
-
     protected string $module_dir = __DIR__;
-
     protected string $module_ns = __NAMESPACE__;
 <<<<<<< HEAD:app/Providers/RouteServiceProvider.php
 
