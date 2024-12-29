@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Models;
 
-use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
-
 /**
  * Modules\Activity\Models\Snapshot.
  *
@@ -17,6 +15,7 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property string|null                     $updated_by
  * @property string|null                     $created_by
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot query()
@@ -29,14 +28,13 @@ use Spatie\EventSourcing\Snapshots\EloquentSnapshot as SpatieSnapshot;
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereState($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot whereUpdatedBy($value)
-
+ *
  * @mixin \Eloquent
  */
-class Snapshot extends SpatieSnapshot
+class Snapshot extends BaseSnapshot
 {
     /** @var list<string> */
     protected $fillable = ['id', 'aggregate_uuid', 'aggregate_version', 'state', 'created_at', 'updated_at'];
-
     /*
     @var array<string, mixed>
     protected $attributes = ['field_name'];
