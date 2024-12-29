@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Models;
 
-use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent as SpatieStoredEvent;
-
 /**
  * Class StoredEvent.
  *
@@ -13,7 +11,7 @@ use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent as SpatieStored
  *
  * @mixin \Eloquent
  */
-class StoredEvent extends SpatieStoredEvent
+class StoredEvent extends BaseStoredEvent
 {
     /** @var list<string> */
     protected $fillable = [
