@@ -6,7 +6,7 @@ namespace Modules\Activity\Filament\Resources\StoredEventResource\Pages;
 
 use Filament\Tables;
 use Modules\Activity\Filament\Resources\StoredEventResource;
-use Modules\Xot\Filament\Pages\XotBaseListRecords;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListStoredEvents extends XotBaseListRecords
 {
