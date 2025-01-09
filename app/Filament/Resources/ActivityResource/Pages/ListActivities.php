@@ -6,7 +6,8 @@ namespace Modules\Activity\Filament\Resources\ActivityResource\Pages;
 
 use Filament\Tables;
 use Modules\Activity\Filament\Resources\ActivityResource;
-use Modules\Xot\Filament\Pages\XotBaseListRecords;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+
 
 class ListActivities extends XotBaseListRecords
 {
