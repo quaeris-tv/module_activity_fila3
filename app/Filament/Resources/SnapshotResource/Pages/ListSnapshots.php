@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\SnapshotResource\Pages;
 
-use Modules\Activity\Filament\Resources\SnapshotResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ViewColumn;
+use Modules\Activity\Filament\Resources\SnapshotResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListSnapshots extends XotBaseListRecords
 {
