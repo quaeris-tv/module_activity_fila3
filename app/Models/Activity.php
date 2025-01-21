@@ -13,7 +13,7 @@ namespace Modules\Activity\Models;
  */
 class Activity extends BaseActivity
 {
-    /** @var array<string> */
+    /** @var list<string> */
     protected $fillable = [
         'id',
         'log_name',
