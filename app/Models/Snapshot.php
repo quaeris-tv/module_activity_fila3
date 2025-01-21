@@ -7,14 +7,14 @@ namespace Modules\Activity\Models;
 /**
  * Modules\Activity\Models\Snapshot.
  *
- * @property int $id
- * @property string $aggregate_uuid
- * @property int $aggregate_version
- * @property array $state
+ * @property int                             $id
+ * @property string                          $aggregate_uuid
+ * @property int                             $aggregate_version
+ * @property array                           $state
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
+ * @property string|null                     $updated_by
+ * @property string|null                     $created_by
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Snapshot newQuery()
@@ -33,13 +33,8 @@ namespace Modules\Activity\Models;
  */
 class Snapshot extends BaseSnapshot
 {
-    /** @var list<string> */
+    /** @var array<string> */
     protected $fillable = ['id', 'aggregate_uuid', 'aggregate_version', 'state', 'created_at', 'updated_at'];
 
-    /*
-    @var array<string, mixed>
-    protected $attributes = ['field_name'];
-    */
-    /** @var string */
-    protected $connection = 'activity';
+    protected string $connection = 'activity';
 }

@@ -13,7 +13,7 @@ namespace Modules\Activity\Models;
  */
 class StoredEvent extends BaseStoredEvent
 {
-    /** @var list<string> */
+    /** @var array<string> */
     protected $fillable = [
         'id',
         'aggregate_uuid',
@@ -27,14 +27,5 @@ class StoredEvent extends BaseStoredEvent
         'created_by',
     ];
 
-    // protected $attributes = [
-    //     'field_name' => '',
-    // ];
-
-    /**
-     * The database connection used by the model.
-     *
-     * @var string
-     */
-    protected $connection = 'activity';
+    protected string $connection = 'activity';
 }
