@@ -13,7 +13,7 @@ namespace Modules\Activity\Models;
  */
 class StoredEvent extends BaseStoredEvent
 {
-    /** @var array<string> */
+    /** @var list<string> */
     protected $fillable = [
         'id',
         'aggregate_uuid',
