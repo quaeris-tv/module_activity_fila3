@@ -13,7 +13,7 @@ namespace Modules\Activity\Models;
  */
 class Activity extends BaseActivity
 {
-    /** @var list<string> */
+    /** @var array<string> */
     protected $fillable = [
         'id',
         'log_name',
@@ -29,14 +29,7 @@ class Activity extends BaseActivity
         'updated_at',
     ];
 
-    /*
-    @var array<string, mixed>
-    protected $attributes = [
-        'field_name', // Consider adding real field names as needed
-    ];
-    */
-    /** @var string */
-    protected $connection = 'activity';
+    protected string $connection = 'activity';
 
     // Additional methods or relationships can be defined here as needed
 }

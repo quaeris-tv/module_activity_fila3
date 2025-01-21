@@ -32,33 +32,20 @@ abstract class BaseModel extends Model
      */
     public static $snakeAttributes = true;
 
-    /** @var bool */
-    public $incrementing = true;
+    public bool $incrementing = true;
+    public bool $timestamps = true;
+    protected int $perPage = 30;
+    protected string $connection = 'activity';
+    protected string $primaryKey = 'id';
+    protected string $keyType = 'string';
 
-    /** @var bool */
-    public $timestamps = true;
-
-    /** @var int */
-    protected $perPage = 30;
-
-    /** @var string */
-    protected $connection = 'activity';
-
-    /** @var string */
-    protected $primaryKey = 'id';
-
-    /** @var string */
-    protected $keyType = 'string';
-
-    /** @var list<string> */
+    /** @var array<string> */
     protected $hidden = [
         // 'password'
     ];
 
-    /** @var list<string> */
-    protected $fillable = [
-        // ..
-    ];
+    /** @var array<string> */
+    protected $fillable = [];
 
     /** @return array<string, string> */
     protected function casts(): array
@@ -84,7 +71,7 @@ abstract class BaseModel extends Model
      *
      * @return \Illuminate\Database\Eloquent\Factories\Factory<static>
      */
-    protected static function newFactory()
+    protected static function newFactory(): Factory
     {
         return app(GetFactoryAction::class)->execute(static::class);
     }
