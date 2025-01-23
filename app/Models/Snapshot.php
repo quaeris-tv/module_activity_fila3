@@ -36,5 +36,6 @@ class Snapshot extends BaseSnapshot
     /** @var list<string> */
     protected $fillable = ['id', 'aggregate_uuid', 'aggregate_version', 'state', 'created_at', 'updated_at'];
 
-    protected string $connection = 'activity';
+    /** @var string */
+    protected $connection = 'activity';
 }

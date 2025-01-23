@@ -27,5 +27,6 @@ class StoredEvent extends BaseStoredEvent
         'created_by',
     ];
 
-    protected string $connection = 'activity';
+    /** @var string */
+protected $connection = 'activity';
 }

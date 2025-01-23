@@ -29,7 +29,7 @@ class Activity extends BaseActivity
         'updated_at',
     ];
 
-    protected string $connection = 'activity';
+    protected $connection = 'activity';
 
     // Additional methods or relationships can be defined here as needed
 }
