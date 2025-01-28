@@ -27,14 +27,6 @@ class StoredEvent extends BaseStoredEvent
         'created_by',
     ];
 
-    // protected $attributes = [
-    //     'field_name' => '',
-    // ];
-
-    /**
-     * The database connection used by the model.
-     *
-     * @var string
-     */
-    protected $connection = 'activity';
+    /** @var string */
+protected $connection = 'activity';
 }
