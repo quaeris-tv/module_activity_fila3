@@ -29,13 +29,6 @@ class Activity extends BaseActivity
         'updated_at',
     ];
 
-    /*
-    @var array<string, mixed>
-    protected $attributes = [
-        'field_name', // Consider adding real field names as needed
-    ];
-    */
-    /** @var string */
     protected $connection = 'activity';
 
     // Additional methods or relationships can be defined here as needed
