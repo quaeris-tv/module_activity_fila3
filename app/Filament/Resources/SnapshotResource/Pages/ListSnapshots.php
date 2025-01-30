@@ -15,10 +15,11 @@ class ListSnapshots extends XotBaseListRecords
 
     public function getListTableColumns(): array
     {
-        $view='activity::filament.tables.columns.state';
-        if(!view()->exists($view)){
+        $view = 'activity::filament.tables.columns.state';
+        if (! view()->exists($view)) {
             throw new \Exception('view ['.$view.'] Not Exists');
         }
+
         return [
             'id' => TextColumn::make('id')
                 ->sortable(),
