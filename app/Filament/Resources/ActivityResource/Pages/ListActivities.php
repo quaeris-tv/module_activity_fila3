@@ -15,9 +15,9 @@ class ListActivities extends XotBaseListRecords
     public function getListTableColumns(): array
     {
         return [
-            'id'=>Tables\Columns\TextColumn::make('id')
+            'id' => Tables\Columns\TextColumn::make('id')
                 ->sortable(),
-            'description'=> Tables\Columns\TextColumn::make('description'),
+            'description' => Tables\Columns\TextColumn::make('description'),
             'created_at' => Tables\Columns\TextColumn::make('created_at')
                 ->sortable(),
         ];
