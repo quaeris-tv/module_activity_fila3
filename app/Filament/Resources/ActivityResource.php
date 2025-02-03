@@ -20,13 +20,30 @@ class ActivityResource extends XotBaseResource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    public static function form(Form $form): Form
+    public static function getFormSchema(): array
     {
-        return $form
-            ->schema(
-                [
-                ]
-            );
+        return [
+            \Filament\Forms\Components\TextInput::make('log_name')
+                ->required()
+                ->maxLength(255),
+            \Filament\Forms\Components\TextInput::make('description')
+                ->required()
+                ->maxLength(255),
+            \Filament\Forms\Components\TextInput::make('subject_type')
+                ->required()
+                ->maxLength(255),
+            \Filament\Forms\Components\TextInput::make('subject_id')
+                ->numeric()
+                ->required(),
+            \Filament\Forms\Components\TextInput::make('causer_type')
+                ->maxLength(255),
+            \Filament\Forms\Components\TextInput::make('causer_id')
+                ->numeric(),
+            \Filament\Forms\Components\KeyValue::make('properties')
+                ->columnSpanFull(),
+            \Filament\Forms\Components\TextInput::make('batch_uuid')
+                ->maxLength(36),
+        ];
     }
 
     /**

@@ -15,11 +15,22 @@ class SnapshotResource extends XotBaseResource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    public static function form(Form $form): Form
+    public static function getFormSchema(): array
     {
-        return $form
-            ->schema([
-            ]);
+        return [
+            \Filament\Forms\Components\TextInput::make('model_type')
+                ->required()
+                ->maxLength(255),
+            \Filament\Forms\Components\TextInput::make('model_id')
+                ->numeric()
+                ->required(),
+            \Filament\Forms\Components\KeyValue::make('state')
+                ->columnSpanFull(),
+            \Filament\Forms\Components\TextInput::make('created_by_type')
+                ->maxLength(255),
+            \Filament\Forms\Components\TextInput::make('created_by_id')
+                ->numeric(),
+        ];
     }
 
     public static function getRelations(): array
