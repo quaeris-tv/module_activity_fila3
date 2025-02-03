@@ -4,14 +4,30 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\SnapshotResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ViewColumn;
 use Modules\Activity\Filament\Resources\SnapshotResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+<<<<<<< HEAD
+=======
+use Modules\Activity\Filament\Resources\SnapshotResource;
+<<<<<<< HEAD
+use Modules\Xot\Filament\Pages\XotBaseListRecords;
+>>>>>>> 36aa08e (up)
+=======
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+>>>>>>> f51fd34 (up)
+=======
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Columns\ViewColumn;
+>>>>>>> a0e69f7 (up)
 
 class ListSnapshots extends XotBaseListRecords
 {
     protected static string $resource = SnapshotResource::class;
+<<<<<<< HEAD
+<<<<<<< HEAD
 
     public function getListTableColumns(): array
     {
@@ -19,7 +35,15 @@ class ListSnapshots extends XotBaseListRecords
         if (! view()->exists($view)) {
             throw new \Exception('view ['.$view.'] Not Exists');
         }
+<<<<<<< HEAD
 
+=======
+=======
+
+    public function getListTableColumns(): array
+    {
+>>>>>>> a0e69f7 (up)
+>>>>>>> 7d80c84b980d70711bebf399c4b5ca0679046562
         return [
             'id' => TextColumn::make('id')
                 ->sortable(),
@@ -31,7 +55,11 @@ class ListSnapshots extends XotBaseListRecords
                 ->numeric()
                 ->sortable(),
             'state' => ViewColumn::make('state')
+<<<<<<< HEAD
                 ->view($view),
+=======
+                ->view('activity::filament.tables.columns.state'),
+>>>>>>> a0e69f7 (up)
             'created_at' => TextColumn::make('created_at')
                 ->dateTime()
                 ->sortable(),
@@ -40,4 +68,9 @@ class ListSnapshots extends XotBaseListRecords
                 ->sortable(),
         ];
     }
+<<<<<<< HEAD
+=======
+>>>>>>> 36aa08e (up)
+=======
+>>>>>>> a0e69f7 (up)
 }
