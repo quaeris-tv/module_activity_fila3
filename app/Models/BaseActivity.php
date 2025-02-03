@@ -1,11 +1,15 @@
 <?php
+<<<<<<< HEAD
 
 declare(strict_types=1);
 
+=======
+>>>>>>> c05c351 (up)
 namespace Modules\Activity\Models;
 
 use Spatie\Activitylog\Models\Activity as SpatieActivity;
 
+<<<<<<< HEAD
 /**
  * Class BaseActivity.
  *
@@ -15,3 +19,8 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
 abstract class BaseActivity extends SpatieActivity
 {
 }
+=======
+abstract class BaseActivity extends SpatieActivity{
+    
+}
+>>>>>>> c05c351 (up)
