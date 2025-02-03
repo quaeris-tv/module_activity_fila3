@@ -6,11 +6,6 @@ namespace Modules\Activity\Providers;
 
 use Modules\Xot\Providers\XotBaseServiceProvider;
 
-// use Modules\Xot\Services\BladeService;
-
-/**
- * Undocumented class.
- */
 class ActivityServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'Activity';
@@ -22,36 +17,12 @@ class ActivityServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
-        // ...
-        // activity()->log('boot');
-        // Event::listen('*', function (string $eventName, array $data) {
-        // dddx(['eventName' => $eventName, 'data' => $data]);
-        // ...
-        // activity()->log($eventName);
-        /*
-        try {
-            activity()
-                // ->performedOn($anEloquentModel)
-                ->causedBy(auth()->user)
-                ->withProperties($data)
-                ->log($eventName);
-        } catch (\Exception $e) {
-            activity()->causedBy(auth()->user)
-            ->withProperties(['message' => $e->getMessage()])
-            ->log($e->getMessage());
-        }
-        */
-        // });
+        // Additional boot logic can be added here
     }
 
     public function register(): void
     {
         parent::register();
-        // ...
-        // activity()->log('register');
-        // Event::listen('*', function (string $eventName, array $data) {
-        //    dddx(['eventName' => $eventName, 'data' => $data]);
-        //    // ...
-        // });
+        // Additional register logic can be added here
     }
 }
