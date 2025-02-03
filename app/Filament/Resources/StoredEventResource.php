@@ -5,9 +5,16 @@ declare(strict_types=1);
 namespace Modules\Activity\Filament\Resources;
 
 use Filament\Forms\Form;
+<<<<<<< HEAD
 use Modules\Activity\Filament\Resources\StoredEventResource\Pages;
 use Modules\Activity\Models\StoredEvent;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+=======
+use Filament\Resources\Resource;
+use Modules\Activity\Models\StoredEvent;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Activity\Filament\Resources\StoredEventResource\Pages;
+>>>>>>> 36aa08e (up)
 
 class StoredEventResource extends XotBaseResource
 {
@@ -15,6 +22,7 @@ class StoredEventResource extends XotBaseResource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
     {
         return [
@@ -32,6 +40,13 @@ class StoredEventResource extends XotBaseResource
             \Filament\Forms\Components\DateTimePicker::make('created_at')
                 ->required(),
         ];
+=======
+    public static function form(Form $form): Form
+    {
+        return $form
+            ->schema([
+            ]);
+>>>>>>> 36aa08e (up)
     }
 
     public static function getRelations(): array

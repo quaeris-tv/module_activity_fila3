@@ -4,14 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\SnapshotResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ViewColumn;
 use Modules\Activity\Filament\Resources\SnapshotResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+=======
+use Modules\Activity\Filament\Resources\SnapshotResource;
+use Modules\Xot\Filament\Pages\XotBaseListRecords;
+>>>>>>> 36aa08e (up)
 
 class ListSnapshots extends XotBaseListRecords
 {
     protected static string $resource = SnapshotResource::class;
+<<<<<<< HEAD
 
     public function getListTableColumns(): array
     {
@@ -40,4 +46,6 @@ class ListSnapshots extends XotBaseListRecords
                 ->sortable(),
         ];
     }
+=======
+>>>>>>> 36aa08e (up)
 }
