@@ -42,7 +42,7 @@ class ListSnapshots extends XotBaseListRecords
                 ->label('Aggregate Version'),
 
             'state' => ViewColumn::make('state')
-                ->view($view)
+                ->view('activity::filament.tables.columns.state')
                 ->label('State'),
 
             'created_at' => TextColumn::make('created_at')
