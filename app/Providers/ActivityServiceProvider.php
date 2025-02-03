@@ -13,11 +13,15 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
  */
 class ActivityServiceProvider extends XotBaseServiceProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD:app/Providers/ActivityServiceProvider.php
     public string $name = 'Activity';
 =======
     public string $name = 'activity';
 >>>>>>> 5b3e4a8 (up):Providers/ActivityServiceProvider.php
+=======
+    public string $name = 'Activity';
+>>>>>>> 1350557 (up)
 
     protected string $module_dir = __DIR__;
 
