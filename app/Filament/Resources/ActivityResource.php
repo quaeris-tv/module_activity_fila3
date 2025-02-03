@@ -19,9 +19,7 @@ use Filament\Resources\Pages\PageRegistration;
 use Filament\Resources\Resource;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages;
 use Modules\Activity\Models\Activity;
-use Filament\Resources\Pages\PageRegistration;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-use Modules\Activity\Filament\Resources\ActivityResource\Pages;
 
 /**
  * Activity Resource Class.
