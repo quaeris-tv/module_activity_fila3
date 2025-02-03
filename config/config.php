@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'name' => 'Activity',
+<<<<<<< HEAD
     'description' => 'Modulo per il tracciamento delle attività degli utenti',
     // 'icon' => 'heroicon-o-clock',
     'icon' => 'activity-icon',
@@ -18,4 +19,8 @@ return [
     'providers' => [
         'Modules\\Activity\\Providers\\ActivityServiceProvider',
     ],
+=======
+    'navigation_sort' => 1,
+    'icon' => 'heroicon-o-clipboard-document-list', // icon on dashboard
+>>>>>>> 5b3e4a8 (up)
 ];
