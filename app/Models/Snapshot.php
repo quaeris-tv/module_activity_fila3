@@ -33,7 +33,14 @@ class Snapshot extends BaseSnapshot
 {
     /** @var list<string> */
     protected $fillable = ['id', 'aggregate_uuid', 'aggregate_version', 'state', 'created_at', 'updated_at'];
+<<<<<<< HEAD
 
+=======
+    /*
+    @var array<string, mixed>
+    protected $attributes = ['field_name'];
+    */
+>>>>>>> a47f4af (up)
     /** @var string */
     protected $connection = 'activity';
 }
