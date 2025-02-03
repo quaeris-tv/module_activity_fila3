@@ -35,7 +35,6 @@ class ActivityResource extends XotBaseResource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-<<<<<<< HEAD
     public static function form(Form $form): Form
     {
         return $form
@@ -87,6 +86,9 @@ class ActivityResource extends XotBaseResource
 
                 TextInput::make('batch_uuid')
                     ->maxLength(36)
+                    ->label('Batch UUID')
+                    ->placeholder('Enter batch UUID')
+                    ->helperText('UUID for batch operations (optional)')
                     ->label('Batch UUID')
                     ->placeholder('Enter batch UUID')
                     ->helperText('UUID for batch operations (optional)')
