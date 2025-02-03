@@ -20,27 +20,15 @@ use Filament\Resources\Pages\PageRegistration;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 /**
+ * Activity Resource Class.
+ *
+ * This resource class is responsible for configuring the Activity model in the Filament admin panel.
+ * It defines the form schema, relations, and pages for managing activity records.
+ *
  * @property ActivityResource $resource
+ * @package Modules\Activity
  */
-=======
->>>>>>> 7d80c84 (up)
-=======
-/*
-|--------------------------------------------------------------------------
-| Activity Resource
-|--------------------------------------------------------------------------
-|
-| This resource class is responsible for configuring the Activity model in the Filament admin panel.
-| It defines the form schema, relations, and pages for managing activity records.
-|
-| @package Modules\Activity
-|
-*/
-
->>>>>>> c94f6f3 (.)
 class ActivityResource extends XotBaseResource
 {
     protected static ?string $model = Activity::class;
