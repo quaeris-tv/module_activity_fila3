@@ -1,86 +1,106 @@
 <?php
-<<<<<<< HEAD
-=======
+
 /**
- * --.
+ * Activity Resource Class.
+ * 
+ * This class manages the Activity model in the Filament admin panel.
+ * It provides functionality for listing, creating, and editing activity records.
  */
->>>>>>> 36aa08e (up)
 
 declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources;
 
-<<<<<<< HEAD
-use Filament\Resources\Pages\PageRegistration;
-use Modules\Activity\Filament\Resources\ActivityResource\Pages;
-use Modules\Activity\Models\Activity;
-use Modules\Xot\Filament\Resources\XotBaseResource;
-
-/**
- * @property ActivityResource $resource
- */
-=======
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\KeyValue;
 use Modules\Activity\Models\Activity;
 use Filament\Resources\Pages\PageRegistration;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages;
 
->>>>>>> 36aa08e (up)
 class ActivityResource extends XotBaseResource
 {
     protected static ?string $model = Activity::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-<<<<<<< HEAD
+    /**
+     * Define the form schema for the Activity resource.
+     *
+     * @return array The form schema configuration
+     */
     public static function getFormSchema(): array
     {
         return [
-            \Filament\Forms\Components\TextInput::make('log_name')
+            TextInput::make('log_name')
                 ->required()
-                ->maxLength(255),
-            \Filament\Forms\Components\TextInput::make('description')
+                ->maxLength(255)
+                ->label('Log Name')
+                ->placeholder('Enter log name')
+                ->helperText('The name of the log entry'),
+
+            TextInput::make('description')
                 ->required()
-                ->maxLength(255),
-            \Filament\Forms\Components\TextInput::make('subject_type')
+                ->maxLength(255)
+                ->label('Description')
+                ->placeholder('Enter description')
+                ->helperText('A description of the activity'),
+
+            TextInput::make('subject_type')
                 ->required()
-                ->maxLength(255),
-            \Filament\Forms\Components\TextInput::make('subject_id')
+                ->maxLength(255)
+                ->label('Subject Type')
+                ->placeholder('Enter subject type')
+                ->helperText('The type of the subject being logged'),
+
+            TextInput::make('subject_id')
                 ->numeric()
-                ->required(),
-            \Filament\Forms\Components\TextInput::make('causer_type')
-                ->maxLength(255),
-            \Filament\Forms\Components\TextInput::make('causer_id')
-                ->numeric(),
-            \Filament\Forms\Components\KeyValue::make('properties')
-                ->columnSpanFull(),
-            \Filament\Forms\Components\TextInput::make('batch_uuid')
-                ->maxLength(36),
+                ->required()
+                ->label('Subject ID')
+                ->placeholder('Enter subject ID')
+                ->helperText('The ID of the subject being logged'),
+
+            TextInput::make('causer_type')
+                ->maxLength(255)
+                ->label('Causer Type')
+                ->placeholder('Enter causer type')
+                ->helperText('The type of the causer (optional)'),
+
+            TextInput::make('causer_id')
+                ->numeric()
+                ->label('Causer ID')
+                ->placeholder('Enter causer ID')
+                ->helperText('The ID of the causer (optional)'),
+
+            KeyValue::make('properties')
+                ->columnSpanFull()
+                ->label('Properties')
+                ->helperText('Additional properties for this activity'),
+
+            TextInput::make('batch_uuid')
+                ->maxLength(36)
+                ->label('Batch UUID')
+                ->placeholder('Enter batch UUID')
+                ->helperText('UUID for batch operations (optional)')
         ];
-=======
-    public static function form(Form $form): Form
-    {
-        return $form
-            ->schema(
-                [
-                ]
-            );
->>>>>>> 36aa08e (up)
     }
 
     /**
-     * @psalm-return array<never, never>
+     * Get the relations for the Activity resource.
+     *
+     * @return array The relations configuration
      */
     public static function getRelations(): array
     {
-        return [
-        ];
+        return [];
     }
 
     /**
-     * @return array<string, PageRegistration>
+     * Get the pages for the Activity resource.
+     *
+     * @return array<string, PageRegistration> The pages configuration
      */
     public static function getPages(): array
     {
