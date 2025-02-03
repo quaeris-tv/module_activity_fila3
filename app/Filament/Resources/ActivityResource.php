@@ -8,12 +8,14 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources;
 
-use Filament\Forms\Form;
 use Filament\Resources\Pages\PageRegistration;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+/**
+ * @property ActivityResource $resource
+ */
 class ActivityResource extends XotBaseResource
 {
     protected static ?string $model = Activity::class;
