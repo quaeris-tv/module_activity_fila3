@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Activity\Filament\Resources;
 
 use Filament\Forms\Form;
-use Filament\Resources\Resource;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\Textarea;
