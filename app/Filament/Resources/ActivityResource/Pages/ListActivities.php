@@ -4,11 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\ActivityResource\Pages;
 
-use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
+/**
+ * @see ActivityResource
+ */
 class ListActivities extends XotBaseListRecords
 {
     protected static string $resource = ActivityResource::class;
@@ -43,7 +45,7 @@ class ListActivities extends XotBaseListRecords
             'created_at' => TextColumn::make('created_at')
                 ->sortable()
                 ->dateTime()
-                ->label('Created At')
+                ->label('Created At'),
         ];
     }
 }
