@@ -11,8 +11,12 @@ use Modules\Activity\Filament\Resources\SnapshotResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 =======
 use Modules\Activity\Filament\Resources\SnapshotResource;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\XotBaseListRecords;
 >>>>>>> 36aa08e (up)
+=======
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+>>>>>>> f51fd34 (up)
 
 class ListSnapshots extends XotBaseListRecords
 {
