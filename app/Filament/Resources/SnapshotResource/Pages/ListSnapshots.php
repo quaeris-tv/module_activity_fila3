@@ -9,6 +9,9 @@ use Filament\Tables\Columns\ViewColumn;
 use Modules\Activity\Filament\Resources\SnapshotResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
+/**
+ *ListSnapshots
+ */
 class ListSnapshots extends XotBaseListRecords
 {
     protected static string $resource = SnapshotResource::class;
