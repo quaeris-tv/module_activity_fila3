@@ -1,10 +1,9 @@
-<?php
-
-return [
-    'navigation' => [
-        'label' => 'snapshot.navigation',
-        'group' => 'snapshot.navigation',
-        'icon' => 'snapshot.navigation',
-        'sort' => 65,
-    ],
-];
+<?php return array (
+  'navigation' => 
+  array (
+    'label' => 'snapshot.navigation',
+    'group' => 'snapshot.navigation',
+    'icon' => 'snapshot.navigation',
+    'sort' => 8,
+  ),
+);
