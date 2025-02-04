@@ -13,6 +13,7 @@ class AdminPanelProvider extends XotBasePanelProvider
 
     public function panel(Panel $panel): Panel
     {
+
         $panel = parent::panel($panel);
 
         return $panel;
