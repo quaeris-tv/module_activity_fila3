@@ -28,12 +28,12 @@ namespace Modules\Activity\Models;
  * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent $causer
  * @property-read \Illuminate\Support\Collection $changes
  * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent|null $subject
- * @method static Builder<static>|Activity causedBy(\Illuminate\Database\Eloquent\Model $causer)
- * @method static Builder<static>|Activity forBatch(string $batchUuid)
- * @method static Builder<static>|Activity forEvent(string $event)
- * @method static Builder<static>|Activity forSubject(\Illuminate\Database\Eloquent\Model $subject)
- * @method static Builder<static>|Activity hasBatch()
- * @method static Builder<static>|Activity inLog(...$logNames)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity causedBy(\Illuminate\Database\Eloquent\Model $causer)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity forBatch(string $batchUuid)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity forEvent(string $event)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity forSubject(\Illuminate\Database\Eloquent\Model $subject)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity hasBatch()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity inLog(...$logNames)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity query()
