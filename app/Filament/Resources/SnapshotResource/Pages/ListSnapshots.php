@@ -40,11 +40,11 @@ class ListSnapshots extends XotBaseListRecords
                 ->numeric()
                 ->sortable()
                 ->label('Aggregate Version'),
-
+            /*
             'state' => ViewColumn::make('state')
                 ->view('activity::filament.tables.columns.state')
                 ->label('State'),
-
+            */
             'created_at' => TextColumn::make('created_at')
                 ->dateTime()
                 ->sortable()
@@ -57,27 +57,41 @@ class ListSnapshots extends XotBaseListRecords
         ];
     }
 
+    /**
+     * @return array<string, Tables\Filters\BaseFilter>
+     */
     public function getTableFilters(): array
     {
         return [
-            Tables\Filters\SelectFilter::make('aggregate_uuid')
-                ->options(fn () => SnapshotResource::getModel()::distinct()->pluck('aggregate_uuid', 'aggregate_uuid')->toArray()),
+            'aggregate_type' => Tables\Filters\SelectFilter::make('aggregate_type')
+                ->options([
+                    'user' => 'User',
+                    'profile' => 'Profile',
+                    'role' => 'Role',
+                ])
+                ->multiple(),
         ];
     }
 
+    /**
+     * @return array<string, Tables\Actions\Action|Tables\Actions\ActionGroup>
+     */
     public function getTableActions(): array
     {
         return [
-            ViewAction::make(),
-            EditAction::make(),
-            DeleteAction::make(),
+            'view' => Tables\Actions\ViewAction::make(),
+            'edit' => Tables\Actions\EditAction::make(),
+            'delete' => Tables\Actions\DeleteAction::make(),
         ];
     }
 
+    /**
+     * @return array<string, Tables\Actions\BulkAction>
+     */
     public function getTableBulkActions(): array
     {
         return [
-            DeleteBulkAction::make(),
+            'delete' => Tables\Actions\DeleteBulkAction::make(),
         ];
     }
 

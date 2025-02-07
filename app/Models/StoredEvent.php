@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Models;
 
+use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent;
+
 /**
  * Class StoredEvent.
  * 
@@ -21,8 +23,8 @@ namespace Modules\Activity\Models;
  * @property string|null $created_by
  * @property-read \Spatie\EventSourcing\StoredEvents\ShouldBeStored|null $event
  * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder<static>|StoredEvent afterVersion(int $version)
- * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventCollection<int, static> all($columns = ['*'])
- * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventCollection<int, static> get($columns = ['*'])
+ * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventCollection<EloquentStoredEvent> all()
+ * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventCollection<EloquentStoredEvent> get()
  * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder<static>|StoredEvent lastEvent(string ...$eventClasses)
  * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder<static>|StoredEvent newModelQuery()
  * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder<static>|StoredEvent newQuery()
@@ -45,8 +47,10 @@ namespace Modules\Activity\Models;
  * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder<static>|StoredEvent withMetaDataAttributes()
  * @mixin \Eloquent
  */
-class StoredEvent extends BaseStoredEvent
+class StoredEvent extends EloquentStoredEvent
 {
+    protected $table = 'stored_events';
+
     /** @var list<string> */
     protected $fillable = [
         'id',
