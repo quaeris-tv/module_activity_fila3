@@ -1,17 +1,19 @@
-<?php return array (
-    'navigation' => array (
+<?php
+
+return [
+    'navigation' => [
         'name' => 'Log',
         'plural' => 'Log',
-        'group' => array (
+        'group' => [
             'name' => 'Monitoraggio',
             'description' => 'Gestione dei log di sistema',
-        ),
+        ],
         'label' => 'Log',
         'sort' => 61,
         'icon' => 'activity-log-animated',
-    ),
-    'fields' => array (
-        'level' => array (
+    ],
+    'fields' => [
+        'level' => [
             'label' => 'Livello',
             'emergency' => 'Emergency',
             'alert' => 'Alert',
@@ -21,46 +23,46 @@
             'notice' => 'Notice',
             'info' => 'Info',
             'debug' => 'Debug',
-        ),
+        ],
         'message' => 'Messaggio',
-        'context' => array (
+        'context' => [
             'label' => 'Contesto',
             'exception' => 'Eccezione',
             'stack_trace' => 'Stack Trace',
             'additional' => 'Info Aggiuntive',
-        ),
-        'channel' => array (
+        ],
+        'channel' => [
             'label' => 'Canale',
             'system' => 'Sistema',
             'application' => 'Applicazione',
             'security' => 'Sicurezza',
             'database' => 'Database',
             'queue' => 'Code',
-        ),
+        ],
         'datetime' => 'Data e Ora',
         'environment' => 'Ambiente',
-    ),
-    'filters' => array (
+    ],
+    'filters' => [
         'level' => 'Livello',
         'channel' => 'Canale',
         'date_range' => 'Intervallo Date',
         'environment' => 'Ambiente',
         'search' => 'Cerca nel messaggio',
-    ),
-    'actions' => array (
+    ],
+    'actions' => [
         'view_details' => 'Visualizza Dettagli',
         'download' => 'Scarica',
         'clear' => 'Pulisci',
         'archive' => 'Archivia',
-    ),
-    'messages' => array (
+    ],
+    'messages' => [
         'no_logs' => 'Nessun log trovato',
         'cleared' => 'Log eliminati con successo',
         'archived' => 'Log archiviati con successo',
         'downloaded' => 'File log scaricato con successo',
-    ),
-    'badges' => array (
-        'level' => array (
+    ],
+    'badges' => [
+        'level' => [
             'emergency' => 'Emergenza',
             'alert' => 'Allerta',
             'critical' => 'Critico',
@@ -69,6 +71,6 @@
             'notice' => 'Avviso',
             'info' => 'Info',
             'debug' => 'Debug',
-        ),
-    ),
-);
+        ],
+    ],
+];

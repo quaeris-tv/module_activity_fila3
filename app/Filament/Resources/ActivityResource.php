@@ -2,7 +2,7 @@
 
 /**
  * Activity Resource Class.
- * 
+ *
  * This class manages the Activity model in the Filament admin panel.
  * It provides functionality for listing, creating, and editing activity records.
  */
@@ -11,14 +11,14 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources;
 
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
-use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\KeyValue;
-use Modules\Activity\Models\Activity;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Form;
 use Filament\Resources\Pages\PageRegistration;
-use Modules\Xot\Filament\Resources\XotBaseResource;
+use Filament\Resources\Resource;
 use Modules\Activity\Filament\Resources\ActivityResource\Pages;
+use Modules\Activity\Models\Activity;
+use Modules\Xot\Filament\Resources\XotBaseResource;
 
 /**
  * Activity Resource Class.
@@ -27,7 +27,6 @@ use Modules\Activity\Filament\Resources\ActivityResource\Pages;
  * It defines the form schema, relations, and pages for managing activity records.
  *
  * @property ActivityResource $resource
- * @package Modules\Activity
  */
 class ActivityResource extends XotBaseResource
 {
@@ -92,7 +91,7 @@ class ActivityResource extends XotBaseResource
                 ->maxLength(36)
                 ->label('Batch UUID')
                 ->placeholder('Enter batch UUID')
-                ->helperText('UUID for batch operations (optional)')
+                ->helperText('UUID for batch operations (optional)'),
         ];
     }
 

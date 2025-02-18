@@ -4,12 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources;
 
-use Filament\Forms\Form;
-use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\KeyValue;
-use Filament\Resources\Resource;
-use Modules\Activity\Models\Snapshot;
+use Filament\Forms\Components\TextInput;
 use Modules\Activity\Filament\Resources\SnapshotResource\Pages;
+use Modules\Activity\Models\Snapshot;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class SnapshotResource extends XotBaseResource
@@ -32,7 +30,7 @@ class SnapshotResource extends XotBaseResource
             TextInput::make('created_by_id')
                 ->numeric(),
         ];
-        
+
     }
 
     public static function getRelations(): array

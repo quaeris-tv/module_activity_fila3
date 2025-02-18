@@ -5,11 +5,9 @@ declare(strict_types=1);
 namespace Modules\Activity\Filament\Resources;
 
 use Filament\Forms;
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
+use Modules\Activity\Filament\Resources\StoredEventResource\Pages;
 use Modules\Activity\Models\StoredEvent;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-use Modules\Activity\Filament\Resources\StoredEventResource\Pages;
 
 class StoredEventResource extends XotBaseResource
 {
@@ -51,9 +49,9 @@ class StoredEventResource extends XotBaseResource
             'created_at' => Forms\Components\DateTimePicker::make('created_at')
                 ->required()
                 ->label('Created At')
-                ->helperText('When this event was created')
+                ->helperText('When this event was created'),
         ];
-        
+
     }
 
     public static function getRelations(): array
