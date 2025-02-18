@@ -1,14 +1,15 @@
-<?php 
-return array(
-    'navigation' => array(
+<?php
+
+return [
+    'navigation' => [
         'name' => 'Snapshot',
         'plural' => 'Snapshots',
-        'group' => array(
+        'group' => [
             'name' => 'Monitoraggio',
             'description' => 'Gestione degli snapshot di sistema',
-        ),
+        ],
         'label' => 'Snapshot',
         'sort' => 63,
         'icon' => 'activity-snapshot-animated',
-    ),
-);
+    ],
+];

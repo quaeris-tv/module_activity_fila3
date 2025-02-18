@@ -1,23 +1,25 @@
-<?php return array (
-    'navigation' => array (
+<?php
+
+return [
+    'navigation' => [
         'name' => 'Attività',
         'plural' => 'Attività',
-        'group' => array (
+        'group' => [
             'name' => 'Monitoraggio',
             'description' => 'Monitoraggio delle attività di sistema',
-        ),
+        ],
         'label' => 'Attività',
         'sort' => 60,
         'icon' => 'activity-activity-animated',
-    ),
-    'fields' => array (
-        'user' => array (
+    ],
+    'fields' => [
+        'user' => [
             'label' => 'Utente',
             'name' => 'Nome',
             'email' => 'Email',
             'role' => 'Ruolo',
-        ),
-        'action' => array (
+        ],
+        'action' => [
             'label' => 'Azione',
             'created' => 'Creato',
             'updated' => 'Modificato',
@@ -27,52 +29,52 @@
             'uploaded' => 'Caricato',
             'logged_in' => 'Accesso',
             'logged_out' => 'Uscita',
-        ),
-        'subject' => array (
+        ],
+        'subject' => [
             'label' => 'Oggetto',
             'type' => 'Tipo',
             'id' => 'ID',
             'name' => 'Nome',
-        ),
+        ],
         'description' => 'Descrizione',
         'ip_address' => 'Indirizzo IP',
         'user_agent' => 'User Agent',
         'created_at' => 'Data',
-        'properties' => array (
+        'properties' => [
             'label' => 'Proprietà',
             'old' => 'Vecchio Valore',
             'new' => 'Nuovo Valore',
-        ),
-    ),
-    'filters' => array (
+        ],
+    ],
+    'filters' => [
         'user' => 'Utente',
         'action' => 'Azione',
         'subject_type' => 'Tipo Oggetto',
         'date_range' => 'Intervallo Date',
         'ip_address' => 'Indirizzo IP',
-    ),
-    'actions' => array (
+    ],
+    'actions' => [
         'view_details' => 'Visualizza Dettagli',
         'export' => 'Esporta',
         'clear_old' => 'Pulisci Vecchie',
-    ),
-    'messages' => array (
+    ],
+    'messages' => [
         'no_activities' => 'Nessuna attività trovata',
         'cleared' => 'Attività vecchie eliminate con successo',
         'exported' => 'Attività esportate con successo',
-    ),
-    'export' => array (
-        'formats' => array (
+    ],
+    'export' => [
+        'formats' => [
             'csv' => 'CSV',
             'excel' => 'Excel',
             'pdf' => 'PDF',
-        ),
-        'columns' => array (
+        ],
+        'columns' => [
             'date' => 'Data',
             'user' => 'Utente',
             'action' => 'Azione',
             'subject' => 'Oggetto',
             'ip' => 'IP',
-        ),
-    ),
-);
+        ],
+    ],
+];

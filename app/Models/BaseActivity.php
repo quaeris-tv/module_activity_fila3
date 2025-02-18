@@ -12,6 +12,4 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * Base class for all activity models in the Activity module.
  * Extends Spatie's Activity model to provide common functionality.
  */
-abstract class BaseActivity extends SpatieActivity
-{
-}
+abstract class BaseActivity extends SpatieActivity {}

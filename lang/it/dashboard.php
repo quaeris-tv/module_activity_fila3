@@ -1,36 +1,38 @@
-<?php return array (
-    'navigation' => array (
+<?php
+
+return [
+    'navigation' => [
         'name' => 'Dashboard',
         'plural' => 'Dashboard',
-        'group' => array (
+        'group' => [
             'name' => 'Monitoraggio',
             'description' => 'Panoramica delle attività',
-        ),
+        ],
         'label' => 'Dashboard',
         'sort' => 59,
         'icon' => 'activity-dashboard-animated',
-    ),
-    'widgets' => array (
+    ],
+    'widgets' => [
         'recent_activities' => 'Attività Recenti',
         'activity_summary' => 'Riepilogo Attività',
         'top_users' => 'Utenti Più Attivi',
         'activity_by_type' => 'Attività per Tipo',
         'system_health' => 'Stato del Sistema',
         'error_logs' => 'Log di Errore',
-    ),
-    'charts' => array (
+    ],
+    'charts' => [
         'activities_over_time' => 'Attività nel Tempo',
         'activities_by_user' => 'Attività per Utente',
         'activities_by_type' => 'Attività per Tipo',
         'error_distribution' => 'Distribuzione Errori',
-    ),
-    'metrics' => array (
+    ],
+    'metrics' => [
         'total_activities' => 'Totale Attività',
         'unique_users' => 'Utenti Unici',
         'average_actions' => 'Azioni Medie',
         'error_rate' => 'Tasso di Errore',
-    ),
-    'periods' => array (
+    ],
+    'periods' => [
         'last_hour' => 'Ultima Ora',
         'today' => 'Oggi',
         'yesterday' => 'Ieri',
@@ -39,10 +41,10 @@
         'this_month' => 'Questo mese',
         'last_month' => 'Mese scorso',
         'custom' => 'Personalizzato',
-    ),
-    'status' => array (
+    ],
+    'status' => [
         'healthy' => 'In Salute',
         'warning' => 'Attenzione',
         'critical' => 'Critico',
-    ),
-);
+    ],
+];

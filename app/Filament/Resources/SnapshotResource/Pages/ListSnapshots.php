@@ -7,10 +7,6 @@ namespace Modules\Activity\Filament\Resources\SnapshotResource\Pages;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ViewColumn;
-use Filament\Tables\Actions\ViewAction;
-use Filament\Tables\Actions\EditAction;
-use Filament\Tables\Actions\DeleteAction;
-use Filament\Tables\Actions\DeleteBulkAction;
 use Modules\Activity\Filament\Resources\SnapshotResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
@@ -20,8 +16,6 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListSnapshots extends XotBaseListRecords
 {
     protected static string $resource = SnapshotResource::class;
-
-    
 
     public function getListTableColumns(): array
     {
@@ -94,5 +88,4 @@ class ListSnapshots extends XotBaseListRecords
             'delete' => Tables\Actions\DeleteBulkAction::make(),
         ];
     }
-
 }
