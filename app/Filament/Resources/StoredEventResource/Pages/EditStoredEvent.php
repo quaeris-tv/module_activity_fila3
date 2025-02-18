@@ -12,10 +12,5 @@ class EditStoredEvent extends EditRecord
 {
     protected static string $resource = StoredEventResource::class;
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\DeleteAction::make(),
-        ];
-    }
+   
 }

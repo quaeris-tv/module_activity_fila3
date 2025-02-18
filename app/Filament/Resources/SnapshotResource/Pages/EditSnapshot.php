@@ -12,10 +12,5 @@ class EditSnapshot extends EditRecord
 {
     protected static string $resource = SnapshotResource::class;
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\DeleteAction::make(),
-        ];
-    }
+   
 }
