@@ -8,7 +8,7 @@ use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 use Modules\Activity\Filament\Resources\StoredEventResource;
 
-class EditStoredEvent extends EditRecord
+class EditStoredEvent extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord
 {
     protected static string $resource = StoredEventResource::class;
 

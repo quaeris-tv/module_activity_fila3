@@ -8,7 +8,7 @@ use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 use Modules\Activity\Filament\Resources\SnapshotResource;
 
-class EditSnapshot extends EditRecord
+class EditSnapshot extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord
 {
     protected static string $resource = SnapshotResource::class;
 
