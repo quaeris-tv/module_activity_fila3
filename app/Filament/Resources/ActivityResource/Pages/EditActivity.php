@@ -8,7 +8,7 @@ use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
 use Modules\Activity\Filament\Resources\ActivityResource;
 
-class EditActivity extends EditRecord
+class EditActivity extends \Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord
 {
     protected static string $resource = ActivityResource::class;
 

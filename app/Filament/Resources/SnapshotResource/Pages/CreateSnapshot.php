@@ -7,7 +7,7 @@ namespace Modules\Activity\Filament\Resources\SnapshotResource\Pages;
 use Filament\Resources\Pages\CreateRecord;
 use Modules\Activity\Filament\Resources\SnapshotResource;
 
-class CreateSnapshot extends CreateRecord
+class CreateSnapshot extends \Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord
 {
     protected static string $resource = SnapshotResource::class;
 }
