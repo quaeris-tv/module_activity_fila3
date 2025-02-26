@@ -20,43 +20,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Modules\\Activity\\": ""
+            "Modules\\Activity\\": "app/",
+            "Modules\\Activity\\Database\\Factories\\": "database/factories/",
+            "Modules\\Activity\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "require": {
         "spatie/laravel-activitylog": "*",
         "spatie/laravel-event-sourcing": "*"
     },
-    "require_comment": {
-        "filament/filament": "^3.2",
-        "illuminate/contracts": "^9.0|^10.0|^11.0",
-        "illuminate/support": "^9.12|^10.0|^11.0",
-        "laraxot/module_xot_fila3": "*",
-        "mhmiton/laravel-modules-livewire": "^2.3",
-        "spatie/laravel-activitylog": "^4.7",
-        "spatie/laravel-event-sourcing": "^7.3",
-        "thecodingmachine/safe": "^2.5"
-    },
-    "require-dev_comment": {
-        "driftingly/rector-laravel": "^0.26.2",
-        "enlightn/enlightn": "^2.7",
-        "larastan/larastan": "^2.7",
-        "laravel/pint": "^1.13",
-        "nunomaduro/collision": "^7.10",
-        "nunomaduro/phpinsights": "^2.11",
-        "orchestra/pest-plugin-testbench": "^2.0",
-        "orchestra/testbench": "*",
-        "pestphp/pest": "^2.34",
-        "pestphp/pest-plugin-arch": "^2.0",
-        "pestphp/pest-plugin-laravel": "^2.0",
-        "phpstan/phpstan-deprecation-rules": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.0",
-        "psalm/plugin-laravel": "*",
-        "rector/rector": "*",
-        "spatie/laravel-ray": "^1.26",
-        "thecodingmachine/phpstan-safe-rule": "^1.2",
-        "vimeo/psalm": "^5.17"
-    },
+    "require-dev": {},
     "repositories": [
         {
             "type": "path",
@@ -72,11 +45,7 @@
         }
     ],
     "scripts": {
-        "post-autoload-dump": [
-            "@clear",
-            "@prepare",
-            "@php vendor/bin/testbench package:discover --ansi"
-        ],
+        "post-autoload-dump": [],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate"
         ],
