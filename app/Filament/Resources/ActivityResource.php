@@ -32,8 +32,6 @@ class ActivityResource extends XotBaseResource
 {
     protected static ?string $model = Activity::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
     /**
      * Define the form schema for the Activity resource.
      *
@@ -95,27 +93,5 @@ class ActivityResource extends XotBaseResource
         ];
     }
 
-    /**
-     * Get the relations for the Activity resource.
-     *
-     * @return array The relations configuration
-     */
-    public static function getRelations(): array
-    {
-        return [];
-    }
-
-    /**
-     * Get the pages for the Activity resource.
-     *
-     * @return array<string, PageRegistration> The pages configuration
-     */
-    public static function getPages(): array
-    {
-        return [
-            'index' => Pages\ListActivities::route('/'),
-            'create' => Pages\CreateActivity::route('/create'),
-            'edit' => Pages\EditActivity::route('/{record}/edit'),
-        ];
-    }
+    
 }
